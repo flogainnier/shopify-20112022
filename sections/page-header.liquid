@@ -1,0 +1,375 @@
+
+{%- if section.settings.background_type == 'boxed' -%}
+  {%- assign is_boxed = true -%}
+{%- else -%}
+  {%- assign is_boxed = false -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} .image-overlay {
+    --heading-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
+    --text-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
+    --section-items-alignment: center;
+    --section-overlay-color: {{ section.settings.image_overlay_color.red }}, {{ section.settings.image_overlay_color.green }}, {{ section.settings.image_overlay_color.blue }};
+    --section-overlay-opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+  @media screen and (min-width: 1000px) {
+    .image-with-text__image-wrapper {
+      {%- if section.settings.image_size == 'small' -%}
+        width: 33%;
+      {%- elsif section.settings.image_size == 'medium' -%}
+        width: 50%;
+      {%- else -%}
+        width: 66%;
+      {%- endif -%}
+    }
+  }
+</style>
+
+<section>
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------
+  TOP PART (IMAGE AND BREADCRUMB)
+  ------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- if section.settings.section_type == "image_with_text_overlay" -%}
+    <image-with-text-overlay class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio }}"{% endif %}>
+      <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%"{% endif %}>
+        {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
+        <picture>
+          <source media="(max-width: 740px)" {% render 'image-attributes', image: section.settings.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', ignore_src: true %}>
+          <img class="image-overlay__image" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' %}>
+        </picture>
+      </div>
+
+      <div class="container">
+        <div class="image-overlay__content-wrapper">
+          
+          <div class="image-overlay__content content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--center text-container">
+            <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall hidden-phone">
+              <ol class="breadcrumb__list" role="list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+                </li>
+        
+                <li class="breadcrumb__item">
+                  <span class="breadcrumb__link" aria-current="page">
+                    {{- page.title -}}
+                  </span>
+                </li>
+              </ol>
+            </nav>
+
+            <h1 class="heading h1">
+              <split-lines>{{ section.settings.title }}</split-lines>
+            </h1>
+
+            {%- if section.settings.content != blank -%}
+              <div class="image-overlay__text-container">
+                {{- section.settings.content -}}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </image-with-text-overlay>
+  {%- elsif section.settings.section_type == "image_with_text" -%}
+    <image-with-text {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-with-text {% if is_boxed %}image-with-text--boxed{% endif %} {% if section.settings.image_position == 'right' %}image-with-text--reverse{% endif %} image-with-text--overlap-{{ section.settings.background_overlap }}" style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio | default: 1 }}">
+      <div class="{% if is_boxed == true %}container{% endif %}">
+        <div class="image-with-text__wrapper">
+          {%- assign first_image_aspect_ratio = section.settings.image.aspect_ratio | default: 1 -%}
+
+          <div class="image-with-text__image-wrapper"> 
+            {%- if section.settings.image -%}
+              <img class="image-with-text__image" {% if section.settings.reveal_on_scroll %}reveal-visibility{% endif %} sizes="(max-width: 740px) calc(100vw - 96px), (max-width: 999px) calc(100vw - 160px), 600px" loading="lazy" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400' %}>
+            {%- else -%}
+              {%- if section.settings.reveal_on_scroll -%}
+                {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' | replace: '<svg', '<svg reveal-visibility' -}}
+              {%- else -%}
+                {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' -}}
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+
+          <div class="image-with-text__content-wrapper">    
+            <image-with-text-item class="image-with-text__content text-container text--{{ section.settings.text_alignment }}" {{ section.shopify_attributes }}>
+              <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall hidden-phone">
+                <ol class="breadcrumb__list" role="list" style="margin-left:0">
+                  <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+                  </li>
+          
+                  <li class="breadcrumb__item">
+                    <span class="breadcrumb__link" aria-current="page">
+                      {{- page.title -}}
+                    </span>
+                  </li>
+                </ol>
+              </nav>
+              
+              {%- if section.settings.subheading != blank -%}
+                <div class="heading heading--small">
+                  <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.subheading | escape }}</split-lines>
+                </div>
+              {%- endif -%}
+
+              {%- if section.settings.title != blank -%}
+                <h1 class="heading h1">
+                  <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.title | escape }}</split-lines>
+                </h1>
+              {%- endif -%}
+
+              <div class="image-with-text__text-wrapper" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>
+                {%- if section.settings.content != blank -%}
+                  {{- section.settings.content -}}
+                {%- endif -%}
+              </div>
+            </image-with-text-item>
+          </div>
+
+        </div>
+      </div>
+    </image-with-text>
+  {%- else -%}
+    <div class="container">
+      <div class="page-header">
+        {{- breadcrumb -}}
+
+        <div class="page-header__text-wrapper content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--{{ section.settings.text_position }} text-container">
+          <h1 class="heading h1">{{ section.settings.title }}</h1>
+
+          {%- if section.settings.content != blank -%}
+            {{- section.settings.content -}}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Page header",
+  "class": "shopify-section--page-header",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "To change collection descriptions or collection images, [edit your collections](/admin/collections)."
+    },
+    {
+      "type": "select",
+      "id": "section_type",
+      "label": "Section type",
+      "options": [
+        {
+          "value": "rich_text",
+          "label": "Rich text"
+        },
+        {
+          "value": "image_with_text_overlay",
+          "label": "Image with text overlay"
+        },
+        {
+          "value": "image_with_text",
+          "label": "Image with text"
+        }
+      ],
+      "default": "rich_text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1400 x 1400px .jpg recommended"
+    },
+    {
+      "type": "select",
+      "id": "section_height",
+      "label": "Image height",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Original image ratio"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "info": "Choose \"Original image ratio\" to not cut images. [Learn more](https://help.shopify.com/en/manual/online-store/images/theme-images#best-practices-for-slideshows-and-full-width-images)",
+      "default": "small"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Desktop image size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Desktop image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Background",
+      "options": [
+        {
+          "value": "full_width",
+          "label": "Full width"
+        },
+        {
+          "value": "boxed",
+          "label": "Boxed"
+        }
+      ],
+      "default": "full_width"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Image with text"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_width",
+      "label": "Text width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill screen"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "header",
+      "content": "Color",
+      "info": "Only applicable when collection image is used."
+    },
+    {
+      "type": "color",
+      "id": "image_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "image_overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page header",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

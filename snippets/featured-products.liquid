@@ -1,0 +1,23 @@
+{%- assign featured_products_block = section.blocks | where: 'type', 'featured_products' | first -%}
+{%- if featured_products_block != blank -%}
+  {%- assign product_1 = featured_products_block.settings.product_1 -%}
+  {%- assign product_2 = featured_products_block.settings.product_2 -%}
+
+  {%- if featured_products_block.settings.products != blank -%}
+    <div class="product-content__featured-products">
+      {%- if featured_products_block.settings.title != blank -%}
+        <p class="product-content__featured-products-title heading heading--small">{{ featured_products_block.settings.title }}</p>
+      {%- endif -%}
+
+      <div class="scroller">
+        <div class="scroller__inner">
+          <div class="product-content__featured-products-list">
+            {%- for product in featured_products_block.settings.products -%}
+              {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, sizes_attribute: '(max-width: 740px) 105px, 215px' -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endif -%}

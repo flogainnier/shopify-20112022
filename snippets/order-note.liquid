@@ -1,0 +1,8 @@
+{%- if section.settings.show_order_note -%}
+  <openable-element id="mini-cart-note" class="mini-cart__order-note">
+    <span class="openable__overlay openable__bottom-overlay"></span>
+    <label for="cart[note]" class="mini-cart__order-note-title heading heading--xsmall">{{- 'cart.general.add_order_note' | t -}}</label>
+    <textarea is="cart-note" name="note" id="cart[note]" rows="3" aria-owns="order-note-toggle" class="input__field input__field--textarea" placeholder="{{ 'cart.general.order_note_placeholder' | t }}">{{ cart.note }}</textarea>
+    <button type="button" data-action="close" class="form__submit form__submit--closer button button--secondary">{{ 'cart.general.order_note_save' | t }}</button>
+  </openable-element>
+{%- endif -%}

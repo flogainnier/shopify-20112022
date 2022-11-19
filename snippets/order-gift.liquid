@@ -1,0 +1,23 @@
+{%- comment -%}Custom Element Made By FG{%- endcomment -%}
+{%- if section.settings.show_order_gift -%}
+  <openable-element id="{{ type }}-cart-gift" class="{{ type }}-cart__order-gift">
+    <span class="openable__overlay openable__drawer-overlay"></span>
+    <header class="openable__header">
+      <span class="openable__title heading h5">{{- 'cart.general.order_gift_title' | t -}}</span>
+      <button type="button" class="openable__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon' with 'nav-arrow-left' -%}
+      </button>
+    </header>
+    <div class="openable__content openable__content--restrict hide-scrollbar">
+      <p class="mini-cart__order-gift-description text--center text--small">{{- 'cart.general.order_gift_description' | t -}}</p>
+      <count-down>
+        <div class="mini-cart__message-textarea-container">
+          <textarea is="cart-gift" name="attributes[message]" id="attributes[message]" maxlength="250" cols="30" rows="5" data-limit-rows="true" aria-owns="order-gift-toggle" placeholder="{{ 'cart.general.order_gift_placeholder' | t }}" maxlength="250" class="mini-cart__message-textarea counter-input">{{ message }}</textarea>
+        </div>
+        <div class="counter text--subdued text--xsmall">0 / 250</div>
+      </count-down>
+      <button type="button" data-action="close" class="form__submit form__submit--closer button button--primary button--full">{{ 'cart.general.order_gift_save' | t }}</button>
+    </div>
+  </openable-element>
+{%- endif -%}
+{%- comment -%}End of Custom Element Made By FG{%- endcomment -%}

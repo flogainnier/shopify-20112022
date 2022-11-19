@@ -1,0 +1,30 @@
+{%- assign collection = section.settings.upsell_collection -%}
+{%- if collection.products.count > 0 -%}
+  <openable-element id="{{ type }}-cart-upsell" class="cart__upsell {{ type }}-cart__upsell">
+    <span class="openable__overlay openable__drawer-overlay"></span>
+    <header class="openable__header">
+      <div>
+        <div class="openable__title heading h5">{{ section.settings.upsell_title | escape }}</div>
+        <div class="openable__description text--small">{{ section.settings.upsell_description | escape }}</div>
+      </div>
+      <button type="button" class="openable__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon' with 'nav-arrow-left' -%}
+      </button>
+    </header>
+    <div class="main-cart__upsell-inner">
+      <div class="main-cart__upsell-list">
+        {%- assign shown_products_count = 0 -%}
+        {%- for product in collection.products limit: section.settings.products_count -%}
+          {%- if shown_products_count >= 6 -%}
+            {%- break -%}
+          {%- endif -%}
+          {%- assign matching_product = cart.items | where: 'product_id', product.id -%}
+          {%- if matching_product.size == 0 -%}
+            {%- assign shown_products_count = shown_products_count | plus: 1 -%}
+            {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, show_cta: true, hide_secondary_image: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </openable-element>
+{%- endif -%}

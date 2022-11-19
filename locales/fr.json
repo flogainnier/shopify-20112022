@@ -1,0 +1,561 @@
+{
+  "general": {
+    "meta": {
+      "page": "Page {{ page }}",
+      "list_collections": "Toutes les collections"
+    },
+    "label": {
+      "color": "Couleur",
+      "white": "Blanc",
+      "size": "Taille"
+    },
+    "breadcrumb": {
+      "title": "Fil d'ariane",
+      "home": "Accueil"
+    },
+    "pagination": {
+      "previous_page": "Précédent",
+      "next_page": "Suivant",
+      "go_to_page": "Aller à la page {{page}}"
+    },
+    "accessibility": {
+      "skip_to_content": "Passer au contenu",
+      "close": "Fermer",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "play_video": "Lancer la video",
+      "go_to_slide": "Aller au slide {{num}}",
+      "delete": "Supprimer",
+      "show_product": "Afficher le produit {{title}}",
+      "star_reviews_info": "{{ rating_value }} sur {{ rating_max }} étoiles"
+    },
+    "social": {
+      "facebook_share": "Partager sur Facebook",
+      "pinterest_pin": "Pin sur Pinterest",
+      "twitter_tweet": "Tweeter sur Twitter",
+      "email_share": "Partager par e-mail",
+      "email_label": "E-mail",
+      "follow_label": "Suivez nous sur {{ social_media }}"
+    },
+    "newsletter": {
+      "email": "Votre e-mail",
+      "subscribe": "S'abonner",
+      "success": "Vous êtes abonné à la newsletter."
+    },
+    "faq": {
+      "categories": "Catégories"
+    },
+    "onboarding": {
+      "blog_post_category": "Catégorie",
+      "blog_post_title": "Article",
+      "product_vendor": "Marque",
+      "product_title": "Produit",
+      "product_description": "Ecrivez du contenu à propos de votre produit.",
+      "collection_title": "Collection"
+    }
+  },
+  "header": {
+    "general": {
+      "navigation": "Navigation",
+      "newsletter": "Newsletter",
+      "login": "Connexion",
+      "account": "Compte",
+      "cart": "Panier",
+      "language": "Langue",
+      "country": "Pays\/région"
+    }
+  },
+  "footer": {
+    "general": {
+      "language": "Langue",
+      "country": "Pays\/région",
+      "we_accept": "Nous acceptons"
+    },
+    "newsletter": {
+      "email": "Votre e-mail",
+      "submit": "S'inscrire",
+      "success": "Vous êtes abonné à la newsletter."
+    },
+    "cookie_bar": {
+      "accept": "Accepter",
+      "decline": "Refuser"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Panier",
+      "empty": "Votre panier est vide",
+      "start_shopping": "Explorer nos produits",
+      "free_shipping": "Vous êtes éligible à l'envoi gratuit",
+      "free_shipping_remaining_html": "Dépensez <span class=\"bubble-highlight\">{{ remaining_amount }}<\/span> de plus et obtenez la livraison gratuite !",
+      "free": "Gratuit !",
+      "no_more_stock": "Plus de stock",
+      "shipping_tax_note": "Frais d'envoi et taxe calculés à la caisse",
+      "delivery_note": "Les codes promos et frais de livraison s’appliquent à l’étape suivante",
+      "product": "Produit",
+      "quantity": "Quantité",
+      "decrease_quantity": "Réduire la quantité",
+      "increase_quantity": "Augmenter la quantité",
+      "change_quantity": "Changer la quantité",
+      "remove": "Supprimer",
+      "order_note": "Note de commande",
+      "add_order_note": "Ajouter une note",
+      "edit_order_note": "Modifier la note",
+      "order_note_placeholder": "Comment pouvons-nous vous aider ?",
+      "order_note_save": "Enregistrer",
+      "add_order_charity": "Sélectionner une association",
+      "order_charity_save": "Sélectionner cette association",
+      "order_charity_title": "Votre association",
+      "add_order_gift": "Votre message personnalisé",
+      "order_gift_title": "Message personnalisé",
+      "order_gift_description": "Ecrivez votre message ci-dessous, nous l’imprimerons sur une jolie carte, placée dans votre commande ensuite.",
+      "order_gift_save": "Sauvegarder",
+      "order_gift_placeholder": "Votre message",
+      "order_gift_box_html": "<b>Votre commande est un cadeau ?<\/b><br>Ajoutez un emballage cadeau et un message personnalisé (+3,00€)",
+      "total": "Total",
+      "checkout": "Commander",
+      "go_to_cart": "Aller au panier",
+      "we_accept": "Nous acceptons",
+      "item_added": "Produit ajouté à votre panier !",
+      "item_added_short": "Ajouté au panier !",
+      "view_cart": "Voir panier",
+      "upsell_title": "Complétez votre commande avec",
+      "item_count": {
+        "zero": "{{ count }} produit",
+        "one": "{{ count }} produit",
+        "other": "{{ count }} produits"
+      }
+    },
+    "shipping_estimator": {
+      "estimate_shipping": "Estimer les frais d'envoi",
+      "country": "Pays",
+      "province": "Région",
+      "zip_code": "Code postal",
+      "submit": "Estimer",
+      "no_results": "Désolé, nous ne livrons pas à votre destination.",
+      "one_result": "Il y a un frais d'envoi pour votre adresse :",
+      "multiple_results": "Il y a plusieurs frais d'envoi pour votre adresse :",
+      "error": "Une ou plusieurs erreurs se sont produites lors de la récupération des frais d'envoi :"
+    }
+  },
+  "collection": {
+    "general": {
+      "filters": "Filtres",
+      "show_filters": "Afficher les filtres",
+      "all_products": "Tous les produits",
+      "view_results": "Voir résultats",
+      "apply_filters": "Appliquer",
+      "clear_filters": "Tout supprimer",
+      "price_range_to": "à",
+      "price_filter_from": "De",
+      "price_filter_to": "A",
+      "price_filter": "{{min_price}} - {{max_price}}",
+      "no_results_title": "Aucun résultat",
+      "no_results_label": "Désolé, votre recherche n'a retourné aucun résultat.",
+      "no_results_button": "Réinitialiser les filtres",
+      "empty_title": "Collection vide",
+      "empty_label": "Cette collection ne contient aucun produit.",
+      "empty_button": "Explorer nos produits",
+      "sort_by": "Trier par",
+      "more_filter": "Plus de filtres",
+      "products_count": {
+        "zero": "{{ count }} produit",
+        "one": "{{ count }} produit",
+        "other": "{{ count }} produits"
+      }
+    },
+    "product": {
+      "sold_out": "Epuisé",
+      "discount_html": "Economisez {{ savings }}",
+      "from_price_html": "A partir de {{ price_min }}",
+      "add_to_cart": "+ Ajouter au panier",
+      "add_to_cart_short": "Ajouter",
+      "quick_view": "Apercu rapide",
+      "available_colors_count": {
+        "one": "{{ count }} couleur disponible",
+        "other": "{{ count }} couleurs disponibles"
+      }
+    }
+  },
+  "product": {
+    "general": {
+      "description": "Description",
+      "reviews": "Avis ({{ rating_count }})",
+      "sku": "SKU :",
+      "regular_price": "Prix normal",
+      "sale_price": "Prix de vente",
+      "view_in_space": "Afficher dans votre espce",
+      "zoom": "Zoom",
+      "share": "Partager",
+      "size_chart": "Guide des tailles",
+      "need_help": "Besoin d'aide ?",
+      "view_details": "Afficher les détails",
+      "include_taxes": "Taxe incluse",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Frais d'envoi calculés<\/a> à la caisse",
+      "reviews_count": {
+        "zero": "{{ count }} avis",
+        "one": "{{ count }} avis",
+        "other": "{{ count }} avis"
+      }
+    },
+    "form": {
+      "choose_options": "Aperçu",
+      "quantity": "Quantité",
+      "variant": "Variante",
+      "unavailable": "Indisponible",
+      "pre_order": "Pre-commander",
+      "pre_order_property": "Livraison",
+      "add_to_cart": "Ajouter au panier",
+      "sold_out": "Indisponible",
+      "in_stock": "En stock",
+      "oversell_stock": "Re-stockage imminent",
+      "incoming_stock": "Re-stockage le {{ next_incoming_date }}",
+      "low_stock_with_quantity_count": {
+        "one": "Plus qu'un produit en stock",
+        "other": "Plus que {{count}} produits en stock"
+      },
+      "contact_us": "Nous contacter"
+    },
+    "back_in_stock": {
+      "title": "Ce produit est épuisé mais sera bientôt de retour!",
+      "subtitle": "Inscrivez-vous ci-dessous. Nous vous enverrons un mail dès que le produit revient en stock.",
+      "success_title": "Merci !",
+      "success_subtitle": "Votre inscription a bien été prise en compte. Vous recevrez un e-mail dès qu’il revient en stock !",
+      "save": "S'inscrire"
+    },
+    "customization": {
+      "title": "Gravure - Personnalisez votre bijoux",
+      "subtitle": "Nous adapterons la taille de votre texte à la main afin que le rendu soit le plus harmonieux possible. Chaque gravure est donc unique. Attention, les bijoux personnalisés ne peuvent pas être retournés. Attention, les caractères spéciaux et les emojis ne sont pas acceptés et ne seront pas pris en compte lors de la gravure.",
+      "font": "Police"
+    },
+    "certifications": {
+      "made_in_france_title": "Made in France",
+      "argent_recycle_title": "Argent massif recyclé",
+      "pierre_naturelle_title": "Pierre naturelle",
+      "emballage_recycle_title": "Emballage recyclé",
+      "plaquage_certifie_rjc_title": "Plaquage certifié RJC",
+      "tracabilite_de_la_pierre_title": "Traçabilité de la pierre",
+      "made_in_france_description": "Tous nos produits sont fabriqués en France dans l'un de nos 9 ateliers partenaires pour préserver l'emploi et les savoir-faire français.",
+      "argent_recycle_description": "Notre engagement à vous proposer une bijouterie durable passe tout d’abord par l’utilisation de métaux recyclés. A ce jour, 100% de l'argent utilisé dans cette création est de l'argent recyclé.",
+      "pierre_naturelle_description": "La pierre utilisée dans ce bijou provient d'une mine naturelle plus respectueuse de l'environnement.",
+      "emballage_recycle_description": "Emballage de livraison composés de fibres recyclées et certifiées issu de forêts gérées durablement \/ Emballage cadeau 100% recyclé à partir de Tetra Pak.",
+      "plaquage_certifie_rjc_description": "Ce bijou est plaqué avec de l'or 3 microns en partie recyclé (en Suisse), par un atelier certifié Responsible Jewellery Council.",
+      "tracabilite_de_la_pierre_description": "Nous connaissons la provenance exacte de la pierre utilisée dans ce bijou et nous nous assurons au mieux que les conditions de production respectent les normes sociales et environnementales élémentaires.",
+      "artisan_dart_title": "Artisan d'art",
+      "artisan_dart_description": "Leur attribution atteste à la fois la formation et l'expérience professionnelle qui caractérisent le savoir-faire du secteur des métiers. La qualité d’artisan d’art est attribuée aux personnes qui exercent une activité répertoriée dans la classification des métiers d’art.",
+      "coton_certifie_gots_title": "Coton certifié GOTS",
+      "coton_certifie_gots_description": "La certification GOTS certifie que notre coton est cultivé sans OGM, sans produits chimiques et avec une traçabilité depuis les champs de coton jusqu'à chez vous, incluant des certificats de transaction à chaque étape."
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Afficher les informations de la boutique",
+      "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
+      "pick_up_available": "Récupération disponible",
+      "pick_up_currently_unavailable": "Récupération actuellement indisponible",
+      "pick_up_available_at": "Récupération disponible à {{ location_name }}",
+      "pick_up_unavailable_at": "Récupération actuellement indisponible à {{ location_name }}"
+    }
+  },
+  "list_collections": {
+    "general": {
+      "title": "Collections",
+      "empty": "Cette boutique ne contient aucune collection.",
+      "back_to_home": "Retourner à la page d'accueil",
+      "products_count": {
+        "zero": "Aucun produit",
+        "one": "{{count}} produit",
+        "other": "{{count}} produits"
+      }
+    }
+  },
+  "blog": {
+    "general": {
+      "empty": "Ce blog ne contient aucun article.",
+      "back_to_home": "Retourner à la page d'accueil",
+      "view": "Voir",
+      "all_posts": "Tous les articles"
+    }
+  },
+  "article": {
+    "general": {
+      "written_by": "Par {{ author }}",
+      "share": "Partager",
+      "next": "Suivant",
+      "reading": "Vous lisez",
+      "tags": "Tags",
+      "continue_reading": "Continuer à lire",
+      "reading_time": {
+        "zero": "{{ count }} minute",
+        "one": "{{ count }} minute",
+        "other": "{{ count }} minutes"
+      }
+    },
+    "comments": {
+      "leave_comment": "Laisser un commentaire",
+      "moderated": "Tous les commentaires sont modérés avant d'être publiés.",
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "submit": "Envoyer",
+      "comment_sent": "Votre commentaire a été envoyé. Il sera visible une fois approuvé.",
+      "comment_published": "Votre commentaire a été publié.",
+      "comments_count": {
+        "zero": "{{ count }} commentaire",
+        "one": "{{ count }} commentaire",
+        "other": "{{ count }} commentaires"
+      }
+    }
+  },
+  "customer": {
+    "general": {
+      "title": "Mon compte",
+      "welcome": "Bienvenue {{ name }} !"
+    },
+    "login": {
+      "title": "Connexion",
+      "instructions": "Veuillez saisir vos identifiants pour vous connecter",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "forgot_password": "Mot de passe oublié ?",
+      "new_customer": "Nouveau client ?",
+      "create_account": "Créer un compte"
+    },
+    "recover_password": {
+      "title": "Réinitialisation du mot de passe",
+      "instructions": "Merci de renseigner l’e-mail associé à votre compte. Nous vous enverrons un e-mail avec la procédure à suivre.",
+      "email": "E-mail",
+      "submit": "Réinitialiser le mot de passe",
+      "remember_password": "Vous vous souvenez du mot de passe ?",
+      "back_to_login": "Annuler",
+      "success": "Un e-mail a été envoyé à votre adresse avec les instructions pour ré-initialiser votre mot de passe."
+    },
+    "activate_account": {
+      "title": "Activation du compte",
+      "instructions": "Veuillez entrer un mot de passe pour créer votre compte.",
+      "password": "Mot de passe",
+      "password_confirmation": "Confirmation du mot de passe",
+      "submit": "Activer",
+      "cancel": "Annuler"
+    },
+    "reset_password": {
+      "title": "Ré-initialisation du mot de passe",
+      "instructions": "Veuillez entrer un nouveau mot de passe.",
+      "password": "Mot de passe",
+      "password_confirmation": "Confirmation du mot de passe",
+      "submit": "Ré-initialiser"
+    },
+    "register": {
+      "title": "Inscription",
+      "instructions": "Veuillez remplir le formulaire pour vous inscrire.",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "submit": "Créer mon compte",
+      "already_have_account": "Vous avez déjà un compte ?",
+      "login": "Connexion",
+      "update": "Enregistrer",
+      "accepts_marketing": "Je m’inscris à la newsletter pour profiter des avant-premières !",
+      "accepts_sms_marketing": "... et par SMS pour les bons plans de dernières minutes",
+      "gender": "Civilité",
+      "birthday": "Date de naissance",
+      "phone": "Téléphone"
+    },
+    "orders": {
+      "title": "Commandes",
+      "no_orders": "Vous n'avez passé aucune commande.",
+      "start_shopping": "Explorer nos produits",
+      "back_to_orders": "Retour aux commandes",
+      "number": "Numéro de commande",
+      "order_name": "Commande {{name}}",
+      "date": "Date",
+      "payment_status": "Statut du paiement",
+      "fulfillment_status": "Statut de l'envoi",
+      "view_details": "Voir détails",
+      "cancelled_at": "Annulé le {{date}}. Raison : {{reason}}",
+      "fulfillment_with_url_and_number_html": "Tous les produits ont été envoyés le {{date}}. Suivez le colis avec le code {{tracking_number}} ou en <a href=\"{{tracking_url}}\" target=\"_blank\">cliquant ici<\/a>.",
+      "fulfillment_with_url_html": "Tous les produits ont été envoyés le {{date}}. Suivez le colis en <a href=\"{{tracking_url}}\" target=\"_blank\">cliquant ici<\/a>.",
+      "fulfillment_with_number_html": "Tous les produits ont été envoyés le {{date}}. Suivez le colis avec le code {{tracking_number}}.",
+      "fulfillment_html": "Tous les produits ont été envoyés le {{date}}.",
+      "line_fulfillment_with_url_and_number_html": "Ce produit a été envoyé le {{date}}. Suivez le colis avec le code {{tracking_number}} ou en <a href=\"{{tracking_url}}\" target=\"_blank\">cliquant ici<\/a>.",
+      "line_fulfillment_with_url_html": "Ce produit a été envoyé le {{date}}. Suivez le colis en <a href=\"{{tracking_url}}\" target=\"_blank\">cliquant ici<\/a>.",
+      "line_fulfillment_with_number_html": "Ce produit a été envoyé le {{date}}. Suivez le colis avec le code {{tracking_number}}.",
+      "line_fulfillment_html": "Ce produit a été envoyé le {{date}}.",
+      "total": "Total",
+      "subtotal": "Sous-total",
+      "discount": "Réduction",
+      "shipping": "Frais d'envoi",
+      "total_duties": "Douanes",
+      "refunded_amount": "Montant remboursé",
+      "tax_included": "Taxes incluses",
+      "tax_excluded": "Taxes excluses",
+      "quantity": "Quantité : {{quantity}}",
+      "shipping_address": "Adresse de livraison",
+      "billing_address": "Adresse de facturation"
+    },
+    "addresses": {
+      "title": "Adresses",
+      "no_address": "Vous n'avez sauvegardé aucune adresse.",
+      "add_new": "Ajouter une adresse",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "delete_confirm": "Etes-vous sur de vouloir supprimer cette adresse ?",
+      "save": "Sauvegarder",
+      "default_address": "Adresse par défaut",
+      "address_count": "Adresse {{count}}",
+      "fill_address": "Veuillez compléter les champs suivants :",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "company": "Entreprise",
+      "phone": "Numéro de téléphone",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "Ville",
+      "zip": "Code postal",
+      "country": "Pays",
+      "province": "Région",
+      "set_default": "Définir comme défaut"
+    },
+    "informations": {
+      "title": "Informations",
+      "personal_title": "Informations personnelles",
+      "personal_description": "Voici les informations personnelles de votre compte Aglaïa & Co.",
+      "account_title": "Informations de connexion",
+      "account_description": "Voici vos identifiants de connexion. Seul votre mot de passe est modifiable.",
+      "account_modify": "Veuillez nous contacter pour changer vos informations personelles."
+    },
+    "wishlist": {
+      "title": "Ma Wishlist",
+      "subtitle": "Retrouvez ci-dessous les produits inclus dans votre wishlist.",
+      "empty": "Votre wishlist est vide."
+    },
+    "logout": {
+      "title": "Déconnexion"
+    }
+  },
+  "search": {
+    "general": {
+      "title": "Recherche",
+      "terms": "Résultats pour \"{{terms}}\"",
+      "search_placeholder": "Que recherchez-vous ?",
+      "no_results": "Aucun résultat n'a été retourné.",
+      "new_search": "Nouvelle recherche",
+      "view_all_results": "Voir tous les résultats",
+      "products": "Produits",
+      "articles": "Blog",
+      "pages": "Pages",
+      "collections": "Collections"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "submit": "Envoyer",
+      "successfully_sent": "Votre message a été envoyé."
+    }
+  },
+  "gift_card": {
+    "issued": {
+      "subtext": "Voici votre carte cadeau !",
+      "illustration": "Illustration",
+      "disabled": "Votre carte cadeau est desactivée.",
+      "expired": "Votre carte cadeau a expiré le {{expiry}}.",
+      "expires_on": "Expire le {{expiry}}",
+      "redeem": "Utilisez ce code au moment du paiement pour utiliser votre carte cadeau :",
+      "remaining_amount_html": "Montant restant : {{balance}} (sur {{initial_value}})",
+      "print": "Imprimer",
+      "scan_qr_code": "Scannez ce QR code:",
+      "add_to_apple_wallet": "Ajouter à Apple Wallet",
+      "go_to_store": "Aller à la boutique"
+    }
+  },
+  "password": {
+    "general": {
+      "store_owner": "Gérant de la boutique ?",
+      "login": "Se connecter",
+      "powered_by": "Cette boutique sera propulsée par",
+      "enter_password": "Entrer le mot de passe"
+    },
+    "password": {
+      "label": "Veuillez entrer le mot de passe pour accéder à cette boutique",
+      "input": "Mot de passe",
+      "submit": "Entrer"
+    },
+    "newsletter": {
+      "success": "Vous êtes abonné à la newsletter.",
+      "email": "Votre e-mail",
+      "submit": "Me tenir informé"
+    }
+  },
+  "404": {
+    "general": {
+      "title": "Page non trouvée",
+      "description": "Désolé, cette page n'existe plus.",
+      "back_to_home": "Retourner à la page d'accueil"
+    }
+  },
+  "custom_checkout": {
+    "colissimo_with_signature": "Colissimo | Livraison à domicile avec signature",
+    "colissimo_without_signature": "Colissimo | Livraison à domicile sans signature",
+    "colissimo_service_point": "Colissimo | Point relais",
+    "lettre_suivie": "Lettre suivie | Livraison à domicile",
+    "delivery_home_description": "Livraison entre {{min_delay}} à {{max_delay}} jours ouvrés à domicile",
+    "delivery_service_point_description": "Livraison entre {{min_delay}} à {{max_delay}} jours ouvrés dans le point relais de votre choix",
+    "reserved_rights": "TOUS DROITS RÉSERVÉS AGLAÏA & CO",
+    "alert_title": "Attention",
+    "alert_description": "Votre panier contient un produit personnalisé. Le délai de préparation de votre commande peut être prolongé d'un ou deux jours ouvrés.",
+    "preorder_description": "Votre panier contient un produit en pré-commande. Votre commande sera envoyée lorsque tous les produits seront disponibles.",
+    "header": {
+      "continue_shopping": "Continuer le shopping",
+      "back_to_site": "Retour au site",
+      "back": "Retour",
+      "your_cart": "Votre panier",
+      "your_order": "Votre comamnde",
+      "summary": "Récapitulatif",
+      "add_promo_code": "Ajouter un code promo",
+      "customer_service_title_html": "Service client via <b>hello@aglaiaco.com<\/b>",
+      "customer_service_text_html": "Une question, besoin d'aide ?<br>Nous sommes disponibles<br>du lundi au vendredi de 9h à 17h"
+    },
+    "order_info": {
+      "title": "Information sur la commande",
+      "to_whom_label": "À qui cette commande est-elle destinée ?",
+      "for_me": "Pour moi",
+      "to_offer": "Pour offir",
+      "both": "Un peu des deux",
+      "error": "Veuillez sélectionner une option"
+    },
+    "delivery": {
+      "no_packaging_title": "Je souhaite que ma commande soit envoyée via le moins d'emballages possibles",
+      "no_packaging_text": "Nous réduirons au maximum les emballages nécessaires à l'envoi de votre commande pour en limiter l'empreinte écologique. Attention, les bijoux peuvent être envoyés dans une seule et même boite. Les cadeaux et autres goodies que nous vous offrons lors de certaines commandes seront également supprimés de votre colis.",
+      "select_service_point": "Sélectionner un point relais",
+      "modify_service_point": "Modifier",
+      "service_point_error": "Sélectionnez un point relais"
+    },
+    "charity": {
+      "title": "Association",
+      "description_html": "Grâce à votre commande, nous reverserons <b>{{ amount }}<\/b> à l'association de votre choix ci-dessous :",
+      "ruban_rose_description": "Le Ruban Rose est aujourd'hui le symbole mondial du mois de sensibilisation à la lutte contre le cancer du sein.",
+      "l214_description": "L214 est une association à but non lucratif française de défense des animaux.",
+      "la_croix_rouge_description": "La Croix-Rouge française s'efforce de prévenir et d'alléger en toutes circonstances les souffrances des hommes. Il tend à protéger la vie et la santé ainsi qu'à faire respecter la personne humaine.",
+      "epic_description": "Epic est une organisation à but non lucratif qui lutte pour améliorer les conditions de vie des plus défavorisés.",
+      "solidarite_femmes_description": "Fédération Nationale Solidarité Femmes est une association française issue du mouvement féministe pour lutter contre les violences faites aux femmes.",
+      "fpnh_description": "La fondation pour la nature et l'homme est une fondation française reconnue d'utilité publique dont l'objet est d’assurer une sensibilisation à l'environnement."
+    },
+    "features": {
+      "secure_payment_title": "Paiement sécurisé",
+      "secure_payment_description": "Par carte bancaire (Visa, MasterCard, CB),PayPal, Apple Pay...",
+      "fast_delivery_title": "Livraison rapide",
+      "fast_delivery_description": "À partir de 48h en fonction du mode livraison choisi",
+      "sav_title": "SAV réactif",
+      "sav_description": "Une question, besoin d'aide ? Du lundi au vendredi de 9h à 17h",
+      "return_title": "Retours gratuits",
+      "return_description": "En France métropolitaine sans minimum d'achat",
+      "repair_title": "Politique anti-casse",
+      "repair_description": "Bijou reçu cassé ? On s'occupe de vous"
+    }
+  }
+}

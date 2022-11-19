@@ -1,0 +1,35 @@
+<div class="feature-section">
+  <div class="container container--loose">
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-item__inner">
+          <h2 class="feature-item__title">{{ 'custom_checkout.features.secure_payment_title' | t }}</h2>
+          <p class="feature-item__content">{{ 'custom_checkout.features.secure_payment_description' | t }}</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__inner">
+          <h2 class="feature-item__title">{{ 'custom_checkout.features.fast_delivery_title' | t }}</h2>
+          <p class="feature-item__content">{{ 'custom_checkout.features.fast_delivery_description' | t }}</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__inner">
+          <h2 class="feature-item__title">{{ 'custom_checkout.features.sav_title' | t }}</h2>
+          <p class="feature-item__content">{{ 'custom_checkout.features.sav_description' | t }}</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__inner">
+          {% if request.locale.iso_code == 'fr' %}
+            <h2 class="feature-item__title">{{ 'custom_checkout.features.return_title' | t }}</h2>
+            <p class="feature-item__content">{{ 'custom_checkout.features.return_description' | t }}</p>
+          {% else %}
+            <h2 class="feature-item__title">{{ 'custom_checkout.features.repair_title' | t }}</h2>
+            <p class="feature-item__content">{{ 'custom_checkout.features.repair_description' | t }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

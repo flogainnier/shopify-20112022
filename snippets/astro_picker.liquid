@@ -1,0 +1,16 @@
+<div class="zodiac-section">
+  <ul>
+    <li {% if product.handle contains "verseau" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-verseau">Verseau</a></li>
+    <li {% if product.handle contains "poisson" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-poisson">Poisson</a></li>
+    <li {% if product.handle contains "belier" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-belier">Bélier</a></li>
+    <li {% if product.handle contains "taureau" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-taureau">Taureau</a></li>
+    <li {% if product.handle contains "gemeaux" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-gemeaux">Gémeaux</a></li>
+    <li {% if product.handle contains "cancer" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-cancer">Cancer</a></li>
+    <li {% if product.handle contains "lion" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-lion">Lion</a></li>
+    <li {% if product.handle contains "vierge" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-vierge">Vierge</a></li>
+    <li {% if product.handle contains "balance" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-balance">Balance</a></li>
+    <li {% if product.handle contains "scorpion" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-scorpion">Scorpion</a></li>
+    <li {% if product.handle contains "sagittaire" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-sagittaire">Sagittaire</a></li>
+    <li {% if product.handle contains "capricorne" %}class="current"{% endif %}><a href="/products/{{ product.handle | split: "-" | first }}-astro-capricorne">Capricorne</a></li>
+  </ul>
+</div>

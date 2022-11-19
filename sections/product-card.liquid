@@ -1,0 +1,11 @@
+{%- assign desktop_number_of_products_minus_one = 4 | minus: 1 -%}
+{%- assign gap_width = 24.0 | divided_by: 4 | times: desktop_number_of_products_minus_one -%}
+{%- capture sizes_attribute -%}(max-width: 740px) calc({{ 100.0 | divided_by: 2 | ceil }}vw - 24px), calc((min(100vw - 80px, 1520px)) / 4 - {{ gap_width | ceil }}px){%- endcapture -%}
+
+{%- render 'product-item', product: product, sizes_attribute: sizes_attribute, show_wishlist: true -%}
+
+{% schema %}
+  {
+    "templates": ["product"]
+  }
+{% endschema %}

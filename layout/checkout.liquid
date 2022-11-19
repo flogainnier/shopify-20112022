@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+    
+    {{ checkout_scripts }}
+
+    {% if settings.checkout_customization %}
+      {% render 'checkout-css-variables' %}
+      {{ checkout_stylesheets }}
+      <link rel="stylesheet" href="{{ 'checkout-2.css' | asset_url }}">
+    {% else %}
+      {{ checkout_stylesheets }}
+    {% endif %}
+  </head>
+
+  <body>
+    {% if settings.checkout_customization %}
+      {% assign total_item_count = 0 %}
+      {% assign has_custom_item = false %}
+      {% assign has_preorder_item = false %}
+      {% assign pre_order_property = 'product.form.pre_order_property' | t %}
+      {% for item in checkout.line_items %}
+        {% assign item_quantity = item.quantity | times: 1 %}
+        {% assign total_item_count = total_item_count | plus: item_quantity %}
+        {% unless item.properties == empty %}
+          {% for property in item.properties %}
+            {% if property.first contains pre_order_property %}
+              {% assign has_preorder_item = true %}
+            {% else %}
+              {% unless property.first contains "Message" %}
+                {% assign has_custom_item = true %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+      {% endfor %}
+      <div id="shopify-section-checkout-settings" class="shopify-section">
+        <script>
+          let countries = { 
+            "Colissimo Domicile sans signature": {
+              "title": "Colissimo Domicile sans signature",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_without_signature' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 2, max_delay: 3 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-colissimo.png?v=1664875032",
+              "servicePoint": false
+            },
+            "Colissimo Domicile avec signature": {
+              "title": "Colissimo Domicile avec signature",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_with_signature' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 2, max_delay: 3 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-colissimo.png?v=1664875032",
+              "servicePoint": false
+            },
+            "Lettre suivie": {
+              "title": "Lettre suivie",
+              "titleDisplayed": "{{ 'custom_checkout.lettre_suivie' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 2, max_delay: 5 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-lettre-suivie.png?v=1664875033",
+              "servicePoint": false
+            },
+            "Colissimo Point Retrait": {
+              "title": "Colissimo Point Retrait",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_service_point' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_service_point_description' | t: min_delay: 2, max_delay: 3 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-colissimo.png?v=1664875032",
+              "servicePoint": true
+            },
+            "Colissimo International": {
+              "title": "Colissimo International",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_without_signature' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 4, max_delay: 10 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-colissimo.png?v=1664875032",
+              "servicePoint": false
+            },
+            "Colissimo Europe Point Retrait": {
+              "title": "Colissimo Europe Point Retrait",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_service_point' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 4, max_delay: 10 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-colissimo.png?v=1664875032",
+              "servicePoint": true
+            },
+            "Colissimo Overseas": {
+              "title": "Colissimo Overseas",
+              "titleDisplayed": "{{ 'custom_checkout.colissimo_without_signature' | t }}",
+              "subtitle": "{{ 'custom_checkout.delivery_home_description' | t: min_delay: 4, max_delay: 10 }}",
+              "image": "//cdn.shopify.com/s/files/1/0633/8120/9318/files/shipping-lettre-suivie.png?v=1664875033",
+              "servicePoint": false
+            }
+          };
+          let regex = /\,(?!\s*?[\{\[\"\'\w])/g;
+          let correct = JSON.stringify(countries).replace(regex, '');
+          let data = JSON.parse(correct);
+      
+          window.shippingMethods = data;
+      
+          window.cartContent = {
+            hasCustomItem: {{ has_custom_item }},
+            hasPreorderItem: {{ has_preorder_item }},
+            alertTitle: "{{ 'custom_checkout.alert_title' | t }}",
+            alertDescription: "{{ 'custom_checkout.alert_description' | t }}",
+            preorderDescription: "{{ 'custom_checkout.preorder_description' | t }}"
+          };
+        
+        </script>
+      </div>
+      <header class="header">
+        {% render "checkout-header", total_item_count: total_item_count %}
+      </header>
+      <div class="breadcrumb-container hide-first">
+        {{ breadcrumb }}
+      </div>
+      <div class="content" data-content>
+        <div class="wrap">
+          <div class="main">
+            <main class="main__content" role="main">
+              {{ content_for_layout }}
+            </main>
+            {% render 'checkout-customization' %}
+          </div>
+          <aside class="sidebar" role="complementary" aria-hidden="true">
+            <div class="sidebar__inner">
+              <div class="sidebar__header hidden-lap-and-up">
+                <button class="sidebar__close" data-action="toggle-mini-cart">
+                  <svg class="icon icon--close" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.854 18.997L18.997 4.854M5.146 4.997L19.29 19.14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <p class="sidebar__header-title">
+                  {% if checkout.order_id %}
+                    {{ 'custom_checkout.header.your_order' | t }}
+                  {% else %}
+                    {{ 'custom_checkout.header.your_cart' | t }}
+                  {% endif %}
+                </p>
+                <span class="sidebar__mini-cart-icon">
+                  <svg class="icon icon--cart" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.582 17.507L6 9h12l1.418 8.507A3 3 0 0116.458 21H7.542a3 3 0 01-2.959-3.493zM15 6a3 3 0 10-6 0" stroke="#1B2C13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="sidebar__mini-cart-count">
+                    <span class="sidebar__mini-cart-item-count">{{ total_item_count }}</span>
+                  </span>
+                </span>
+              </div>
+              <div class="sidebar__content">
+                {{ content_for_order_summary }}
+              </div>
+            </div>
+          </aside>
+          <div class="overlay sidebar-overlay hidden-lap-and-up" data-action="toggle-overlay"></div>
+        </div>
+        <div class="footer__wrapper">
+          {% render "checkout-features" %}
+          <footer class="footer">
+            <div class="container container--loose">
+              <ul class="footer-linklist"><li class="footer-linklist__item footer-linklist__item--push">
+                <li>
+                  {{ 'custom_checkout.reserved_rights' | t }}
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <script src="{{ 'checkout-flickity.js' | asset_url }}" defer></script>
+      <script>
+        const apiKeyField = "2f49771b52e44bb09d77c92c30679eb5"
+        const countryField = "{{ checkout.shipping_address.country_code }}"
+        const languageField = "{{ locale }}"
+        const postalCodeField = "{{ checkout.shipping_address.zip }}"
+        const cityField = "{{ checkout.shipping_address.city }}"
+        const servicePointIdField = "{{ checkout.attributes.point_id }}"
+        const postNumberField = "{{ checkout.attributes.point_postNumber }}"
+        const shopTypeField = ""
+        const selectServicePoint = "{{ 'custom_checkout.delivery.select_service_point' | t }}"
+        const modifyServicePoint = "{{ 'custom_checkout.delivery.modify_service_point' | t }}"
+        const servicePointError = "{{ 'custom_checkout.delivery.service_point_error' | t }}"
+        const point_id = "{{ checkout.attributes.point_id }}"
+        const point_code = "{{ checkout.attributes.point_code }}"
+        const point_name = "{{ checkout.attributes.point_name }}"
+        const point_country = "{{ checkout.attributes.point_country }}"
+        const point_city = "{{ checkout.attributes.point_city }}"
+        const point_house_number = "{{ checkout.attributes.point_house_number }}"
+        const point_street = "{{ checkout.attributes.point_street }}"
+        const point_postal_code = "{{ checkout.attributes.point_postal_code }}"
+        const point_carrier = "{{ checkout.attributes.point_carrier }}"
+      </script>
+      <script src="{{ 'checkout-script.js' | asset_url }}" defer></script>
+      <script src="https://embed.sendcloud.sc/spp/1.0.0/api.min.js"></script>
+    {% else %}
+      {{ skip_to_content_link }}
+      <header class="banner" data-header role="banner">
+        <div class="wrap">
+          {{ content_for_logo }}
+        </div>
+      </header>
+      {{ order_summary_toggle }}
+      <div class="content" data-content>
+        <div class="wrap">
+          <div class="main">
+            <header class="main__header" role="banner">
+              {{ content_for_logo }}
+              {{ breadcrumb }}
+              {{ alternative_payment_methods }}
+            </header>
+            <main class="main__content" role="main">
+              {{ content_for_layout }}
+            </main>
+            <footer class="main__footer" role="contentinfo">
+              {{ content_for_footer }}
+            </footer>
+          </div>
+          <aside class="sidebar" role="complementary">
+            <div class="sidebar__header">
+              {{ content_for_logo }}
+            </div>
+            <div class="sidebar__content">
+              {{ content_for_order_summary }}
+            </div>
+          </aside>
+        </div>
+      </div>
+    {% endif %}
+
+    {{ tracking_code }}
+
+  </body>
+</html>

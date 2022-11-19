@@ -1,0 +1,36 @@
+{%- comment -%}Custom Element Made By FG{%- endcomment -%}
+<openable-element id="mini-cart-charity" class="mini-cart__order-charity">
+  <span class="openable__overlay openable__drawer-overlay"></span>
+  <header class="openable__header">
+    <span class="openable__title heading h6">{{- 'cart.general.order_charity_title' | t -}}</span>
+    <button type="button" class="openable__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+      {%- render 'icon' with 'nav-arrow-left' -%}
+    </button>
+  </header>
+  <div class="openable__content openable__content--restrict hide-scrollbar">
+    {%- capture charity_images -%}
+      {%- for block in section.blocks -%}
+        {%- assign images_count = 0 -%}
+        {%- assign images_count = images_count | plus: 1 -%}
+        <input type="radio" id="{{ block.settings.title }}" is="cart-charity" name="attributes[charity]" value="{{ block.settings.title }}"{% if cart.attributes.charity == block.settings.title %} checked{% endif %} style="display:none">
+        <label class="charity-nav__label" for="{{ block.settings.title }}">
+          <div class="charity-nav__image-push">   
+            <div class="charity-nav__image-wrapper">   
+              <img class="charity-nav__image" loading="lazy" sizes="270px" {% render 'image-attributes', image: block.settings.image, sizes: '270,540,810' %}>  
+            </div>
+            <div class="charity-nav__text">
+              <img class="charity-nav__logo" loading="lazy" width="100px" sizes="100px" {% render 'image-attributes', image: block.settings.logo, sizes: '100,200,300' %}>  
+            </div>
+          </div>   
+        </label>
+      {%- endfor -%}
+    {%- endcapture -%}
+    <div class="mobile-nav__images-wrapper {% if images_count >= 3 %}mobile-nav__images-wrapper--tight{% endif %} hide-scrollbar">
+      <div class="charity-nav__images-scroller">
+        {{- charity_images -}}
+      </div>
+    </div>
+    <button type="button" data-action="close" class="form__submit form__submit--closer button button--primary button--full">{{ 'cart.general.order_charity_save' | t }}</button>
+  </div>   
+</openable-element>
+{%- comment -%}End of Custom Element Made By FG{%- endcomment -%}

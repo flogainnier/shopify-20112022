@@ -1,0 +1,57 @@
+<a class="header__back header__back--normal hidden-pocket" href="/{% if request.locale.iso_code != 'fr' %}{{ request.locale.iso_code }}{% endif %}" data-custom-event="{"eventCategory":"Cart","eventAction":"continue_shopping","eventLabel":"/"}">
+  <svg class="icon icon--arrow-right" viewBox="0 0 19 12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 6h17m0 0c-2-.67-5-2-6-5m6 5c-2 .33-5 2-6 5"></path></svg>
+  {{ 'custom_checkout.header.continue_shopping' | t }}
+</a>
+<a class="header__back header__back--thank-you hidden-pocket" href="/" style="display: none">
+  <svg class="icon icon--arrow-right" viewBox="0 0 19 12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 6h17m0 0c-2-.67-5-2-6-5m6 5c-2 .33-5 2-6 5"></path></svg>
+  {{ 'custom_checkout.header.back_to_site' | t }}
+</a>
+<a class="header__back header__back--thank-you hidden-lap-and-up" href="/" style="display: none">
+  <svg class="icon icon--arrow-right" viewBox="0 0 19 12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 6h17m0 0c-2-.67-5-2-6-5m6 5c-2 .33-5 2-6 5"></path></svg>
+  {{ 'custom_checkout.header.back' | t }}
+</a>
+<h1 class="header__logo">
+  <a href="/{% if request.locale.iso_code != 'fr' %}{{ request.locale.iso_code }}{% endif %}">
+    <img class="icon icon--logo" src="{{ 'aglaiaco_logo.svg' | asset_url }}">
+  </a>
+</h1>
+<button class="header__mini-cart hidden-lap-and-up" data-action="toggle-mini-cart">
+  <span class="header__mini-cart-title-container">
+    <span class="header__mini-cart-title hidden-lap-and-up">
+      {% if checkout.order_id %}
+        {{ 'custom_checkout.header.your_order' | t }}
+      {% else %}
+        {{ 'custom_checkout.header.your_cart' | t }}
+      {% endif %}
+    </span>
+    <span class="header__mini-cart-discount-title hidden-lap-and-up">
+      {% if checkout.order_id %}
+        {{ 'custom_checkout.header.summary' | t }}
+      {% else %}
+        {{ 'custom_checkout.header.add_promo_code' | t }}
+      {% endif %}
+    </span>
+  </span>
+  <span class="header__mini-cart-icon">
+    <svg class="icon icon--cart" viewBox="0 0 24 24" fill="none"><path d="M4.582 17.507L6 9h12l1.418 8.507A3 3 0 0116.458 21H7.542a3 3 0 01-2.959-3.493zM15 6a3 3 0 10-6 0" stroke="#1B2C13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <span class="header__mini-cart-count">
+      <span class="header__mini-cart-item-count">{{ total_item_count }}</span>
+    </span>
+  </span>
+</button>
+<div class="header__info hidden-pocket">
+  <div>
+    <svg class="icon icon--phone" focusable="false" width="20" height="16" class="{{ icon_class }}" viewBox="0 0 20 16">
+      <path d="M19 4l-9 5-9-5" fill="none" stroke="currentColor" stroke-width="{{ settings.icon_stroke_width }}"></path>
+      <path stroke="currentColor" fill="none" stroke-width="{{ settings.icon_stroke_width }}" d="M1 1h18v14H1z"></path>
+    </svg>
+  </div>
+  <div class="header__info-text">{{ 'custom_checkout.header.customer_service_title_html' | t }}</div>
+  <span class="tooltip-custom" style="">
+    <span class="tooltip-custom__icon" style="">i</span>
+    <span class="tooltip-custom__text">
+      <span class="tooltip-custom__arrow"></span>
+      {{ 'custom_checkout.header.customer_service_text_html' | t }}
+    </span>
+  </span>
+</div>

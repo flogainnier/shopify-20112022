@@ -1,0 +1,144 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-products-per-row: {{ section.settings.mobile_products_per_row | times: 1 }};
+  }
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      {%- assign remainder_for_two = section.settings.products_per_page | modulo: 2 -%}
+      {%- assign remainder_for_desktop_count = section.settings.products_per_page | modulo: section.settings.desktop_products_per_row -%}
+
+      --section-products-per-row: {% if remainder_for_two == 0 and remainder_for_desktop_count == 0 %}2{% else %}3{% endif %};
+    }
+  }
+
+  {%- if section.settings.filter_position == 'drawer' -%}
+    @media screen and (min-width: 1200px) {
+      #shopify-section-{{ section.id }} {
+        --section-products-per-row: {{ section.settings.desktop_products_per_row }};
+      }
+    }
+  {%- else -%}
+    @media screen and (min-width: 1400px) {
+      #shopify-section-{{ section.id }} {
+        --section-products-per-row: {{ section.settings.desktop_products_per_row }};
+      }
+    }
+  {%- endif -%}
+</style>
+
+<section>
+  <div class="link-bar hidden-phone">
+    <div class="container">
+      <div class="link-bar__wrapper">
+        <ul class="link-bar__linklist list--unstyled" role="list">
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.orders.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}?view=wishlist" class="heading heading--xsmall heading-hover">{{ 'customer.wishlist.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}?view=infos" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.informations.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_addresses_url }}" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.addresses.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_logout_url }}" class="heading heading--xsmall text--subdued heading-hover" data-no-instant>{{ 'customer.logout.title' | t }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-toolbar hidden-tablet-and-up">
+    <button class="mobile-toolbar__item" is="toggle-button" aria-expanded="false" aria-controls="account-links-popover">{{- 'customer.wishlist.title' | t -}} {%- render 'icon' with 'chevron' -%}</button>
+  </div>
+
+  <popover-content id="account-links-popover" class="popover">
+    <span class="popover__overlay"></span>
+    <header class="popover__header">
+      <span class="popover__title heading h6">{{- 'customer.general.title' | t -}}</span>
+      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon' with 'close' -%}
+      </button>
+    </header>
+    <div class="popover__content">
+      <div class="popover__choice-list">
+        <a href="{{ routes.account_url }}" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.orders.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_url }}?view=wishlist" class="popover__choice-item">
+          <span class="popover__choice-label" aria-current="true">{{ 'customer.wishlist.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_url }}?view=infos" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.informations.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_addresses_url }}" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.addresses.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_logout_url }}" class="popover__choice-item text--subdued" data-no-instant>
+          <span class="popover__choice-label">{{ 'customer.logout.title' | t }}</span>
+        </a>
+      </div>
+    </div>
+  </popover-content>
+
+  <div class="account account--order-list account__customer-informations">
+    <div class="container container--small">
+      <div class="page-header page-header--small">
+        <div class="page-header__text-wrapper text-container">
+          <p class="text--subdued">{{ 'customer.general.welcome' | t: name: customer.first_name }}</p>
+          <h1 class="heading h4">{{ 'customer.wishlist.title' | t }}</h1>
+          <p class="text--subdued">{{ 'customer.wishlist.subtitle' | t }}</p>
+        </div>
+      </div>
+      <product-facet section-id="{{ section.id }}" class="product-facet"> 
+      <div id="facet-main" class="product-facet__main anchor" role="region" aria-live="polite">
+        <product-list {% if settings.stagger_products_apparition %}stagger-apparition{% endif %} class="product-facet__product-list product-list anchor">
+          <div grid-wishlist data-empty="{{ 'customer.wishlist.empty' | t }}">
+            <p class="wishlist__loader">
+              <div class="spinner">
+                {%- render 'icon' with 'spinner', stroke_width: 3, width: 40, height: 40 -%}
+              </div>
+            </p>
+          </div>
+        </product-list>
+      </div>
+    </div>  
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer wishlist",
+  "class": "shopify-section--main-customers-wishlist",
+  "settings": [
+    {
+      "type": "select",
+      "id": "mobile_products_per_row",
+      "label": "Products per row (mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "min": 3,
+      "max": 5,
+      "id": "desktop_products_per_row",
+      "label": "Products per row (desktop)",
+      "default": 4
+    }
+  ]
+}
+{% endschema %}

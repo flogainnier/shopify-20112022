@@ -1,0 +1,289 @@
+<div class="section section--order-information" style="display:none">
+  <div class="section__header">
+    <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
+      <h2 class="section__title layout-flex__item layout-flex__item--stretch" id="main-header" tabindex="-1">{{ 'custom_checkout.order_info.title' | t }}</h2>
+    </div>
+  </div>
+  <div class="section__content" data-section="order-information">
+    <div class="fieldset">
+      <div class="field field--optional field--show-floating-label" data-address-field="order_info">
+        <div class="field__input-wrapper field__input-wrapper--select">
+          <label class="field__label field__label--visible" for="checkout_attributes_order_info">{{ 'custom_checkout.order_info.to_whom_label' | t }}</label>
+          <select size="1" class="field__input field__input--select" aria-required="false" name="checkout[attributes][order_info]" id="checkout_attributes_order_info">
+            <option value="" selected>{{ 'custom_checkout.order_info.to_whom_label' | t }}</option>
+            <option value="J'achète pour moi" {% if checkout.attributes.order_info == "J'achète pour moi"%}selected{% endif %}>{{ 'custom_checkout.order_info.for_me' | t }}</option>
+            <option value="J'achète pour offrir" {% if checkout.attributes.order_info == "J'achète pour offrir"%}selected{% endif %}>{{ 'custom_checkout.order_info.to_offer' | t }}</option>
+            <option value="Un peu des deux" {% if checkout.attributes.order_info == "Un peu des deux"%}selected{% endif %}>{{ 'custom_checkout.order_info.both' | t }}</option>
+          </select>
+          <div class="field__caret">
+            <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"><use xlink:href="#caret-down"></use></svg>
+          </div>
+        </div>
+        <p class="field__message field__message--error" id="error-for-order-info">{{ 'custom_checkout.order_info.error' | t }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section section--order-fulfillment" style="display:none">
+  <div class="section__content" data-section="order-fulfillment">
+    <div class="field field--show-floating-label">
+      <div class="checkbox-wrapper">
+        <div class="checkbox__input">
+          <input type="hidden" value="0" name="checkout[attributes][order_fulfillment]">
+          <input class="input-checkbox" type="checkbox" value="1" name="checkout[attributes][order_fulfillment]" id="checkout_fulfillment" {% if checkout.attributes.order_fulfillment == "1" %}checked{% endif %}>
+        </div>
+        <label class="checkbox__label" for="checkout_fulfillment">
+          {{ 'custom_checkout.delivery.no_packaging_title' | t }}
+        </label>     
+        <span class="tooltip-custom">
+          <span class="tooltip-custom__icon">i</span>
+          <span class="tooltip-custom__text">
+            <span class="tooltip-custom__arrow"></span>
+            {{ 'custom_checkout.delivery.no_packaging_text' | t }}
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--order-charity" style="display:none">
+  <div class="section__header">
+    <h2 class="section__title">{{ 'custom_checkout.charity.title' | t }}</h2>
+    <p class="section__text">
+      {% assign charity_amount = checkout.total_price | minus: checkout.total_tax | times: 0.05 | money %}
+      {{ 'custom_checkout.charity.description_html' | t: amount: charity_amount }}
+    </p>
+  </div>
+  <div class="section__content" data-section="order-charity">
+    <fieldset class="content-box">
+      <legend class="visually-hidden">Choisissez une association</legend>
+      <div class="content-box__row">
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="Ruban Rose" checked="checked" name="checkout[attributes][order_charity]" id="ruban_rose">
+            </div>
+            <label class="radio__label" for="ruban_rose">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/ruban_rose.png?v=1664887757" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text-right">
+                        <span class="tooltip-custom__arrow-right"></span>
+                        {{ 'custom_checkout.charity.ruban_rose_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div> 
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="L214" name="checkout[attributes][order_charity]" id="L214">
+            </div>
+            <label class="radio__label" for="L214">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/L214.png?v=1664887737" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text">
+                        <span class="tooltip-custom__arrow"></span>
+                        {{ 'custom_checkout.charity.l214_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-box__row">
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="La Croix-Rouge" name="checkout[attributes][order_charity]" id="croix_rouge">
+            </div>
+            <label class="radio__label" for="croix_rouge">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/croix_rouge.png?v=1664887737" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text-right">
+                        <span class="tooltip-custom__arrow-right"></span>
+                        {{ 'custom_checkout.charity.la_croix_rouge_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div>
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="Epic" name="checkout[attributes][order_charity]" id="epic">
+            </div>
+            <label class="radio__label" for="epic">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/epic.png?v=1664963276" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text">
+                        <span class="tooltip-custom__arrow"></span>
+                        {{ 'custom_checkout.charity.epic_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-box__row">
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="Solidarité Femmes" name="checkout[attributes][order_charity]" id="solidarite_femmes">
+            </div>
+            <label class="radio__label" for="solidarite_femmes">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/solidarite_femmes.png?v=1664963276" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text-right">
+                        <span class="tooltip-custom__arrow-right"></span>
+                        {{ 'custom_checkout.charity.solidarite_femmes_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div>
+        <div class="content-box__column">
+          <div class="radio-wrapper">
+            <div class="radio__input">
+              <input class="input-radio" type="radio" value="Fondation pour la Nature et l'Homme" name="checkout[attributes][order_charity]" id="fondation_nature_homme">
+            </div>
+            <label class="radio__label" for="fondation_nature_homme">
+              <span class="radio__label__primary">
+                <div class="charity">
+                  <img src="//cdn.shopify.com/s/files/1/0633/8120/9318/files/fondation_nature_homme.png?v=1664963276" class="charity__image" alt="Aglaïa &amp; Co">
+                  <div class="charity__text">
+                    <span class="tooltip-custom">
+                      <span class="tooltip-custom__icon">i</span>
+                      <span class="tooltip-custom__text">
+                        <span class="tooltip-custom__arrow"></span>
+                        {{ 'custom_checkout.charity.fpnh_description' | t }}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <!--
+              <span class="radio__label__accessory">
+                {%- render 'icon' with 'nav-arrow-right' -%}
+              </span>
+              -->
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+<div class="section section--checkout-attributes" style="display:none">
+  {% for attribute in checkout.attributes %}
+    <input type=hidden name="checkout[attributes][{{ attribute.first }}]" value="{{ attribute.last  }}">
+  {% endfor %}
+</div>
+
+<script>
+    // Initialize after Shopify renders the checkout
+    document.addEventListener('page:load', init);
+    // Reinitialize on DOM refresh
+    document.addEventListener('page:change', init);
+
+    var orderInfo = document.querySelector('.section--order-information');
+    var orderCharity = document.querySelector('.section--order-charity');
+    var orderFulfillment = document.querySelector('.section--order-fulfillment');
+    var checkoutAttributes = document.querySelector('.section--checkout-attributes');
+
+    function init() {
+    
+      const forms = document.querySelectorAll('.edit_checkout');
+      for (let i = 0; i < forms.length; i++) {
+        forms[i].insertAdjacentHTML('afterbegin', checkoutAttributes.innerHTML)
+      }
+
+      if (Shopify.Checkout.step == "contact_information") {
+        document.querySelector('.step__sections').append(orderInfo);
+        orderInfo.style.display = "block"
+      } else {
+        orderInfo.remove()
+      }
+
+      if (Shopify.Checkout.step == "shipping_method") {
+        document.querySelector('.step__sections').append(orderFulfillment);
+        orderFulfillment.style.display = "block"
+      } else {
+        orderFulfillment.remove()
+      }
+
+      if (Shopify.Checkout.step == "payment_method") {
+        document.querySelector('.section--billing-address').after(orderCharity);
+        orderCharity.style.display = "block"
+        for (var shippingMethod in window.shippingMethods) {
+          document.querySelector('[data-review-section="shipping-cost"]').innerHTML = document.querySelector('[data-review-section="shipping-cost"]').innerHTML.replace(window.shippingMethods[shippingMethod]['title'], window.shippingMethods[shippingMethod]['titleDisplayed']);
+        }
+      } else {
+        orderCharity.remove()
+      }
+    }
+</script>

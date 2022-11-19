@@ -1,0 +1,135 @@
+<section>
+  <div class="link-bar hidden-phone">
+    <div class="container">
+      <div class="link-bar__wrapper">
+        <ul class="link-bar__linklist list--unstyled" role="list">
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.orders.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}?view=wishlist" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.wishlist.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_url }}?view=infos" class="heading heading--xsmall heading-hover">{{ 'customer.informations.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_addresses_url }}" class="heading heading--xsmall text--subdued heading-hover">{{ 'customer.addresses.title' | t }}</a>
+          </li>
+          <li class="link-bar__link-item">
+            <a href="{{ routes.account_logout_url }}" class="heading heading--xsmall text--subdued heading-hover" data-no-instant>{{ 'customer.logout.title' | t }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-toolbar hidden-tablet-and-up">
+    <button class="mobile-toolbar__item" is="toggle-button" aria-expanded="false" aria-controls="account-links-popover">{{- 'customer.informations.title' | t -}} {%- render 'icon' with 'chevron' -%}</button>
+  </div>
+
+  <popover-content id="account-links-popover" class="popover">
+    <span class="popover__overlay"></span>
+    <header class="popover__header">
+      <span class="popover__title heading h6">{{- 'customer.general.title' | t -}}</span>
+      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon' with 'close' -%}
+      </button>
+    </header>
+    <div class="popover__content">
+      <div class="popover__choice-list">
+        <a href="{{ routes.account_url }}" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.orders.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_url }}?view=wishlist" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.wishlist.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_url }}?view=infos" class="popover__choice-item">
+          <span class="popover__choice-label" aria-current="true">{{ 'customer.informations.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_addresses_url }}" class="popover__choice-item">
+          <span class="popover__choice-label">{{ 'customer.addresses.title' | t }}</span>
+        </a>
+        <a href="{{ routes.account_logout_url }}" class="popover__choice-item text--subdued" data-no-instant>
+          <span class="popover__choice-label">{{ 'customer.logout.title' | t }}</span>
+        </a>
+      </div>
+    </div>
+  </popover-content>
+
+  <div class="account account__customer-informations">
+    <div class="container container--small">
+      <div class="page-header page-header--small">
+        <div class="page-header__text-wrapper text-container">
+          <p class="text--subdued">{{ 'customer.general.welcome' | t: name: customer.first_name }}</p>
+          <h1 class="heading h4">{{ 'customer.informations.title' | t }}</h1>
+        </div>
+      </div>
+      <div class="account__customer-informations-form">
+        <h4 class="text--subdued">{{ 'customer.informations.personal_title' | t }}</h4>
+        <div class="text--subdued">{{ 'customer.informations.personal_description' | t }}</div>
+        <form action="#" class="account__customer-informations-form-div">
+          <div class="input">
+            <div class="select-wrapper is-filled">
+              <select is="gender-selector" class="select select-label" name="customer[metafields][custom][gender]" id="customer[metafields][custom][gender]" aria-owns="customer-gender-container" disabled="disabled">
+                <option value="" {% if customer.metafields.custom.gender == "" %}selected="selected"{% endif %}>Civilité</option>
+                <option value="male" {% if customer.metafields.custom.gender == "male" %}selected="selected"{% endif %}>M.</option>
+                <option value="female" {% if customer.metafields.custom.gender == "female" %}selected="selected"{% endif %}>Mme</option>
+              </select>
+              {%- render 'icon' with 'chevron' -%}
+            </div>
+            <label for="customer[metafields][custom][gender]" class="input__label">{{ 'customer.register.gender' | t }}</label>
+          </div>
+          <div class="input-row">
+            <div class="input">
+              <input id="customer[first_name]" type="text" class="input__field input__field--text {% if customer.first_name != blank %}is-filled{% endif %}" name="customer[first_name]" value="{{ customer.first_name }}" disabled="disabled">
+              <label for="customer[first_name]" class="input__label">{{ 'customer.register.first_name' | t }}</label>
+              <div class="input-tooltip__container" data-tooltip="{{ 'customer.informations.account_modify' | t }}">
+                {%- render 'icon' with 'lock' -%}
+              </div>
+            </div>
+            <div class="input">
+              <input id="customer[last_name]" type="text" class="input__field input__field--text {% if customer.last_name != blank %}is-filled{% endif %}" name="customer[last_name]" value="{{ customer.last_name }}" disabled="disabled">
+              <label for="customer[last_name]" class="input__label">{{ 'customer.register.last_name' | t }}</label>
+              <div class="input-tooltip__container" data-tooltip="{{ 'customer.informations.account_modify' | t }}">
+                {%- render 'icon' with 'lock' -%}
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <input id="customer[metafields][custom][birthday]" type="text" class="input__field input__field--text {% if customer.metafields.custom.birthday != blank %}is-filled{% endif %}" name="customer[metafields][custom][birthday]" value="{{ customer.metafields.custom.birthday }}" disabled="disabled">
+            <label for="customer[metafields][custom][birthday]" class="input__label">{{ 'customer.register.birthday' | t }}</label>
+            <div class="input-tooltip__container" data-tooltip="{{ 'customer.informations.account_modify' | t }}">
+              {%- render 'icon' with 'lock' -%}
+            </div>
+          </div>
+          <div class="input">
+            <input id="customer[phone]" type="text" class="input__field input__field--text {% if customer.phone != blank %}is-filled{% endif %}" name="customer[phone]" value="{{ customer.phone }}" disabled="disabled">
+            <label for="customer[phone]" class="input__label">{{ 'customer.register.phone' | t }}</label>
+            <div class="input-tooltip__container" data-tooltip="{{ 'customer.informations.account_modify' | t }}">
+              {%- render 'icon' with 'lock' -%}
+            </div>
+          </div>
+        </form>
+        <h4 class="text--subdued">{{ 'customer.informations.account_title' | t }}</h4>
+        <div class="text--subdued">{{ 'customer.informations.account_description' | t }}</div>
+        <form action="#" class="account__customer-informations-form-div">
+          <div class="input">
+            <input id="customer[email]" type="text" class="input__field input__field--text {% if customer.email != blank %}is-filled{% endif %}" name="customer[last_name]" value="{{ customer.email }}" disabled="disabled">
+            <label for="customer[email]" class="input__label">{{ 'customer.register.email' | t }}</label>
+            <div class="input-tooltip__container" data-tooltip="{{ 'customer.informations.account_modify' | t }}">
+              {%- render 'icon' with 'lock' -%}
+            </div>
+          </div>
+        </form>
+        <a href="/account/login#recover" class="button button--primary button--password"><span class="button-label">Modifier mon mot de passe</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer informations",
+  "class": "shopify-section--main-customers-informations"
+}
+{% endschema %}

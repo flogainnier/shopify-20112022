@@ -1,0 +1,79 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-products-per-row: {{ section.settings.mobile_products_per_row | times: 1 }};
+  }
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      {%- assign remainder_for_two = section.settings.products_per_page | modulo: 2 -%}
+      {%- assign remainder_for_desktop_count = section.settings.products_per_page | modulo: section.settings.desktop_products_per_row -%}
+
+      --section-products-per-row: {% if remainder_for_two == 0 and remainder_for_desktop_count == 0 %}2{% else %}3{% endif %};
+    }
+  }
+
+  {%- if section.settings.filter_position == 'drawer' -%}
+    @media screen and (min-width: 1200px) {
+      #shopify-section-{{ section.id }} {
+        --section-products-per-row: {{ section.settings.desktop_products_per_row }};
+      }
+    }
+  {%- else -%}
+    @media screen and (min-width: 1400px) {
+      #shopify-section-{{ section.id }} {
+        --section-products-per-row: {{ section.settings.desktop_products_per_row }};
+      }
+    }
+  {%- endif -%}
+</style>
+
+<section>
+  <div class="container">
+    <product-facet section-id="{{ section.id }}" class="product-facet"> 
+      <div id="facet-main" class="product-facet__main anchor" role="region" aria-live="polite">
+        <product-list {% if settings.stagger_products_apparition %}stagger-apparition{% endif %} class="product-facet__product-list product-list anchor">
+          <div grid-wishlist data-empty="{{ 'customer.wishlist.empty' | t }}">
+            <p class="wishlist__loader">
+              <div class="spinner">
+                {%- render 'icon' with 'spinner', stroke_width: 3, width: 40, height: 40 -%}
+              </div>
+            </p>
+          </div>
+        </product-list>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Wishlist page",
+    "class": "shopify-section--main-wishlist",
+    "settings": [
+      {
+        "type": "select",
+        "id": "mobile_products_per_row",
+        "label": "Products per row (mobile)",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "range",
+        "min": 3,
+        "max": 5,
+        "id": "desktop_products_per_row",
+        "label": "Products per row (desktop)",
+        "default": 4
+      }
+    ]
+  }
+{% endschema %}

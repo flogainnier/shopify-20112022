@@ -1,0 +1,45 @@
+{%- capture product_content -%}
+  {%- capture product_tabs -%}
+    <div class="product-tabs__content">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'content' -%}
+            {%- if block.settings.page != blank -%}
+              {%- assign title = block.settings.page.title -%}
+              {%- assign content = block.settings.page.content -%}
+            {%- else -%}
+              {%- assign title = block.settings.title -%}
+              {%- assign content = block.settings.content -%}
+            {%- endif -%}
+            {%- if title != blank and content != blank -%}
+              <div id="block-{{ section.id }}-{{ block.id }}" class="product-tabs__tab-item-wrapper" {{ block.shopify_attributes }}>
+                <button is="toggle-button" class="collapsible-toggle heading heading--small" aria-expanded="false" aria-controls="block-{{ section.id }}-{{ block.id }}-content">
+                  {{- title -}}
+                  {%- render 'icon' with 'chevron' -%}
+                </button>
+                <collapsible-content id="block-{{ section.id }}-{{ block.id }}-content" class="collapsible">
+                  <div class="product-tabs__tab-item-content rte">
+                    {{- content | strip -}}
+                  </div>
+                </collapsible-content>
+              </div>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  {%- endcapture -%}
+
+  {%- if product_tabs != blank -%}
+    <div class="product-content__tabs anchor" id="product-{{ product.id }}-tabs">
+      <div class="product-tabs">
+        {{- product_tabs -}}
+      </div>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if product_content != blank -%}
+  <div id="product-{{ product.id }}-content">
+    {{- product_content -}}
+  </div>
+{%- endif -%}

@@ -1,0 +1,33 @@
+{%- if product_variant.available != true -%}
+  <div class="product__back-in-stock">
+    <div class="product__back-in-stock-content">
+      <div class="product__back-in-stock-title">{{ 'product.back_in_stock.title' | t }}</div>
+      <div class="product__back-in-stock-description">
+        <p>{{ 'product.back_in_stock.subtitle' | t }}</p>
+      </div>
+      <div class="product__back-in-stock-form">
+        <form is="back-in-stock-form">
+          <div class="input-row">
+            <div class="input">
+              <input id="back-in-stock" type="email" data-variant-id="{{ product_variant.id }}" required="required" class="input__field input__field--text"> 
+              <label for="back-in-stock" class="input__label">E-mail</label>
+            </div>
+            <button id="back-in-stock-button" type="submit" is="loader-button" class="product-form__add-button button button--primary">
+              {{ 'product.back_in_stock.save' | t }}
+            </button>
+          </div>
+          <div class="product__back-in-stock-error" style="display:none">{{ 'product.back_in_stock.error' | t }}</div>
+        </form>
+      </div>
+    </div>
+    <div class="product__back-in-stock-success" style="display:none"> 
+      <div class="product__back-in-stock-title">
+        <span class="product__back-in-stock-success-icon">
+          {%- render 'icon' with 'form-success' -%}
+        </span> 
+        {{ 'product.back_in_stock.success_title' | t }}
+      </div> 
+      <div class="product__back-in-stock-description">{{ 'product.back_in_stock.success_subtitle' | t }}</div>
+    </div>
+  </div>
+{%- endif -%}

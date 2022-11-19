@@ -1,0 +1,49 @@
+<cart-drawer-recommendations section-id="{{ section.id }}" product-id="{{ cart.items.first.product_id }}" class="mini-cart__recommendations">
+  {%- assign acceptable_recommendations_count = 0 -%}
+
+  {%- for product in recommendations.products -%}
+    {%- assign matching_product = cart.items | where: 'product_id', product.id | first -%}
+
+    {%- if matching_product == blank -%}
+      {%- assign acceptable_recommendations_count = acceptable_recommendations_count | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if recommendations.performed -%}
+    {%- if acceptable_recommendations_count > 0 -%}
+      <div class="mini-cart__recommendations-inner">
+        {%- if section.settings.recommendations_title != blank -%}
+          <p class="mini-cart__recommendations-heading heading heading--small hidden-pocket">{{ section.settings.recommendations_title | escape }}</p>
+          <p class="mini-cart__recommendations-heading heading heading--xsmall text--subdued hidden-lap-and-up">{{ section.settings.recommendations_title | escape }}</p>
+        {%- endif -%}
+
+        <div class="scroller">
+          <div class="scroller__inner">
+            <div class="mini-cart__recommendations-list">
+              {%- assign shown_products_count = 0 -%}
+
+              {%- for product in recommendations.products -%}
+                {%- if shown_products_count >= 6 -%}
+                  {%- break -%}
+                {%- endif -%}
+
+                {%- assign matching_product = cart.items | where: 'product_id', product.id -%}
+
+                {%- if matching_product.size == 0 -%}
+                  {%- assign shown_products_count = shown_products_count | plus: 1 -%}
+                  {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, hide_secondary_image: true, show_cta: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- else -%}
+    <div class="mini-cart__recommendations-inner">
+      <div class="spinner">
+        {%- render 'icon' with 'spinner', stroke_width: 3, width: 40, height: 40 -%}
+      </div>
+    </div>
+  {%- endif -%}
+</cart-drawer-recommendations>
