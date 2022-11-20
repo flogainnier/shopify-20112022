@@ -63,6 +63,7 @@
         "blocks": {
           "e841c848-c49d-4586-b1e3-d6a4e6d143d6": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Une bougie à partir de 99€ d'achat",
               "learn_more_text": "",
