@@ -189,9 +189,17 @@
     {%- if section.blocks.size > 1 -%}
       <page-dots {% if section.settings.autoplay %}animation-timer{% endif %} class="slideshow__nav container">
         {%- for block in section.blocks -%}
-          <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.first %}aria-current="true"{% endif%}>
-            <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
-          </button>
+          {%- if block.settings.only_customer -%}
+            {%- if customer -%}
+              <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.first %}aria-current="true"{% endif%}>
+                <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+              </button>
+            {% endif %}
+          {%- else -%}
+            <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.first %}aria-current="true"{% endif%}>
+              <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+            </button>
+          {%- endif -%}
         {%- endfor -%}
       </page-dots>
     {%- endif -%}
