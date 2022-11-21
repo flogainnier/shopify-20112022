@@ -549,7 +549,7 @@
     {%- form 'product', product, is: 'product-form', id: product_form_id -%}
       <input type="hidden" disabled name="id" value="{{ product.selected_or_first_available_variant.id }}">
       {%- if product.selected_or_first_available_variant.metafields.custom.private_sale_price > 0 -%}
-        <input type="hidden" name="properties[_private_sale_price]" value="{{ product.selected_or_first_available_variant.custom.private_sale_price }}">
+        <input type="hidden" name="properties[_private_sale_price]" value="{{ product.selected_or_first_available_variant.metafields.custom.private_sale_price }}">
       {%- endif -%}
     {%- endform -%}
   {%- endif -%}
