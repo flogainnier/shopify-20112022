@@ -92,8 +92,8 @@
         {%- endif -%}
         {%- unless product.selected_or_first_available_variant.available -%}
           <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
-        {%- elsif product.selected_or_first_available_variant.inventory_quantity < 5 -%}
-            <span class="label label--subdued">{{ 'collection.product.almost_sold_out' | t }}</span>
+        {%- elsif product.selected_or_first_available_variant.inventory_quantity > 0 and product.selected_or_first_available_variant.inventory_quantity < 5 -%}
+          <span class="label label--subdued">{{ 'collection.product.almost_sold_out' | t }}</span>
         {%- endunless -%}
       </div>
     </div>
