@@ -490,7 +490,7 @@
               {%- if product.template_suffix == 'pre-order' and product.selected_or_first_available_variant.available and product.selected_or_first_available_variant.metafields.custom.delivery_date != blank  -%}
                 <input type="hidden" form="{{ product_form_id }}" name="properties[{{ 'product.form.pre_order_property' | t }}]" value="{{ product.selected_or_first_available_variant.metafields.custom.delivery_date }}">
               {%- endif -%}
-              {%- if product.selected_or_first_available_variant.metafields.custom.private_sale_price > 0 -%}
+              {%- if product.selected_or_first_available_variant.metafields.custom.private_sale_price -%}
                 <input type="hidden" name="properties[_private_sale_price]" value="{{ product.selected_or_first_available_variant.metafields.custom.private_sale_price }}">
               {%- endif -%}
               <product-payment-container form-id="{{ product_form_id }}" {% if update_url %}id="MainPaymentContainer"{% endif %} class="product-form__payment-container" {{ block.shopify_attributes }}>
