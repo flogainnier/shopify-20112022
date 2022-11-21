@@ -155,18 +155,34 @@
             style="--image-aspect-ratio: {{ image_aspect_ratio }}; --mobile-image-aspect-ratio: {{ mobile_image.aspect_ratio | default: image_aspect_ratio | default: 1 }};"
           {% endif %}
         {%- endcapture -%}
-
-        <slide-show-item {% if section.settings.transition_type != 'reveal' %}reveal-visibility{% endif %} {{ slide_attributes }}>
-          {%- if block.settings.button_1_link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank -%}
-            <a class="slideshow__slide-inner" href="{{ block.settings.button_1_link }}">
-              {{- slide_content -}}
-            </a>
-          {%- else -%}
-            <div class="slideshow__slide-inner">
-              {{- slide_content -}}
-            </div>
-          {%- endif -%}
-        </slide-show-item>
+        
+        {%- if block.settings.only_customer -%}
+          {%- if customer -%}
+            <slide-show-item {% if section.settings.transition_type != 'reveal' %}reveal-visibility{% endif %} {{ slide_attributes }}>
+              {%- if block.settings.button_1_link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank -%}
+                <a class="slideshow__slide-inner" href="{{ block.settings.button_1_link }}">
+                  {{- slide_content -}}
+                </a>
+              {%- else -%}
+                <div class="slideshow__slide-inner">
+                  {{- slide_content -}}
+                </div>
+              {%- endif -%}
+            </slide-show-item>
+          {% endif %}
+        {%- else -%}
+          <slide-show-item {% if section.settings.transition_type != 'reveal' %}reveal-visibility{% endif %} {{ slide_attributes }}>
+            {%- if block.settings.button_1_link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank -%}
+              <a class="slideshow__slide-inner" href="{{ block.settings.button_1_link }}">
+                {{- slide_content -}}
+              </a>
+            {%- else -%}
+              <div class="slideshow__slide-inner">
+                {{- slide_content -}}
+              </div>
+            {%- endif -%}
+          </slide-show-item>
+        {%- endif -%}
       {%- endfor -%}
     </div>
 
@@ -266,6 +282,12 @@
       "type": "image",
       "name": "Image",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "only_customer",
+          "label": "Show only to customer",
+          "default": false
+        },
         {
           "type": "image_picker",
           "id": "image",
