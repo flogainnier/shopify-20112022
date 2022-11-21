@@ -166,6 +166,7 @@
     },
     "product": {
       "sold_out": "Epuisé",
+      "almost_sold_out": "Bientôt épuisé",
       "discount_html": "Economisez {{ savings }}",
       "from_price_html": "A partir de {{ price_min }}",
       "add_to_cart": "+ Ajouter au panier",

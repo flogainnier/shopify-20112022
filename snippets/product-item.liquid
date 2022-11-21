@@ -17,6 +17,8 @@
 
     {%- unless product.available -%}
       <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
+    {%- elsif product.selected_or_first_available_variant.quantity < 5 -%}
+      <span class="label label--subdued">{{ 'collection.product.almost_sold_out' | t }}</span>
     {%- endunless -%}
 
     {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}

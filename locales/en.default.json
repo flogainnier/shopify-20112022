@@ -166,6 +166,7 @@
     },
     "product": {
       "sold_out": "Sold out",
+      "almost_sold_out": "Almost sold out",
       "discount_html": "Save {{ savings }}",
       "from_price_html": "From {{ price_min }}",
       "add_to_cart": "+ Add to cart",
