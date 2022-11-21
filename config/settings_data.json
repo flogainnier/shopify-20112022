@@ -36,6 +36,7 @@
     "show_vendor": false,
     "show_secondary_image": true,
     "show_product_rating": false,
+    "discount_mode": "percentage",
     "product_color_display": "swatch",
     "product_image_size": "natural",
     "cart_type": "drawer",
