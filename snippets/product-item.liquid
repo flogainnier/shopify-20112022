@@ -162,7 +162,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{- product.price | money_with_currency -}}
                 {%- else -%}
-                  {{- product__image.price | money -}}
+                  {{- product.price | money -}}
                 {%- endif -%}
               </span>
             {%- elsif product.price < product.compare_at_price -%}
