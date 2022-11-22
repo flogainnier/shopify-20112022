@@ -52,7 +52,7 @@
               {{- product.selected_or_first_available_variant.price | money -}}
             {%- endif -%}
           </span>
-        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+        {%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
           <span class="price price--highlight price--large">
             <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
             {%- if settings.currency_code_enabled -%}
