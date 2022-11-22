@@ -24,20 +24,21 @@
     {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
 
     {%- if settings.show_discount and product.available %}
-      {%- if customer and product.price > product.compare_at_price and cheapest_variant.price != blank -%}
+      {%- if customer and product.compare_at_price and product.price > product.compare_at_price and cheapest_variant.price != blank -%}
         {%- if settings.discount_mode == 'percentage' -%}
           {%- assign savings = product.price | minus: product.compare_at_price | times: 100.0 | divided_by: product.price | round | append: '%' -%}
         {%- else -%}
           {%- capture savings -%}{{ product.price | minus: product.compare_at_price | money }}{%- endcapture -%}
         {%- endif -%}
+        <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
       {%- elsif product.price < product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
         {%- if settings.discount_mode == 'percentage' -%}
           {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
         {%- else -%}
           {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
         {%- endif -%}
+        <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
       {%- endif -%}
-      <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
     {%- endif -%}
   {%- endcapture -%}
 
