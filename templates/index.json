@@ -129,6 +129,38 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "43c63689-22c1-4d87-8c7d-321239627670": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "template--16637482565862__43c63689-22c1-4d87-8c7d-321239627670-166913364473cd9030-0": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "black-friday-1",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482565862__43c63689-22c1-4d87-8c7d-321239627670-166913364473cd9030-0"
+      ],
+      "settings": {
+        "subheading": "SÉLECTION",
+        "title": "BLACK FRIDAY",
+        "content": "",
+        "products_count": 12,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1663599417d7f4c1fe": {
       "type": "image-with-text-block",
       "settings": {
@@ -516,6 +548,7 @@
   "order": [
     "slideshow",
     "1658498460c35802eb",
+    "43c63689-22c1-4d87-8c7d-321239627670",
     "1663599417d7f4c1fe",
     "collection-list",
     "1656928658a00e3d02",
