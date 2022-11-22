@@ -342,13 +342,22 @@
                         <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
                       {%- endunless -%}
                       {%- assign cheapest_variant = grouped_product.variants | sort: 'price' | first -%}           
-                      {%- if settings.show_discount and grouped_product.available and grouped_product.price < grouped_product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
-                        {%- if settings.discount_mode == 'percentage' -%}
-                          {%- assign savings = grouped_product.compare_at_price | minus: grouped_product.price | times: 100.0 | divided_by: grouped_product.compare_at_price | round | append: '%' -%}
-                        {%- else -%}
-                          {%- capture savings -%}{{ grouped_product.compare_at_price | minus: grouped_product.price | money }}{%- endcapture -%}
-                        {%- endif -%}      
-                        <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                      {%- if settings.show_discount and grouped_product.available -%}
+                        {%- if grouped_product.price > grouped_product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
+                          {%- if settings.discount_mode == 'percentage' -%}
+                            {%- assign savings = grouped_product.price | minus: grouped_product.compare_at_price | times: 100.0 | divided_by: grouped_product.price | round | append: '%' -%}
+                          {%- else -%}
+                            {%- capture savings -%}{{ grouped_product.price | minus: grouped_product.compare_at_price | money }}{%- endcapture -%}
+                          {%- endif -%}      
+                          <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                        {%- elsif grouped_product.price < grouped_product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
+                          {%- if settings.discount_mode == 'percentage' -%}
+                            {%- assign savings = grouped_product.compare_at_price | minus: grouped_product.price | times: 100.0 | divided_by: grouped_product.compare_at_price | round | append: '%' -%}
+                          {%- else -%}
+                            {%- capture savings -%}{{ grouped_product.compare_at_price | minus: grouped_product.price | money }}{%- endcapture -%}
+                          {%- endif -%}      
+                          <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                        {%- endif -%}
                       {%- endif -%}
                     {%- endcapture -%}
                     {%- capture price -%}
@@ -360,7 +369,27 @@
                           {%- else -%}
                             {{- cheapest_variant.price | money -}}
                           {%- endif -%}
+                        {%- endcapture -%}  
+                        {%- capture compare_at_price_min -%}
+                          {%- if settings.currency_code_enabled -%}
+                            {{- cheapest_variant.compare_at_price | money_with_currency -}}
+                          {%- else -%}
+                            {{- cheapest_variant.compare_at_price | money -}}
+                          {%- endif -%}
                         {%- endcapture -%}    
+                        {%- if customer and cheapest_variant.price > cheapest_variant.compare_at_price -%}
+                          <span class="price price--highlight">
+                            <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                            {{- 'collection.product.from_price_html' | t: price_min: comapre_at_price_min -}}
+                          </span>  
+                          <span class="price price--compare">
+                            <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>   
+                            {%- if settings.currency_code_enabled -%}
+                              {{- cheapest_variant.price | money_with_currency -}}
+                            {%- else -%}
+                              {{- cheapest_variant.price | money -}}
+                            {%- endif -%}
+                          </span>
                         {%- if cheapest_variant.price < cheapest_variant.compare_at_price -%}
                           <span class="price price--highlight">
                             <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
@@ -380,6 +409,23 @@
                             {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
                           </span>
                         {%- endif -%}
+                      {%- elsif customer and grouped_product.price > grouped_product.compare_at_price -%}
+                        <span class="price price--highlight">
+                          <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>       
+                          {%- if settings.currency_code_enabled -%}
+                            {{- grouped_product.compare_at_price | money_with_currency -}}
+                          {%- else -%}
+                            {{- grouped_product.compare_at_price | money -}}
+                          {%- endif -%}
+                        </span>          
+                        <span class="price price--compare">
+                          <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                          {%- if settings.currency_code_enabled -%}
+                            {{- grouped_product.price | money_with_currency -}}
+                          {%- else -%}
+                            {{- grouped_product.price | money -}}
+                          {%- endif -%}
+                        </span>
                       {%- elsif grouped_product.price < grouped_product.compare_at_price -%}
                         <span class="price price--highlight">
                           <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>       
@@ -514,13 +560,22 @@
                               <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
                             {%- endunless -%}
                             {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}           
-                            {%- if settings.show_discount and product.available and product.price < product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
-                              {%- if settings.discount_mode == 'percentage' -%}
-                                {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
-                              {%- else -%}
-                                {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
-                              {%- endif -%}      
-                              <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                            {%- if settings.show_discount and product.available -%} 
+                              {%- if customer and product.price > product.compare_at_price and cheapest_variant.price != blank -%}
+                                {%- if settings.discount_mode == 'percentage' -%}
+                                  {%- assign savings = product.price | minus: product.compare_at_price | times: 100.0 | divided_by: product.price | round | append: '%' -%}
+                                {%- else -%}
+                                  {%- capture savings -%}{{ product.price | minus: product.compare_at_price | money }}{%- endcapture -%}
+                                {%- endif -%}      
+                                <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                              {%- elsif product.price < product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
+                                {%- if settings.discount_mode == 'percentage' -%}
+                                  {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
+                                {%- else -%}
+                                  {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+                                {%- endif -%}      
+                                <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                              {%- endif -%}
                             {%- endif -%}
                           {%- endcapture -%}
                           {%- capture price -%}
@@ -532,8 +587,28 @@
                                 {%- else -%}
                                   {{- cheapest_variant.price | money -}}
                                 {%- endif -%}
+                              {%- endcapture -%}  
+                              {%- capture compare_at_price_min -%}
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- cheapest_variant.compare_at_price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- cheapest_variant.compare_at_price | money -}}
+                                {%- endif -%}
                               {%- endcapture -%}    
-                              {%- if cheapest_variant.price < cheapest_variant.compare_at_price -%}
+                              {%- if customer and cheapest_variant.price > cheapest_variant.compare_at_price -%}
+                                <span class="price price--highlight">
+                                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                  {{- 'collection.product.from_price_html' | t: price_min: compare_at_price_min -}}
+                                </span>  
+                                <span class="price price--compare">
+                                  <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>   
+                                  {%- if settings.currency_code_enabled -%}
+                                    {{- cheapest_variant.price | money_with_currency -}}
+                                  {%- else -%}
+                                    {{- cheapest_variant.price | money -}}
+                                  {%- endif -%}
+                                </span>
+                              {%- elsif cheapest_variant.price < cheapest_variant.compare_at_price -%}
                                 <span class="price price--highlight">
                                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
                                   {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
@@ -552,6 +627,23 @@
                                   {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
                                 </span>
                               {%- endif -%}
+                            {%- elsif customer and product.price > product.compare_at_price -%}
+                              <span class="price price--highlight">
+                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>       
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- product.compare_at_price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- product.compare_at_price | money -}}
+                                {%- endif -%}
+                              </span>          
+                              <span class="price price--compare">
+                                <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- product.price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- product.price | money -}}
+                                {%- endif -%}
+                              </span>
                             {%- elsif product.price < product.compare_at_price -%}
                               <span class="price price--highlight">
                                 <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>       
