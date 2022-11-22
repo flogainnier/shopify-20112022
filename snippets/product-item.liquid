@@ -390,7 +390,7 @@
                               {{- cheapest_variant.price | money -}}
                             {%- endif -%}
                           </span>
-                        {%- if cheapest_variant.price < cheapest_variant.compare_at_price -%}
+                        {%- elsif cheapest_variant.price < cheapest_variant.compare_at_price -%}
                           <span class="price price--highlight">
                             <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
                             {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
