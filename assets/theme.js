@@ -6474,7 +6474,11 @@
         return;
       }
       if (this.priceElement) {
-        this.priceElement.innerHTML = formatMoney(variant["price"], currencyFormat);
+        if (__st.cid && variant["compare_at_price"] && variant["compare_at_price"] < variant["price"]) {
+          this.priceElement.innerHTML = formatMoney(variant["compare_at_price"], currencyFormat);
+        } else {
+          this.priceElement.innerHTML = formatMoney(variant["price"], currencyFormat);
+        }
       }
       if (this.unitPriceElement) {
         this.unitPriceElement.style.display = variant["unit_price_measurement"] ? "block" : "none";
