@@ -73,7 +73,7 @@
 
                           <div class="product-item-meta__price-list-container text--small">
                             <div class="price-list">
-                              {%- if customer and product.compare_at_price_min and product.compare_at_price_min < product.price_min -%}
+                              {%- if customer and product.compare_at_price_min > 0 and product.compare_at_price_min < product.price_min -%}
                                 <span class="price price--highlight">{{ product.compare_at_price_min | money }}</span>
                                 <span class="price price--compare">{{ product.price_min | money }}</span>
                               {%- elsif product.compare_at_price_min > product.price_min -%}
