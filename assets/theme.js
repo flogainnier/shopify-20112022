@@ -5345,7 +5345,10 @@
         productPrices.style.display = "none";
       } else {
         productPrices.innerHTML = "";
-        if (variant["compare_at_price"] > variant["price"]) {
+        if (__st.cid && variant["compare_at_price"] < variant["price"]) {
+          productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span>`;
+          productPrices.innerHTML += `<span class="price price--compare"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
+        } else if (variant["compare_at_price"] > variant["price"]) {
           productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
           productPrices.innerHTML += `<span class="price price--compare"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span>`;
         } else {
