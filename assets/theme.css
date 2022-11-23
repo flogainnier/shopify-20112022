@@ -16277,7 +16277,7 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
   .timer-text {
     font-size: 8px;
     font-weight: 500;
-    line-height: 6px;
+    line-height: 12px;
     text-align: right;
     width: 100%;
   }
