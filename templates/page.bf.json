@@ -126,13 +126,14 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_2_PENDENTIF_BF.jpg",
             "subheading": "",
-            "title": "",
+            "title": "PENDENTIF",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 20
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-5": {
