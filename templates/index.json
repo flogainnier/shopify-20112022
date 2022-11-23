@@ -330,7 +330,7 @@
         "layout": "collage",
         "subheading": "À la une",
         "title": "Découvrir",
-        "background": "#f3f1eb",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -363,26 +363,54 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "1658486162faa06ec7": {
-      "type": "rich-text",
+    "16584869861542d55e": {
+      "type": "text-with-icons",
+      "disabled": true,
+      "blocks": {
+        "16584869867db24579-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "show_icon": false,
+            "custom_icon_width": 50,
+            "title": "DES MATIÈRES ÉCO-RESPONSABLES",
+            "content": ""
+          }
+        },
+        "16584869867db24579-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "show_icon": false,
+            "custom_icon_width": 50,
+            "title": "UNE FABRICATION LOCALE ET ARTISANALE",
+            "content": ""
+          }
+        },
+        "16584869867db24579-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "show_icon": false,
+            "custom_icon_width": 50,
+            "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "16584869867db24579-1",
+        "16584869867db24579-2",
+        "16584869867db24579-3"
+      ],
       "settings": {
-        "subheading": "",
-        "title": "Notre promesse : inventer une mode vraiment durable.",
-        "content": "<p>Dans une industrie de la mode opaque, parfois néfaste pour l'Homme et son environnement, nous cherchons en permanence la meilleure alternative.<\/p>",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_width": "large",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
+        "background": "#f5f1ec",
+        "text_color": "rgba(0,0,0,0)"
       }
     },
     "166359913316da01a7": {
       "type": "promotion-blocks",
+      "disabled": true,
       "blocks": {
         "8cb2d80a-49b5-42be-8606-b61f9ea45d7a": {
           "type": "newsletter",
@@ -428,6 +456,78 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "d28194a4-5dce-4d8e-bd6b-c5037f29b857": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/matieres_homepage_1.jpg",
+            "subheading": "NOS MATIÈRES ÉCO-RESPONSABLES",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/pages\/nos-matieres-premieres",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/ateliers_homepage_1.jpg",
+            "subheading": "NOS ATELIERS 100% FRANÇAIS",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/pages\/nos-ateliers",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/programme_solidaire_homepage_1.jpg",
+            "subheading": "NOTRE PROGRAMME SOLIDAIRE UNIQUE",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/pages\/notre-programme-solidaire",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0",
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-1",
+        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-3"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "carousel",
+        "subheading": "Notre promesse",
+        "title": "Inventer une mode vraiment durable",
+        "background": "#f5f1ec",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<h2 class=\"h2 heading text--center\">Rejoignez le Club !<\/h2>\n<div class=\"text--center\">Inscrivez-vous à notre newsletter et profitez de 10% de réduction sur votre prochaine commande.<br> Réassorts, ventes exclusives, inspiration et bien plus encore...vous saurez tout!<\/div>\n<div class=\"klaviyo-form-WQ58Nc\"><\/div>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1663342446777ddcf4": {
       "type": "newsletter",
       "disabled": true,
@@ -442,50 +542,6 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "#1a1a1a",
         "button_text_color": "#ffffff"
-      }
-    },
-    "16584869861542d55e": {
-      "type": "text-with-icons",
-      "blocks": {
-        "16584869867db24579-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "DES MATIÈRES ÉCO-RESPONSABLES",
-            "content": ""
-          }
-        },
-        "16584869867db24579-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "UNE FABRICATION LOCALE ET ARTISANALE",
-            "content": ""
-          }
-        },
-        "16584869867db24579-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-email",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "16584869867db24579-1",
-        "16584869867db24579-2",
-        "16584869867db24579-3"
-      ],
-      "settings": {
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "text-with-icons": {
@@ -553,10 +609,11 @@
     "collection-list",
     "1656928658a00e3d02",
     "166359917491d44821",
-    "1658486162faa06ec7",
-    "166359913316da01a7",
-    "1663342446777ddcf4",
     "16584869861542d55e",
+    "166359913316da01a7",
+    "d28194a4-5dce-4d8e-bd6b-c5037f29b857",
+    "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5",
+    "1663342446777ddcf4",
     "text-with-icons"
   ]
 }
