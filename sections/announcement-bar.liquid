@@ -135,17 +135,17 @@
   {%- endif -%}
 {%- else -%}
   <section>
-    <div class="announcement-bar">
+    <div class="flex-container">
       <div class="flex-items">
         <div class="copies">
-            <div class="line-1"><strong>BIENTÔT : JUSQU’À -40 % SUR TOUT LE SITE</strong></div>
+            <div class="line-1">{{ section.settings.line_1 }}</div>
             <div class="separator"></div>
-            <div class="line-2">25 NOVEMBRE · SOYEZ PRÊTS</div>
+            <div class="line-2">{{ section.settings.line_2 }}</div>
         </div>
       </div>
       <div class="flex-items">
-        <div id="timerContainer" end-date="2022-11-24T20:59:59.000Z" class="flex-container-row">
-            <span class="timer-text">BLACK FRIDAY DÉBUTE DANS</span>
+        <div id="timerContainer" end-date="{{ section.settings.end_date }}" class="flex-container-row">
+            <span class="timer-text">{{ section.settings.timer_text }}</span>
             <div id="timer" class="clock-container">
                 <div class="clock-number"><span id="days"></span>
                     <p class="clock-text">Jours</p>
@@ -187,8 +187,8 @@
     
       function isCountingDays() {
         let date = new Date().toISOString();
-        let startCountingDays = "2022-11-21T08:00:00Z";
-        let endsCountingDays = "2022-11-29T04:59:59Z";
+        let startCountingDays = "{{ section.settings.start_date }}";
+        let endsCountingDays = "{{ section.settings.end_date }}";
         if ( 
           (Date.parse(startCountingDays) < Date.parse(date))
           && (Date.parse(endsCountingDays) > Date.parse(date))
@@ -372,8 +372,29 @@
     },
     {
       "type": "text",
-      "id": "date_picker",
-      "label": "Choose date and hour",
+      "id": "line_1",
+      "label": "Line 1",
+    },
+    {
+      "type": "text",
+      "id": "line_2",
+      "label": "Line 2",
+    },
+    {
+      "type": "text",
+      "id": "timer_text",
+      "label": "Timer text",
+    },
+    {
+      "type": "text",
+      "id": "start_date",
+      "label": "Choose start date",
+      "info": "e.g. 2022-11-24T20:59:59.000Z"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "Choose end date",
       "info": "e.g. 2022-11-24T20:59:59.000Z"
     },
     {

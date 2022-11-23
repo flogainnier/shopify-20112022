@@ -16158,6 +16158,25 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 
 /* Announcement bar countdown */
 
+.flex-container {
+  height: 44px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  align-items: center;
+}
+
 .copies {
   font-size: 11px;
 }
@@ -16215,6 +16234,14 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 
 
 @media only screen and (max-width: 768px) {
+  .flex-container {
+    padding: 0 .5rem 0;
+  }
+
+  .flex-container-row {
+    flex-direction: column;
+  }
+
   .separator {
     display: none;
   }
