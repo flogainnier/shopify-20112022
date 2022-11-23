@@ -5,7 +5,6 @@
       "blocks": {
         "4a6397ce-db8d-499f-b539-a911e4c53663": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "only_customer": true,
             "image": "shopify:\/\/shop_images\/HP_SHOPIFY_BF_V3.jpg",
