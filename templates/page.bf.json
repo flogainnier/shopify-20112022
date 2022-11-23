@@ -84,14 +84,14 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/BLOC_2_BAGUE_BF.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_2_BAGUE_V2.jpg",
             "subheading": "",
             "title": "BAGUE",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 21
+            "overlay_opacity": 13
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-2": {
@@ -105,7 +105,7 @@
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 15
+            "overlay_opacity": 11
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-3": {
