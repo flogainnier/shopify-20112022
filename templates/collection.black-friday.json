@@ -3,11 +3,12 @@
     "collection-banner": {
       "type": "collection-banner",
       "settings": {
-        "section_type": "rich_text",
+        "section_type": "image_with_text",
+        "image": "{{ collection.image }}",
         "show_collection_description": true,
         "section_height": "auto",
-        "image_size": "small",
-        "image_position": "left",
+        "image_size": "medium",
+        "image_position": "right",
         "background_type": "full_width",
         "title": "{{ collection.metafields.custom.title.value }}",
         "text_position": "left",
