@@ -70,39 +70,42 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_2_COLLIER_BF.jpg",
             "subheading": "",
-            "title": "",
+            "title": "COLLIER",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 25
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-1": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_2_BAGUE_BF.jpg",
             "subheading": "",
-            "title": "",
+            "title": "BAGUE",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 21
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-2": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_2_BRACELET.jpg",
             "subheading": "",
-            "title": "",
+            "title": "BRACELET",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 21
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-3": {
