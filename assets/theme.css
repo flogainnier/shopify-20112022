@@ -16155,3 +16155,94 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
   font-weight: 600;
   text-align: center;
 }
+
+/* Announcement bar countdown */
+
+.copies {
+  font-size: 11px;
+}
+
+.link {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.copies div {
+  padding-left: 0.3rem;
+  line-height: 1.4em;
+}
+
+.separator {
+  visibility: visible;
+  display: none;
+}
+
+.flex-items:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.timer-text {
+  font-size: 11px;
+  line-height: 1.4em;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  padding-left: 0.8rem;
+}
+
+.clock-number {
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.clock-text {
+  font-size: 8px;
+  line-height: 9px;
+  margin: 0;
+  text-align: center;
+}
+
+.separation-clock {
+  padding: 0rem 0.3rem 0 0.3rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .separator {
+    display: none;
+  }
+
+  .copies {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .copies div {
+    line-height: 9px;
+  }
+
+  .clock-number span {
+    font-size: 16px;
+    line-height: 12px;
+  }
+
+  .clock-text {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .timer-text {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 6px;
+    text-align: right;
+    width: 100%;
+  }
+}
