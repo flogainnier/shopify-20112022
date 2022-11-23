@@ -27,10 +27,18 @@
               <span class="product-sticky-form__title">{{ product.title }}</span>
               <span class="square-separator square-separator--subdued"></span>
               <span class="product-sticky-form__price">
-                {%- if settings.currency_code_enabled -%}
-                  {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                {%- if customer and product.selected_or_first_available_variant.price > product.selected_or_first_available_variant.compare_at_price -%}
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+                  {%- endif -%}
                 {%- else -%}
-                  {{- product.selected_or_first_available_variant.price | money -}}
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.selected_or_first_available_variant.price | money -}}
+                  {%- endif -%}
                 {%- endif -%}
               </span>
 

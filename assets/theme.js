@@ -5325,6 +5325,14 @@
         productLabelList.innerHTML = "";
         if (!variant["available"]) {
           productLabelList.innerHTML = `<span class="label label--subdued">${window.themeVariables.strings.collectionSoldOut}</span>`;
+        } else if (__st.cid && variant["compare_at_price"] && variant["compare_at_price"] < variant["price"]) { 
+          let savings = "";
+          if (window.themeVariables.settings.discountMode === "percentage") {
+            savings = `${Math.round((variant["price"] - variant["compare_at_price"]) * 100 / variant["price"])}%`;
+          } else {
+            savings = formatMoney(variant["price"] - variant["compare_at_price"]);
+          }
+          productLabelList.innerHTML = `<span class="label label--highlight">${window.themeVariables.strings.collectionDiscount.replace("@savings@", savings)}</span>`;
         } else if (variant["compare_at_price"] > variant["price"]) {
           let savings = "";
           if (window.themeVariables.settings.discountMode === "percentage") {
@@ -5345,7 +5353,10 @@
         productPrices.style.display = "none";
       } else {
         productPrices.innerHTML = "";
-        if (variant["compare_at_price"] > variant["price"]) {
+        if (__st.cid && variant["compare_at_price"] && variant["compare_at_price"] < variant["price"]) {
+          productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span>`;
+          productPrices.innerHTML += `<span class="price price--compare"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
+        } else if (variant["compare_at_price"] > variant["price"]) {
           productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
           productPrices.innerHTML += `<span class="price price--compare"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span>`;
         } else {
@@ -6463,7 +6474,11 @@
         return;
       }
       if (this.priceElement) {
-        this.priceElement.innerHTML = formatMoney(variant["price"], currencyFormat);
+        if (__st.cid && variant["compare_at_price"] && variant["compare_at_price"] < variant["price"]) {
+          this.priceElement.innerHTML = formatMoney(variant["compare_at_price"], currencyFormat);
+        } else {
+          this.priceElement.innerHTML = formatMoney(variant["price"], currencyFormat);
+        }
       }
       if (this.unitPriceElement) {
         this.unitPriceElement.style.display = variant["unit_price_measurement"] ? "block" : "none";
