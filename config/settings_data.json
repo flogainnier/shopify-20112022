@@ -330,7 +330,7 @@
           "links": {
             "type": "links",
             "settings": {
-              "menu": "footer",
+              "menu": "services",
               "use_default_layout": true
             }
           },
