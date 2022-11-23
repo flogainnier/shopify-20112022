@@ -67,7 +67,7 @@
         "a30850cb-f28e-4683-8600-7001edb72de1": {
           "type": "image",
           "settings": {
-            "only_customer": true,
+            "only_customer": false,
             "image": "shopify:\/\/shop_images\/HP_SHOPIFY_Ilia_bloc_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/HP_SHOPIFY_MOBILE_ILIA.jpg",
             "text_position": "middle_center",
