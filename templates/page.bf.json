@@ -105,7 +105,7 @@
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 21
+            "overlay_opacity": 15
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-3": {
@@ -159,8 +159,8 @@
       "settings": {
         "reveal_on_scroll": false,
         "layout": "collage",
-        "subheading": "Subheading",
-        "title": "Collection list",
+        "subheading": "",
+        "title": "",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
