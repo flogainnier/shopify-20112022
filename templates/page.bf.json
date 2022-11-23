@@ -13,11 +13,12 @@
         "1663859615c54b54e3-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL_54360ab7-78f2-4a5d-85de-dbfdf808fa24.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
-            "text_position": "middle_center",
-            "subheading": "COLLECTION",
-            "title": "MADAME",
+            "only_customer": false,
+            "image": "shopify:\/\/shop_images\/BLOC_1_BF_V2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HP_MOBILE_BF.jpg",
+            "text_position": "bottom_right",
+            "subheading": "",
+            "title": "",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -33,6 +34,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "only_customer": false,
             "image": "shopify:\/\/shop_images\/Page_madame_bloc_1_slide_2.jpg",
             "text_position": "middle_center",
             "subheading": "collection",
@@ -61,8 +63,108 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "fb655f49-44ee-4b56-a9fc-76b122e05d6b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-0",
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-1",
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-2",
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-3",
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-4",
+        "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "Subheading",
+        "title": "Collection list",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1663859687669a96ea": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "16638596866d6999cc-1": {
           "type": "item",
@@ -147,6 +249,7 @@
     },
     "1663859960dda437aa": {
       "type": "featured-collections",
+      "disabled": true,
       "blocks": {
         "1663859960095d2406-0": {
           "type": "collection",
@@ -177,6 +280,7 @@
     },
     "16638600383ac29a23": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "subheading": "histoire",
         "title": "BIJOUX MADAME",
@@ -254,6 +358,7 @@
     },
     "0240c335-9f22-432a-a226-51078d95d4f0": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-0": {
           "type": "collection",
@@ -436,6 +541,7 @@
   "order": [
     "main",
     "1663859615c1a9ffe1",
+    "fb655f49-44ee-4b56-a9fc-76b122e05d6b",
     "1663859687669a96ea",
     "1663859960dda437aa",
     "16638600383ac29a23",
