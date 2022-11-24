@@ -91,8 +91,8 @@
                           <img class="text-with-icons__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
                         {%- endif -%}
                       {%- endif -%}
-                      {%- if section.settings.text_1 != blank -%}
-                        <a href="{{ section.settings.url_1 }}" class="link--faded">{{ section.settings.text_1 | escape }}</a>
+                      {%- if block.settings.text_1 != blank -%}
+                        <a href="{{ block.settings.url_1 }}" class="link--faded">{{ block.settings.text_1 | escape }}</a>
                       {%- endif -%}
                     </li>
                   </ul>
