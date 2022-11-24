@@ -91,7 +91,7 @@
                           <img class="contact__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
                         {%- else -%}
                           <div class="contact__custom-icon">
-                            {%- render 'icon' with block.settings.icon_1 -%}
+                            {%- render 'icon' with block.settings.icon_1, width: block.settings.custom_icon_1_width, height: block.settings.custom_icon_1_width -%}
                           </div>
                         {%- endif -%}
                       {%- endif -%}
