@@ -71,7 +71,7 @@
           {%- endcapture -%}
         {%- endif -%}
 
-        <li class="mobile-nav__item {% if customer and link.title == "Archives" %}hidden{% endif %} {% if customer.id == null and link.title == "Black Friday" %}hidden{% endif %}" data-level="1">
+        <li class="mobile-nav__item" data-level="1">
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
             <button is="toggle-button" class="collapsible-toggle mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false">
               {{- link.title -}}
