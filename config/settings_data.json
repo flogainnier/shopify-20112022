@@ -364,14 +364,6 @@
               "use_default_layout": true
             }
           },
-          "newsletter": {
-            "type": "newsletter",
-            "disabled": true,
-            "settings": {
-              "title": "Recevez nos actus",
-              "content": "<p>Inscrivez-vous et profitez de -10% sur votre première commande.<\/p>"
-            }
-          },
           "2590b084-67f0-4b61-8762-a16d90e63554": {
             "type": "social_media",
             "settings": {
@@ -384,7 +376,6 @@
           "22b8c66c-f88a-444d-996c-07f25c6ecd79",
           "84e4445d-8540-4089-ab2b-e8381e1abb31",
           "links",
-          "newsletter",
           "2590b084-67f0-4b61-8762-a16d90e63554"
         ],
         "settings": {
