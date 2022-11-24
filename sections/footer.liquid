@@ -99,6 +99,36 @@
                         <a href="{{ block.settings.url_1 }}" class="link--faded">{{ block.settings.text_1 | escape }}</a>
                       {%- endif -%}
                     </li>
+                    <li class="linklist__item">
+                      {%- if block.settings.show_icon_2 -%}
+                        {%- if block.settings.custom_icon_2 != blank -%}
+                          {% capture custom_icon_width %}{{ block.settings.custom_icon_2_width | times: 2 }}x{% endcapture %}
+                          <img class="contact__custom-icon" style="max-width: {{ block.settings.custom_icon_2_width }}px" width="{{ block.settings.custom_icon_2.width }}" height="{{ block.settings.custom_icon_2.height }}" src="{{ block.settings.custom_icon_2 | img_url: custom_icon_2_width }}" alt="{{ block.settings.custom_icon_2.alt | escape }}">
+                        {%- else -%}
+                          <div class="contact__custom-icon">
+                            {%- render 'icon' with block.settings.icon_2, width: block.settings.custom_icon_2_width, height: block.settings.custom_icon_2_width -%}
+                          </div>
+                        {%- endif -%}
+                      {%- endif -%}
+                      {%- if block.settings.text_2 != blank -%}
+                        <a href="{{ block.settings.url_2 }}" class="link--faded">{{ block.settings.text_2 | escape }}</a>
+                      {%- endif -%}
+                    </li>
+                    <li class="linklist__item">
+                      {%- if block.settings.show_icon_3 -%}
+                        {%- if block.settings.custom_icon_3 != blank -%}
+                          {% capture custom_icon_width %}{{ block.settings.custom_icon_3_width | times: 2 }}x{% endcapture %}
+                          <img class="contact__custom-icon" style="max-width: {{ block.settings.custom_icon_3_width }}px" width="{{ block.settings.custom_icon_3.width }}" height="{{ block.settings.custom_icon_3.height }}" src="{{ block.settings.custom_icon_3 | img_url: custom_icon_3_width }}" alt="{{ block.settings.custom_icon_3.alt | escape }}">
+                        {%- else -%}
+                          <div class="contact__custom-icon">
+                            {%- render 'icon' with block.settings.icon_3, width: block.settings.custom_icon_3_width, height: block.settings.custom_icon_3_width -%}
+                          </div>
+                        {%- endif -%}
+                      {%- endif -%}
+                      {%- if block.settings.text_3 != blank -%}
+                        <a href="{{ block.settings.url_3 }}" class="link--faded">{{ block.settings.text_3 | escape }}</a>
+                      {%- endif -%}
+                    </li>
                   </ul>
                 </div>
 
