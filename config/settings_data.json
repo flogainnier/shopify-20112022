@@ -350,11 +350,26 @@
               "use_default_layout": false
             }
           },
-          "84e4445d-8540-4089-ab2b-e8381e1abb31": {
-            "type": "links",
+          "d7e55d84-0db4-4677-9e96-df55aa6f3f4b": {
+            "type": "contact",
             "settings": {
-              "menu": "footer-1",
-              "use_default_layout": true
+              "title": "Une question ?",
+              "content": "",
+              "icon_1": "picto-email",
+              "show_icon_1": true,
+              "custom_icon_1_width": 20,
+              "text_1": "hello@aglaiaco.com",
+              "url_1": "mailto:hello@aglaiaco.com",
+              "icon_2": "faq",
+              "show_icon_2": true,
+              "custom_icon_2_width": 20,
+              "text_2": "Questions fréquentes",
+              "url_2": "shopify:\/\/pages\/questions-frequentes",
+              "icon_3": "picto-phone",
+              "show_icon_3": false,
+              "custom_icon_3_width": 10,
+              "text_3": "",
+              "url_3": ""
             }
           },
           "links": {
@@ -374,7 +389,7 @@
         },
         "block_order": [
           "22b8c66c-f88a-444d-996c-07f25c6ecd79",
-          "84e4445d-8540-4089-ab2b-e8381e1abb31",
+          "d7e55d84-0db4-4677-9e96-df55aa6f3f4b",
           "links",
           "2590b084-67f0-4b61-8762-a16d90e63554"
         ],
