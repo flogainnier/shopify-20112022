@@ -73,6 +73,31 @@
                   {%- render 'social-media' -%}
                 </div>
 
+              {%- when 'contact' -%}
+                {%- if block.settings.title != blank -%}
+                  <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
+                {%- endif -%}
+
+                <div class="footer__item-content">
+                  {%- if block.settings.content != blank -%}
+                    {{- block.settings.content -}}
+                  {%- endif -%}
+
+                  <ul class="linklist list--unstyled" role="list">              
+                    <li class="linklist__item">
+                      {%- if block.settings.show_icon_1 -%}
+                        {%- if block.settings.custom_icon_1 != blank -%}
+                          {% capture custom_icon_width %}{{ block.settings.custom_icon_1_width | times: 2 }}x{% endcapture %}
+                          <img class="text-with-icons__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
+                        {%- endif -%}
+                      {%- endif -%}
+                      {%- if section.settings.text_1 != blank -%}
+                        <a href="{{ section.settings.url_1 }}" class="link--faded">{{ section.settings.text_1 | escape }}</a>
+                      {%- endif -%}
+                    </li>
+                  </ul>
+                </div>
+
               {%- when 'newsletter' -%}
                 {%- if block.settings.title != blank -%}
                   <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
@@ -400,6 +425,131 @@
           "id": "content",
           "label": "Content",
           "default": "<p>To configure social media, go to your social media settings. Change this text in the theme editor.</p>"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "Contact",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "Link 1",
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon_1",
+          "label": "Custom icon",
+          "info": "100 x 100px .png with transparency recommended"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icon_1",
+          "label": "Show icon"
+        },
+        {
+          "type": "range",
+          "id": "custom_icon_1_width",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "label": "Custom icon width",
+          "info": "Only impact custom icons",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "text_1",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url_1",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Link 2",
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon_2",
+          "label": "Custom icon",
+          "info": "100 x 100px .png with transparency recommended"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icon_2",
+          "label": "Show icon"
+        },
+        {
+          "type": "range",
+          "id": "custom_icon_2_width",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "label": "Custom icon width",
+          "info": "Only impact custom icons",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url_2",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Link 3",
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon_3",
+          "label": "Custom icon",
+          "info": "100 x 100px .png with transparency recommended"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icon_3",
+          "label": "Show icon"
+        },
+        {
+          "type": "range",
+          "id": "custom_icon_3_width",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "label": "Custom icon width",
+          "info": "Only impact custom icons",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "text_3",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url_3",
+          "label": "Link"
         }
       ]
     },
