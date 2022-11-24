@@ -88,7 +88,9 @@
                       {%- if block.settings.show_icon_1 -%}
                         {%- if block.settings.custom_icon_1 != blank -%}
                           {% capture custom_icon_width %}{{ block.settings.custom_icon_1_width | times: 2 }}x{% endcapture %}
-                          <img class="text-with-icons__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
+                          <img class="contact__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_1 -%}
                         {%- endif -%}
                       {%- endif -%}
                       {%- if block.settings.text_1 != blank -%}
@@ -448,6 +450,43 @@
           "content": "Link 1"
         },
         {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "picto-mobile",
+              "label": "Mobile",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-email",
+              "label": "Email",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-whatsapp",
+              "label": "Whatsapp",
+              "group": "Communication"
+            }
+          ]
+        },
+        {
           "type": "image_picker",
           "id": "custom_icon_1",
           "label": "Custom icon",
@@ -461,13 +500,13 @@
         {
           "type": "range",
           "id": "custom_icon_1_width",
-          "min": 40,
-          "max": 200,
-          "step": 5,
+          "min": 5,
+          "max": 30,
+          "step": 1,
           "unit": "px",
           "label": "Custom icon width",
           "info": "Only impact custom icons",
-          "default": 50
+          "default": 10
         },
         {
           "type": "text",
@@ -484,6 +523,43 @@
           "content": "Link 2"
         },
         {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "picto-mobile",
+              "label": "Mobile",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-email",
+              "label": "Email",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-whatsapp",
+              "label": "Whatsapp",
+              "group": "Communication"
+            }
+          ]
+        },
+        {
           "type": "image_picker",
           "id": "custom_icon_2",
           "label": "Custom icon",
@@ -497,13 +573,13 @@
         {
           "type": "range",
           "id": "custom_icon_2_width",
-          "min": 40,
-          "max": 200,
-          "step": 5,
+          "min": 5,
+          "max": 30,
+          "step": 1,
           "unit": "px",
           "label": "Custom icon width",
           "info": "Only impact custom icons",
-          "default": 50
+          "default": 10
         },
         {
           "type": "text",
@@ -520,6 +596,43 @@
           "content": "Link 3"
         },
         {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "picto-mobile",
+              "label": "Mobile",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-email",
+              "label": "Email",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-whatsapp",
+              "label": "Whatsapp",
+              "group": "Communication"
+            }
+          ]
+        },
+        {
           "type": "image_picker",
           "id": "custom_icon_3",
           "label": "Custom icon",
@@ -533,13 +646,13 @@
         {
           "type": "range",
           "id": "custom_icon_3_width",
-          "min": 40,
-          "max": 200,
-          "step": 5,
+          "min": 5,
+          "max": 30,
+          "step": 1,
           "unit": "px",
           "label": "Custom icon width",
           "info": "Only impact custom icons",
-          "default": 50
+          "default": 10
         },
         {
           "type": "text",
