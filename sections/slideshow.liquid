@@ -1,6 +1,6 @@
 <style>
   #shopify-section-{{ section.id }} {
-    --progress-bar-color: {{ section.blocks.last.settings.text_color.red }}, {{ section.blocks.last.settings.text_color.green }}, {{ section.blocks.last.settings.text_color.blue }};
+    --progress-bar-color: {{ section.blocks.first .settings.text_color.red }}, {{ section.blocks.first.settings.text_color.green }}, {{ section.blocks.first.settings.text_color.blue }};
     --section-autoplay-duration: {% if section.settings.autoplay %}{{ section.settings.cycle_speed }}s{% else %}0s{% endif %};
     --section-animation-play-state: paused;
     background-color: {{ section.settings.background }}; /* Allows to set a placeholder color while loading */
@@ -196,7 +196,7 @@
               </button>
             {% endif %}
           {%- else -%}
-            <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.first %}aria-current="true"{% endif%}>
+            <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.last %}aria-current="true"{% endif%}>
               <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
             </button>
           {%- endif -%}
