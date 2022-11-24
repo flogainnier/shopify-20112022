@@ -2046,7 +2046,11 @@ p + .button-group,
  * -------------------------------------------------------------
  */
 
- 
+.linklist__item {
+  display: flex;
+  align-items: center;
+}
+
 .linklist__item:not(:first-child) {
   padding-top: 12px;
 }
@@ -2060,6 +2064,10 @@ p + .button-group,
   .linklist__item:not(:first-child) {
     padding-top: 6px; /* On desktop we use less space as we do not have as much constraint for tap area */
   }
+}
+
+.contact__custom-icon {
+  margin-right: 10px;
 }
 
 /**

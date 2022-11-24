@@ -90,7 +90,9 @@
                           {% capture custom_icon_width %}{{ block.settings.custom_icon_1_width | times: 2 }}x{% endcapture %}
                           <img class="contact__custom-icon" style="max-width: {{ block.settings.custom_icon_1_width }}px" width="{{ block.settings.custom_icon_1.width }}" height="{{ block.settings.custom_icon_1.height }}" src="{{ block.settings.custom_icon_1 | img_url: custom_icon_1_width }}" alt="{{ block.settings.custom_icon_1.alt | escape }}">
                         {%- else -%}
-                          {%- render 'icon' with block.settings.icon_1 -%}
+                          <div class="contact__custom-icon">
+                            {%- render 'icon' with block.settings.icon_1 -%}
+                          </div>
                         {%- endif -%}
                       {%- endif -%}
                       {%- if block.settings.text_1 != blank -%}
@@ -480,7 +482,7 @@
               "group": "Communication"
             },
             {
-              "value": "picto-whatsapp",
+              "value": "whatsapp",
               "label": "Whatsapp",
               "group": "Communication"
             }
@@ -553,7 +555,7 @@
               "group": "Communication"
             },
             {
-              "value": "picto-whatsapp",
+              "value": "whatsapp",
               "label": "Whatsapp",
               "group": "Communication"
             }
@@ -626,7 +628,7 @@
               "group": "Communication"
             },
             {
-              "value": "picto-whatsapp",
+              "value": "whatsapp",
               "label": "Whatsapp",
               "group": "Communication"
             }
