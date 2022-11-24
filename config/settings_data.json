@@ -130,10 +130,16 @@
           "7d51a798-10a3-4a1a-8637-3fce932d10a8"
         ],
         "settings": {
+          "announcement_bar_type": "carousel",
           "announcement_bar_position": "non_sticky",
           "announcement_text_size": "small",
           "autoplay": true,
           "cycle_speed": 5,
+          "line_1": "",
+          "line_2": "",
+          "timer_text": "",
+          "start_date": "",
+          "end_date": "",
           "background": "#1a1a1a",
           "text_color": "#ffffff",
           "button_background": "#ffffff",
@@ -277,6 +283,33 @@
               "image_6_text": "",
               "image_6_link": ""
             }
+          },
+          "4c9f7f4a-7ef8-49ac-897d-e84d6ea8a1b4": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Black Friday",
+              "images_position": "right",
+              "show_images_on_mobile": false,
+              "image_1": "shopify:\/\/shop_images\/black_friday_header_1.jpg",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": "",
+              "image_3_heading": "",
+              "image_3_text": "",
+              "image_3_link": "",
+              "image_4_heading": "",
+              "image_4_text": "",
+              "image_4_link": "",
+              "image_5_heading": "",
+              "image_5_text": "",
+              "image_5_link": "",
+              "image_6_heading": "",
+              "image_6_text": "",
+              "image_6_link": ""
+            }
           }
         },
         "block_order": [
@@ -284,7 +317,8 @@
           "8abd5126-0418-4777-ad9a-928630a90d7d",
           "4cce6637-2fbc-4267-89c2-e03bb640f916",
           "dc45c0d9-c0f6-4099-bd7e-528fd88e461f",
-          "6bee12d9-f3f3-4ed4-a540-d036df49397d"
+          "6bee12d9-f3f3-4ed4-a540-d036df49397d",
+          "4c9f7f4a-7ef8-49ac-897d-e84d6ea8a1b4"
         ],
         "settings": {
           "enable_sticky_header": true,
