@@ -112,6 +112,7 @@
           },
           "7d51a798-10a3-4a1a-8637-3fce932d10a8": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "100% Made in France",
               "learn_more_text": "En savoir plus",
