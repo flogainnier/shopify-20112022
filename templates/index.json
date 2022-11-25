@@ -376,9 +376,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-phone",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "DES MATIÈRES ÉCO-RESPONSABLES",
+            "custom_icon": "shopify:\/\/shop_images\/icon_matieres_responsables.png",
+            "show_icon": true,
+            "custom_icon_width": 70,
+            "title": "MATIÈRES ÉCO-RESPONSABLES",
             "content": ""
           }
         },
@@ -386,9 +387,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "UNE FABRICATION LOCALE ET ARTISANALE",
+            "custom_icon": "shopify:\/\/shop_images\/icon_atelier.png",
+            "show_icon": true,
+            "custom_icon_width": 70,
+            "title": "FABRICATION française ET ARTISANALE",
             "content": ""
           }
         },
@@ -396,8 +398,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-email",
-            "show_icon": false,
-            "custom_icon_width": 50,
+            "custom_icon": "shopify:\/\/shop_images\/icon_programme_solidaire.png",
+            "show_icon": true,
+            "custom_icon_width": 70,
             "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
             "content": ""
           }
@@ -409,7 +412,7 @@
         "16584869867db24579-3"
       ],
       "settings": {
-        "background": "#f5f1ec",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
     },
