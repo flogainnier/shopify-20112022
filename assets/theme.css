@@ -15247,6 +15247,10 @@ shopify-payment-terms {
   margin: 0 auto;
 }
 
+.text-with-icons__item-left .text-with-icons__icon-wrapper {
+  margin-right: 20px;
+}
+
 .text-with-icons__dots {
   margin-top: 26px;
 }
