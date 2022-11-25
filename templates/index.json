@@ -25,6 +25,7 @@
         },
         "845b9503-615e-4611-8e65-f17ed938cce7": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "only_customer": false,
             "image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_VF.jpg",
