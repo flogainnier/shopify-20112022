@@ -10468,7 +10468,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .mobile-secondary-nav li {
- padding: 15px 0px;
+ padding: 10px 0px;
 }
 
 /* Mobile images */
