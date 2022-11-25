@@ -10486,7 +10486,7 @@ input:checked + .popover__choice-label::after,
   gap: 12px;
   grid-auto-flow: column;
   margin-bottom: 32px;
-  padding-left: var(--container-gutter);
+  /* padding-left: var(--container-gutter); */
   padding-right: var(--container-gutter);
   width: -moz-fit-content;
   width: fit-content;
