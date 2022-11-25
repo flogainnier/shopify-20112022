@@ -1,0 +1,126 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign heading_color = settings.heading_color -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign heading_color = section.settings.text_color -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    --heading-color: {{ heading_color.red }}, {{ heading_color.green }}, {{ heading_color.blue }};
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+    --vertical-breather: 40px; /* Inner spacing is smaller on this section */
+  }
+
+  .scroll-ticker, .ticker-wrap {
+    background-color: #000000;
+  }
+
+  .scroll-ticker, .ticker-wrap {
+      overflow: hidden;
+  }
+
+  .scroll-ticker, .ticker-wrap {
+      background-color: #000000;
+  }
+
+  .ticker-wrap {
+      width: 100%;
+      padding-left: 100%;
+      box-sizing: content-box!important;
+  }
+
+  .scroll-ticker, .ticker-wrap {
+      overflow: hidden;
+  }
+
+  .ticker-wrap .ticker {
+      display: inline-block;
+      height: 4rem;
+      line-height: 4rem;
+      white-space: nowrap;
+      padding-right: 100%;
+      box-sizing: content-box;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: ticker;
+      animation-duration: var(--ticker-animation-duration);
+  }
+
+  .ticker-wrap .ticker__item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: 2rem;
+      margin-right: 30vw;
+  }
+
+  .ticker__item, .ticker__item a {
+      color: #ffffff;
+  }
+</style>
+
+<div class="scroll-ticker " style="--ticker-bg-color: #000000;--ticker-title-color: #ffffff;--ticker-animation-duration: 25s;">
+	<div class="ticker-wrap">
+		<div class="ticker">
+      {%- if section.blocks.size > 1 -%}
+        {%- for block in section.blocks -%}
+          <div class="h1 ticker__item">
+            <a href="{{ block.settings.url }}" class="mi-heading-2">
+              {{ block.settings.title }}
+            </a>
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "Scroll ticker",
+  "class": "shopify-section--scroll-ticker",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Your title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "rgba(0,0,0,0)"
+    }
+  ],
+  "presets": []
+}
+{% endschema %}
