@@ -69,7 +69,6 @@
   .ticker-wrap .ticker__item {
       display: inline-block;
       padding: 0 2rem;
-      font-size: 2rem;
       margin-right: 30vw;
   }
 
@@ -83,7 +82,7 @@
 		<div class="ticker">
       {%- if section.blocks.size > 1 -%}
         {%- for block in section.blocks -%}
-          <div class="h1 ticker__item">
+          <div class="ticker__item heading heading--small">
               {{ block.settings.title }}
             </a>
           </div>
