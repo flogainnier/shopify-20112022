@@ -15213,8 +15213,19 @@ shopify-payment-terms {
   margin-right: calc(-1 * var(--container-gutter));
 }
 
-.text-with-icons__item {
+.text-with-icons__item-center {
   display: block;
+  text-align: center;
+  padding: 0 48px;
+  width: 100%;
+  flex: none;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.text-with-icons__item-left {
+  display: flex;
+  align-items: center;
   text-align: center;
   padding: 0 48px;
   width: 100%;
@@ -15252,7 +15263,11 @@ shopify-payment-terms {
     margin-right: 0;
   }
 
-  .text-with-icons__item {
+  .text-with-icons__item-center {
+    padding: 0; /* Spacing is already added by the grid */
+  }
+
+  .text-with-icons__item-left {
     padding: 0; /* Spacing is already added by the grid */
   }
 

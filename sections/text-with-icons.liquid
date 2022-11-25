@@ -45,7 +45,7 @@
       <native-carousel class="text-with-icons">
         <div class="text-with-icons__list hide-scrollbar">
           {%- for block in section.blocks -%}
-            <native-carousel-item {% unless forloop.first %}hidden{% endunless %} id="block-{{ section.id }}-{{ block.id }}" class="text-with-icons__item" {{ block.shopify_attributes }}>
+            <native-carousel-item {% unless forloop.first %}hidden{% endunless %} id="block-{{ section.id }}-{{ block.id }}" class="text-with-icons__item-{{ block.settings.icon_position }}" {{ block.shopify_attributes }}>
               <div class="text-with-icons__icon-wrapper">
                 {%- if block.settings.show_icon -%}
                   {%- if block.settings.custom_icon != blank -%}
@@ -96,6 +96,22 @@
       "type": "item",
       "name": "Item",
       "settings": [
+        {
+          "type": "select",
+          "id": "icon_position",
+          "label": "Icon position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            }
+          ],
+          "default": "center"
+        },
         {
           "type": "select",
           "id": "icon",
