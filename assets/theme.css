@@ -10464,6 +10464,7 @@ input:checked + .popover__choice-label::after,
 
 .mobile-secondary-nav {
   margin-top: 30px;
+  display: flow-root;
 }
 
 .mobile-secondary-nav li {
