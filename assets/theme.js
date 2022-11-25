@@ -4696,6 +4696,17 @@
             easing: "cubic-bezier(0.25, 1, 0.5, 1)"
           });
         })));
+        const secondaryMenu = this.querySelector(".mobile-secondary-nav");
+        if (secondaryMenu) {
+          effects.push(new CustomKeyframeEffect(bottomBar, {
+            opacity: [0, 1],
+            transform: ["translateY(100%)", "translateY(0)"]
+          }, {
+            duration: 300,
+            delay: 500 + Math.max(125 * navItems.length - 25 * navItems.length, 25),
+            easing: "cubic-bezier(0.25, 1, 0.5, 1)"
+          }));
+        }
         const bottomBar = this.querySelector(".drawer__footer");
         if (bottomBar) {
           effects.push(new CustomKeyframeEffect(bottomBar, {
