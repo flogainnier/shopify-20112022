@@ -20,6 +20,17 @@
     --vertical-breather: 40px; /* Inner spacing is smaller on this section */
   }
 
+  @keyframes ticker {
+    0% {
+      -webkit-transform:translateZ(0);
+      transform:translateZ(0);
+      visibility:visible
+    } to {
+      -webkit-transform:translate3d(-100%,0,0);
+      transform:translate3d(-100%,0,0)
+    }
+  }
+
   .scroll-ticker, .ticker-wrap {
     background-color: #000000;
   }
@@ -73,7 +84,6 @@
       {%- if section.blocks.size > 1 -%}
         {%- for block in section.blocks -%}
           <div class="h1 ticker__item">
-            <a href="{{ block.settings.url }}" class="mi-heading-2">
               {{ block.settings.title }}
             </a>
           </div>
