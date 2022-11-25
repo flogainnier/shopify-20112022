@@ -236,7 +236,7 @@
             "settings": {
               "menu_item": "Accessoires",
               "images_position": "right",
-              "show_images_on_mobile": true,
+              "show_images_on_mobile": false,
               "image_1": "shopify:\/\/shop_images\/814.jpg",
               "image_1_heading": "",
               "image_1_text": "",
@@ -263,7 +263,7 @@
             "settings": {
               "menu_item": "Archives",
               "images_position": "left",
-              "show_images_on_mobile": true,
+              "show_images_on_mobile": false,
               "image_1": "shopify:\/\/shop_images\/223.jpg",
               "image_1_heading": "",
               "image_1_text": "",
