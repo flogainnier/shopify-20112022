@@ -102,9 +102,11 @@
     },
     "1658498460c35802eb": {
       "type": "featured-collections",
+      "disabled": true,
       "blocks": {
         "1658498460200905ad-0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "best-sellers-hp",
             "label": "BEST SELLERS",
@@ -132,11 +134,9 @@
     },
     "43c63689-22c1-4d87-8c7d-321239627670": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "template--16637482565862__43c63689-22c1-4d87-8c7d-321239627670-166913364473cd9030-0": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "black-friday-1",
             "label": "",
@@ -164,6 +164,7 @@
     },
     "1663599417d7f4c1fe": {
       "type": "image-with-text-block",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/Bloc_astro_HP.jpg",
@@ -187,6 +188,7 @@
     },
     "collection-list": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "collection-3": {
           "type": "collection",
@@ -277,6 +279,7 @@
     },
     "1656928658a00e3d02": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1656928658d7e5012e-0": {
           "type": "collection",
