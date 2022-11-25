@@ -14,6 +14,46 @@
   </div>
 
   <div class="drawer__content">
+    {%- assign mobile_menu_images = '' -%}
+    {%- assign mobile_images_count = 0 -%}
+    {%- capture mobile_menu_images -%}
+      {%- for i in (1..4) -%}
+        {%- capture image_setting -%}image_{{ i }}{%- endcapture -%}
+
+        {%- if section.settings[image_setting] != blank -%}
+          {%- assign mobile_images_count = mobile_images_count | plus: 1 -%}
+
+          {%- capture image_heading_setting -%}image_{{ i }}_heading{%- endcapture -%}
+          {%- capture image_link_setting -%}image_{{ i }}_link{%- endcapture -%}
+
+          {%- capture image_push -%}
+            <img class="mobile-nav__image" loading="lazy" sizes="270px" {% render 'image-attributes', image: section.settings[image_setting], sizes: '270,540,810' %}>
+            {%- if section.settings[image_heading_setting] != '' -%}
+              <p class="mobile-nav__image-heading heading heading--xsmall">{{ section.settings[image_heading_setting] }}</p>
+            {%- endif -%}
+          {%- endcapture -%}
+
+          {%- if section.settings[image_link_setting] != blank -%}
+            <a href="{{ section.settings[image_link_setting] }}" class="mobile-nav__image-push">
+              {{- image_push -}}
+            </a>
+          {%- else -%}
+            <div class="mobile-nav__image-push">
+              {{- image_push -}}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {%- if mobile_menu_images != blank -%}
+      <div class="mobile-nav__images-wrapper {% if mobile_images_count >= 3 %}mobile-nav__images-wrapper--tight{% endif %} hide-scrollbar">
+        <div class="mobile-nav__images-scroller">
+          {{- mobile_menu_images -}}
+        </div>
+      </div>
+    {%- endif -%}
+
     <ul class="mobile-nav list--unstyled" role="list">
       {%- for link in menu.links -%}
         {%- assign link_title_downcase = link.title | strip | downcase -%}
