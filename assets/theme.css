@@ -15272,7 +15272,7 @@ shopify-payment-terms {
   }
 
   .text-with-icons__content-wrapper .heading + p {
-    margin-top: 16px; /* We have a slightly different spacing here */
+    margin-top: 0px !important; /* We have a slightly different spacing here */
   }
 }
 .timeline__inner {
