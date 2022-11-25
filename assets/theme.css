@@ -10422,7 +10422,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .mobile-nav .mobile-nav .mobile-nav__item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: none;
 }
 
