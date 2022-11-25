@@ -120,6 +120,14 @@
         </li>
       {%- endfor -%}
     </ul>
+
+    <ul class="mobile-secondary-nav list--unstyled" role="list">
+      {%- for link in secondary_menu.links -%}
+        <li>
+          <a href="{{ link.url }}" class="heading heading--small">{{ link.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
   </div>
 
   {%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}

@@ -374,7 +374,8 @@ MOBILE MENU DRAWER
 {%- endcomment -%}
 
 {%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}
-{%- render 'mobile-menu', menu: menu -%}
+{%- assign secondary_menu = section.settings.secondary_sidebar_navigation_menu | default: section.settings.secondary_navigation_menu -%}
+{%- render 'mobile-menu', menu: menu, secondary_menu: secondary_menu  -%}
 
 {%- comment -%}
 ------------------------------------------------------------------------------------
@@ -469,6 +470,11 @@ SEARCH DRAWER
       "id": "sidebar_navigation_menu",
       "label": "Mobile menu",
       "info": "Select a different menu for mobile sidebar. If none is set the main menu is used."
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_sidebar_navigation_menu",
+      "label": "Secondary mobile menu"
     },
     {
       "type": "header",
