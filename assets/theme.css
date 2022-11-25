@@ -15226,7 +15226,7 @@ shopify-payment-terms {
 .text-with-icons__item-left {
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding: 0 48px;
   width: 100%;
   flex: none;
@@ -15253,6 +15253,10 @@ shopify-payment-terms {
 
 .text-with-icons__dots {
   margin-top: 26px;
+}
+
+.text-with-icons__content-wrapper .heading + p {
+  margin-top: 5px !important; /* We have a slightly different spacing here */
 }
 
 @media screen and (min-width: 1000px) {
