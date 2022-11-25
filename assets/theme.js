@@ -4698,7 +4698,7 @@
         })));
         const secondaryMenu = this.querySelector(".mobile-secondary-nav");
         if (secondaryMenu) {
-          effects.push(new CustomKeyframeEffect(bottomBar, {
+          effects.push(new CustomKeyframeEffect(secondaryMenu, {
             opacity: [0, 1],
             transform: ["translateY(100%)", "translateY(0)"]
           }, {
