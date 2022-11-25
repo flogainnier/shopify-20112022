@@ -339,35 +339,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "166359917491d44821": {
-      "type": "gallery",
-      "disabled": true,
-      "blocks": {
-        "1663599174ba9d7272-1": {
-          "type": "image",
-          "settings": {
-            "caption": ""
-          }
-        },
-        "1663599174ba9d7272-2": {
-          "type": "image",
-          "settings": {
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "1663599174ba9d7272-1",
-        "1663599174ba9d7272-2"
-      ],
-      "settings": {
-        "subheading": "Subheading",
-        "title": "Gallery",
-        "show_arrows": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "16584869861542d55e": {
       "type": "text-with-icons",
       "disabled": true,
@@ -413,54 +384,6 @@
       ],
       "settings": {
         "background": "#ffffff",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "166359913316da01a7": {
-      "type": "promotion-blocks",
-      "disabled": true,
-      "blocks": {
-        "8cb2d80a-49b5-42be-8606-b61f9ea45d7a": {
-          "type": "newsletter",
-          "settings": {
-            "highlight": false,
-            "title": "Newsletter",
-            "content": "<p>Inscrivez-vous à notre newsletter et profitez de 10% de réduction sur votre première commance.<\/p>",
-            "text_position": "middle_center",
-            "background": "#ffffff",
-            "text_color": "#1a1a1a",
-            "button_background": "#1a1a1a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "16635991327223904e-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HP_bloc_NL.jpg",
-            "highlight": false,
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "middle_center",
-            "background": "#f7f8fd",
-            "text_color": "#1e316a",
-            "button_background": "#ffffff",
-            "button_text_color": "#1e316a"
-          }
-        }
-      },
-      "block_order": [
-        "8cb2d80a-49b5-42be-8606-b61f9ea45d7a",
-        "16635991327223904e-2"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "section_size": "large",
-        "stack_on_mobile": true,
-        "background": "#f5f1ec",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -536,22 +459,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "1663342446777ddcf4": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/HP_bloc_NL.jpg",
-        "subheading": "Inscription à la newsletter",
-        "content": "<p>Profitez de 10% de réduction sur votre première commandes. <\/p>",
-        "text_position": "left",
-        "text_alignment": "left",
-        "text_background": "#ffffff",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "#1a1a1a",
-        "button_text_color": "#ffffff"
-      }
-    },
     "text-with-icons": {
       "type": "text-with-icons",
       "disabled": true,
@@ -616,12 +523,9 @@
     "1663599417d7f4c1fe",
     "collection-list",
     "1656928658a00e3d02",
-    "166359917491d44821",
     "16584869861542d55e",
-    "166359913316da01a7",
     "d28194a4-5dce-4d8e-bd6b-c5037f29b857",
     "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5",
-    "1663342446777ddcf4",
     "text-with-icons"
   ]
 }
