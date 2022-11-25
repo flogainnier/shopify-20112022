@@ -5574,7 +5574,6 @@ input[type='password'] {
 .drawer__header--shadowed {
   height: auto;
   border-bottom: none;
-  padding-bottom: 6px;
 }
 
 [dir="ltr"] .drawer__header--shadowed::after {
