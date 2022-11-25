@@ -19,7 +19,7 @@
             "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
             "text_position": "middle_center",
             "subheading": "COLLECTION",
-            "title": "MADAME",
+            "title": "Madame",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -166,7 +166,7 @@
       ],
       "settings": {
         "subheading": "Bijoux MADE IN FRANCE",
-        "title": "DÉCOUVRIR",
+        "title": "Découvrir",
         "content": "",
         "products_count": 50,
         "products_per_row": 4,
