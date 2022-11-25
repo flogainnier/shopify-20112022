@@ -346,17 +346,19 @@
         "16584869867db24579-1": {
           "type": "item",
           "settings": {
+            "icon_position": "left",
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/icon_matieres_responsables.png",
             "show_icon": true,
             "custom_icon_width": 70,
             "title": "MATIÈRES ÉCO-RESPONSABLES",
-            "content": ""
+            "content": "<p>Argent recyclé<\/p>"
           }
         },
         "16584869867db24579-2": {
           "type": "item",
           "settings": {
+            "icon_position": "left",
             "icon": "picto-lock",
             "custom_icon": "shopify:\/\/shop_images\/icon_atelier.png",
             "show_icon": true,
@@ -368,6 +370,7 @@
         "16584869867db24579-3": {
           "type": "item",
           "settings": {
+            "icon_position": "left",
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/icon_programme_solidaire.png",
             "show_icon": true,
@@ -466,6 +469,7 @@
         "item-1": {
           "type": "item",
           "settings": {
+            "icon_position": "center",
             "icon": "picto-box",
             "show_icon": false,
             "custom_icon_width": 40,
@@ -476,6 +480,7 @@
         "item-2": {
           "type": "item",
           "settings": {
+            "icon_position": "center",
             "icon": "picto-phone",
             "show_icon": false,
             "custom_icon_width": 50,
@@ -486,6 +491,7 @@
         "item-3": {
           "type": "item",
           "settings": {
+            "icon_position": "center",
             "icon": "picto-lock",
             "show_icon": false,
             "custom_icon_width": 50,
@@ -496,6 +502,7 @@
         "item-4": {
           "type": "item",
           "settings": {
+            "icon_position": "center",
             "icon": "picto-email",
             "show_icon": false,
             "custom_icon_width": 50,
