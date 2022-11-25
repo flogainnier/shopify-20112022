@@ -329,6 +329,7 @@
           "navigation_menu": "main-menu",
           "secondary_navigation_menu": "secondary-menu",
           "sidebar_navigation_menu": "menu-mobile",
+          "secondary_sidebar_navigation_menu": "menu-mobile-secondaire",
           "header_layout": "logo_center_navigation_inline",
           "show_icons": true,
           "reduce_desktop_padding": true,
