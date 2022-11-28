@@ -195,11 +195,11 @@
           "type": "collection",
           "settings": {
             "collection": "bagues",
-            "image": "shopify:\/\/shop_images\/fd683a13-64a4-4f0c-b62c-5123f13c5765_Bloc_2-3.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL6.jpg",
             "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
+            "title": "Cadeaux pour Elle",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/cadeaux-pour-elle",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -209,11 +209,11 @@
           "type": "collection",
           "settings": {
             "collection": "boucles-doreilles",
-            "image": "shopify:\/\/shop_images\/e74b5fce-5418-4d3c-991c-282004d15e82_Bloc_2-7.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL2.jpg",
             "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
+            "title": "Bagues",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/bagues",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -223,11 +223,11 @@
           "type": "collection",
           "settings": {
             "collection": "colliers",
-            "image": "shopify:\/\/shop_images\/52540299-02dc-434b-9abc-9d358c8f37e9_Bloc_2-1.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL5.jpg",
             "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
+            "title": "Coffrets",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/coffrets",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -237,11 +237,11 @@
           "type": "collection",
           "settings": {
             "collection": "bracelets",
-            "image": "shopify:\/\/shop_images\/51bf18db-696d-49d5-855b-3c972543f3a0_Bloc_2-8.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL3.jpg",
             "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
+            "title": "Colliers",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/colliers",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -251,11 +251,11 @@
           "type": "collection",
           "settings": {
             "collection": "barrettes",
-            "image": "shopify:\/\/shop_images\/d7b9a96c-a835-4b51-b2cf-fecb675262dd_Bloc_2-2.jpg",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL.jpg",
             "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
+            "title": "Boucles d'oreilles",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/boucles-doreilles",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
