@@ -120,11 +120,11 @@
         "1658498460200905ad-0"
       ],
       "settings": {
-        "subheading": "",
+        "subheading": "Idées Cadeaux",
         "title": "Coffrets",
         "content": "",
         "products_count": 20,
-        "products_per_row": 5,
+        "products_per_row": 6,
         "stack_products": false,
         "show_cta": false,
         "background": "rgba(0,0,0,0)",
@@ -189,7 +189,6 @@
     },
     "collection-list": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "collection-3": {
           "type": "collection",
