@@ -131,7 +131,7 @@
           "7d51a798-10a3-4a1a-8637-3fce932d10a8"
         ],
         "settings": {
-          "announcement_bar_type": "carousel",
+          "announcement_bar_type": "countdown",
           "announcement_bar_position": "sticky",
           "announcement_text_size": "small",
           "autoplay": true,
@@ -140,7 +140,7 @@
           "line_2": "JUSQU'À -50%",
           "timer_text": "FIN DU BLACK FRIDAY DANS",
           "start_date": "2022-11-24T20:59:59.0001",
-          "end_date": "2022-11-27T23:59:59.0001",
+          "end_date": "2022-11-28T23:59:59.0001",
           "background": "#1a1a1a",
           "text_color": "#ffffff",
           "button_background": "#ffffff",
