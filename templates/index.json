@@ -260,6 +260,47 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "ce71307a-68b8-4300-b751-3a3c334f8ca4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL4.jpg",
+            "subheading": "",
+            "title": "Bracelets",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/bracelets",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "25cf214f-239f-46c7-974c-306f1c1c6a8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "0db24236-a550-46ee-95be-457312711301": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL7.jpg",
+            "subheading": "",
+            "title": "Barrettes",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/barrettes",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
@@ -267,7 +308,10 @@
         "917b563e-631a-47b7-b966-e83cade76cf0",
         "collection-1",
         "collection-2",
-        "0c62a38f-e8ec-4fb4-906b-ff59a4bbfc63"
+        "0c62a38f-e8ec-4fb4-906b-ff59a4bbfc63",
+        "ce71307a-68b8-4300-b751-3a3c334f8ca4",
+        "25cf214f-239f-46c7-974c-306f1c1c6a8a",
+        "0db24236-a550-46ee-95be-457312711301"
       ],
       "settings": {
         "reveal_on_scroll": true,
