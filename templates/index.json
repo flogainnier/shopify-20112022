@@ -279,13 +279,14 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Bloc_4_maro.jpg",
             "subheading": "",
-            "title": "",
+            "title": "Maroquinerie",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/petite-maroquinerie",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "0db24236-a550-46ee-95be-457312711301": {
