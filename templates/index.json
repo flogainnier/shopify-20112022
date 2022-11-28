@@ -106,7 +106,6 @@
       "blocks": {
         "1658498460200905ad-0": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "coffrets",
             "label": "Coffrets",
