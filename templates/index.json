@@ -189,6 +189,7 @@
     },
     "collection-list": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "collection-3": {
           "type": "collection",
