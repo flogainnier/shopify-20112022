@@ -109,8 +109,8 @@
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "best-sellers-hp",
-            "label": "BEST SELLERS",
+            "collection": "coffrets",
+            "label": "Coffrets",
             "button_text": "",
             "button_url": ""
           }
@@ -121,10 +121,10 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Best-Sellers",
+        "title": "Coffrets",
         "content": "",
-        "products_count": 10,
-        "products_per_row": 4,
+        "products_count": 20,
+        "products_per_row": 5,
         "stack_products": false,
         "show_cta": false,
         "background": "rgba(0,0,0,0)",
