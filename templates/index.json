@@ -101,6 +101,59 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "1658498460c35802eb": {
+      "type": "featured-collections",
+      "blocks": {
+        "1658498460200905ad-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "coffrets",
+            "label": "Coffrets",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1658498460200905ad-0"
+      ],
+      "settings": {
+        "subheading": "Idées Cadeaux",
+        "title": "Coffrets",
+        "content": "",
+        "products_count": 20,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1663599417d7f4c1fe": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/Bloc_astro_HP.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Bloc_3_astro_mobile_HP.jpg",
+        "subheading": "ASTRO",
+        "title": "Trouvez votre signe",
+        "content": "<p><em>Quelque soit votre signe astrologique, ce bijou intemporel mettra en lumière la part mystérimystérieuse de votre personnalité.<\/em> <\/p>",
+        "button_text": "Découvrir",
+        "button_link": "shopify:\/\/products\/collier-astro-lion",
+        "background_type": "full_width",
+        "text_position": "right",
+        "text_alignment": "center",
+        "mobile_content_position": "over",
+        "text_background": "#ffffff",
+        "mobile_text_background": "rgba(0,0,0,0)",
+        "text_color": "#1a1a1a",
+        "mobile_text_color": "rgba(0,0,0,0)",
+        "button_background": "#1a1a1a",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -236,36 +289,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "1658498460c35802eb": {
-      "type": "featured-collections",
-      "blocks": {
-        "1658498460200905ad-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "coffrets",
-            "label": "Coffrets",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "1658498460200905ad-0"
-      ],
-      "settings": {
-        "subheading": "Idées Cadeaux",
-        "title": "Coffrets",
-        "content": "",
-        "products_count": 20,
-        "products_per_row": 4,
-        "stack_products": false,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "43c63689-22c1-4d87-8c7d-321239627670": {
       "type": "featured-collections",
       "disabled": true,
@@ -294,30 +317,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "1663599417d7f4c1fe": {
-      "type": "image-with-text-block",
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/Bloc_astro_HP.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Bloc_3_astro_mobile_HP.jpg",
-        "subheading": "ASTRO",
-        "title": "Trouvez votre signe",
-        "content": "<p><em>Quelque soit votre signe astrologique, ce bijou intemporel mettra en lumière la part mystérimystérieuse de votre personnalité.<\/em> <\/p>",
-        "button_text": "Découvrir",
-        "button_link": "shopify:\/\/products\/collier-astro-lion",
-        "background_type": "full_width",
-        "text_position": "right",
-        "text_alignment": "center",
-        "mobile_content_position": "over",
-        "text_background": "#ffffff",
-        "mobile_text_background": "rgba(0,0,0,0)",
-        "text_color": "#1a1a1a",
-        "mobile_text_color": "rgba(0,0,0,0)",
-        "button_background": "#1a1a1a",
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
@@ -603,10 +602,10 @@
   },
   "order": [
     "slideshow",
-    "collection-list",
     "1658498460c35802eb",
-    "43c63689-22c1-4d87-8c7d-321239627670",
     "1663599417d7f4c1fe",
+    "collection-list",
+    "43c63689-22c1-4d87-8c7d-321239627670",
     "1656928658a00e3d02",
     "c681fb54-1266-4645-a97a-858f7abb574c",
     "16584869861542d55e",
