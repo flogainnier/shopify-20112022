@@ -289,6 +289,41 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "c681fb54-1266-4645-a97a-858f7abb574c": {
+      "type": "scroll-ticker",
+      "blocks": {
+        "d3b6df46-b30e-4652-83ec-74a510d536c4": {
+          "type": "item",
+          "settings": {
+            "title": "Une bougie offerte à partir de 99€ d'achat",
+            "url": ""
+          }
+        },
+        "7c428808-a8a7-4412-951b-fd24ed670232": {
+          "type": "item",
+          "settings": {
+            "title": "Retours prolongés jusqu'au 3 janvier 2023",
+            "url": ""
+          }
+        },
+        "32df7317-068b-4bd9-84fa-c7d6ee026d3b": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite à partir de 79€",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d3b6df46-b30e-4652-83ec-74a510d536c4",
+        "7c428808-a8a7-4412-951b-fd24ed670232",
+        "32df7317-068b-4bd9-84fa-c7d6ee026d3b"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "43c63689-22c1-4d87-8c7d-321239627670": {
       "type": "featured-collections",
       "disabled": true,
@@ -381,41 +416,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "c681fb54-1266-4645-a97a-858f7abb574c": {
-      "type": "scroll-ticker",
-      "blocks": {
-        "d3b6df46-b30e-4652-83ec-74a510d536c4": {
-          "type": "item",
-          "settings": {
-            "title": "Une bougie offerte à partir de 99€ d'achat",
-            "url": ""
-          }
-        },
-        "7c428808-a8a7-4412-951b-fd24ed670232": {
-          "type": "item",
-          "settings": {
-            "title": "Retours prolongés jusqu'au 3 janvier 2023",
-            "url": ""
-          }
-        },
-        "32df7317-068b-4bd9-84fa-c7d6ee026d3b": {
-          "type": "item",
-          "settings": {
-            "title": "Livraison gratuite à partir de 79€",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "d3b6df46-b30e-4652-83ec-74a510d536c4",
-        "7c428808-a8a7-4412-951b-fd24ed670232",
-        "32df7317-068b-4bd9-84fa-c7d6ee026d3b"
-      ],
-      "settings": {
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "16584869861542d55e": {
       "type": "text-with-icons",
       "blocks": {
@@ -468,7 +468,6 @@
     },
     "d28194a4-5dce-4d8e-bd6b-c5037f29b857": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0": {
           "type": "collection",
@@ -541,7 +540,6 @@
     },
     "text-with-icons": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "item-1": {
           "type": "item",
@@ -605,9 +603,9 @@
     "1658498460c35802eb",
     "1663599417d7f4c1fe",
     "collection-list",
+    "c681fb54-1266-4645-a97a-858f7abb574c",
     "43c63689-22c1-4d87-8c7d-321239627670",
     "1656928658a00e3d02",
-    "c681fb54-1266-4645-a97a-858f7abb574c",
     "16584869861542d55e",
     "d28194a4-5dce-4d8e-bd6b-c5037f29b857",
     "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5",
