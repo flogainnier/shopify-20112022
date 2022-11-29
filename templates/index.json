@@ -468,6 +468,7 @@
     },
     "d28194a4-5dce-4d8e-bd6b-c5037f29b857": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0": {
           "type": "collection",
@@ -540,6 +541,7 @@
     },
     "text-with-icons": {
       "type": "text-with-icons",
+      "disabled": true,
       "blocks": {
         "item-1": {
           "type": "item",
