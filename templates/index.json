@@ -30,7 +30,7 @@
             "only_customer": false,
             "image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_VF.jpg",
             "mobile_image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_MOBILE_VF.jpg",
-            "text_position": "bottom_left",
+            "text_position": "middle_center",
             "subheading": "Nouveautés",
             "title": "Madame",
             "button_1_text": "Découvrir",
