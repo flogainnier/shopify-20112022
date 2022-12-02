@@ -3046,7 +3046,7 @@
       if (!this.hasAttribute("use-automatic-recommendations")) {
         return;
       }
-      const response = await fetch(`${window.themeVariables.routes.productRecommendationsUrl}?product_id=${this.productId}&q=${this.tags}&limit=${this.recommendationsCount}&section_id=${this.sectionId}`);
+      const response = await fetch(`${window.themeVariables.routes.productRecommendationsUrl}?product_id=${this.productId}&limit=${this.recommendationsCount}&section_id=${this.sectionId}`);
       const div = document.createElement("div");
       div.innerHTML = await response.text();
       const productRecommendationsElement = div.querySelector("product-recommendations");
@@ -3087,12 +3087,6 @@
       const items = JSON.parse(localStorage.getItem("theme:recently-viewed-products") || "[]");
       if (this.hasAttribute("exclude-product-id") && items.includes(parseInt(this.getAttribute("exclude-product-id")))) {
         items.splice(items.indexOf(parseInt(this.getAttribute("exclude-product-id"))), 1);
-      }
-      if (this.hasAttribute("tags")) {
-        const fetch_items = items.map((item) => "id:" + item).slice(0, this.productsCount).join(" OR ");
-        return fetch_items + " AND " + this.getAttribute("tags")
-      } else {
-        return items.map((item) => "id:" + item).slice(0, this.productsCount).join(" OR ");
       }
     }
     get sectionId() {

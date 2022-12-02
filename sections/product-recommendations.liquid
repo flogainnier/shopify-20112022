@@ -49,8 +49,7 @@
 </style>
 
 <product-recommendations section-id="{{ section.id }}" tags="{{ section.settings.filter_tag }}" product-id="{{ product.id }}" {% if use_recommendations %}use-automatic-recommendations recommendations-count="{{ section.settings.recommendations_count }}"{% endif %} class="section {% unless blends_with_background %}section--flush{% endunless %}">
-  {% assign reco_products = recommendations.products | where: "tags", "Shop" %}
-  {%- if section.settings.products.count > 4 or recommendations.performed and reco_products > 4 -%}
+  {%- if section.settings.products.count > 4 or recommendations.performed and recommendations.products.size > 4 -%}
     <div class="section__color-wrapper">
       <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
         {%- if section.settings.title != blank or section.settings.subheading != blank -%}
@@ -78,10 +77,10 @@
                   {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
 
                   {%- capture sizes_attribute -%}(max-width: 740px) 75vw, min({{ 100.0 | divided_by: 4 | ceil }}vw, {{ 1520.0 | divided_by: 4 | ceil }}px){%- endcapture -%}
-                  {%- if product.tags contains "Shop" %}
+                  {%- unless product.tags contains "noreco" %}
                     {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
                     {%- assign recount = recount | plus: 1 %}
-                  {%- endif -%}
+                  {%- endunless -%}
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in section.settings.products -%}
