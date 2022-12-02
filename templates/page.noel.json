@@ -258,10 +258,10 @@
     },
     "0240c335-9f22-432a-a226-51078d95d4f0": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_5.jpg",
@@ -278,9 +278,9 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Collection_list_Madame_2.jpg",
+            "image": "shopify:\/\/shop_images\/Collection_list_Madame_1.jpg",
             "subheading": "",
-            "title": "",
+            "title": "CADEAUX POUR VOTRE MAMAN",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -294,7 +294,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_4.jpg",
             "subheading": "",
-            "title": "",
+            "title": "CADEAUX POUR UNE AMIE",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -308,7 +308,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_11.jpg",
             "subheading": "",
-            "title": "",
+            "title": "CADEAUX POUR ELLE",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -318,6 +318,7 @@
         },
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_7.jpg",
@@ -332,6 +333,7 @@
         },
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-5": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_1.jpg",
@@ -346,6 +348,7 @@
         },
         "368ba603-8855-4538-863a-0f8ca3fb038e": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_9.jpg",
@@ -360,6 +363,7 @@
         },
         "6b91b9ee-0708-4f95-a148-0cf4b80b2b7f": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_3.jpg",
@@ -374,6 +378,7 @@
         },
         "b3cd84f2-603b-4118-aea8-7be3303780b0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_6.jpg",
@@ -388,6 +393,7 @@
         },
         "34b41122-51d8-40a3-9366-fb0aba917491": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_10_d9b79092-9e52-4033-b279-5d4bccbc3656.jpg",
@@ -402,6 +408,7 @@
         },
         "592a4997-869a-480d-8c4a-7c9464c3944b": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_8.jpg",
@@ -433,28 +440,8 @@
         "layout": "grid",
         "subheading": "",
         "title": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "e8b32ffb-ac95-41e3-927b-4184e8398e30": {
-      "type": "press",
-      "blocks": {
-        "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0": {
-          "type": "item",
-          "settings": {
-            "logo_width": 100,
-            "content": "Write some content about what they are saying about your store."
-          }
-        }
-      },
-      "block_order": [
-        "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
+        "background": "#1e3d21",
+        "text_color": "#ffffff"
       }
     },
     "9bfc74df-181d-47c5-a154-5c138c97491b": {
@@ -464,8 +451,9 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/BLOC_4_HP_NOEL5.jpg",
             "subheading": "",
-            "title": "",
+            "title": "COFFRET",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -501,6 +489,7 @@
         },
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-3": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "subheading": "",
@@ -514,6 +503,7 @@
         },
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "subheading": "",
@@ -527,6 +517,7 @@
         },
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-5": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "subheading": "",
@@ -550,8 +541,28 @@
       "settings": {
         "reveal_on_scroll": false,
         "layout": "collage",
-        "subheading": "Subheading",
-        "title": "Collection list",
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e8b32ffb-ac95-41e3-927b-4184e8398e30": {
+      "type": "press",
+      "blocks": {
+        "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0": {
+          "type": "item",
+          "settings": {
+            "logo_width": 100,
+            "content": "Write some content about what they are saying about your store."
+          }
+        }
+      },
+      "block_order": [
+        "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -565,7 +576,7 @@
     "16638600383ac29a23",
     "1663859928b1090ac6",
     "0240c335-9f22-432a-a226-51078d95d4f0",
-    "e8b32ffb-ac95-41e3-927b-4184e8398e30",
-    "9bfc74df-181d-47c5-a154-5c138c97491b"
+    "9bfc74df-181d-47c5-a154-5c138c97491b",
+    "e8b32ffb-ac95-41e3-927b-4184e8398e30"
   ]
 }
