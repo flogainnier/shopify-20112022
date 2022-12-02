@@ -415,7 +415,7 @@
             "icon_position": "left",
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/icon_matieres_responsables.png",
-            "show_icon": false,
+            "show_icon": true,
             "custom_icon_width": 70,
             "title": "MATIÈRES ÉCO-RESPONSABLES",
             "content": ""
@@ -427,7 +427,7 @@
             "icon_position": "left",
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/icon_atelier.png",
-            "show_icon": false,
+            "show_icon": true,
             "custom_icon_width": 70,
             "title": "FABRICATION française ET ARTISANALE",
             "content": ""
@@ -439,7 +439,7 @@
             "icon_position": "left",
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/icon_programme_solidaire.png",
-            "show_icon": false,
+            "show_icon": true,
             "custom_icon_width": 70,
             "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
             "content": ""
