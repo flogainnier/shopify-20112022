@@ -132,7 +132,7 @@
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
-        "text_width": "large",
+        "text_width": "medium",
         "text_position": "left",
         "text_alignment": "left",
         "background": "rgba(0,0,0,0)",
