@@ -71,13 +71,15 @@
 
           <div class="scroller">
             <div class="product-list__inner product-list__inner--scroller hide-scrollbar">
+              {%- assign recount = 0 %}
               {%- if use_recommendations -%}
                 {%- for product in recommendations.products -%}
                   {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
 
                   {%- capture sizes_attribute -%}(max-width: 740px) 75vw, min({{ 100.0 | divided_by: 4 | ceil }}vw, {{ 1520.0 | divided_by: 4 | ceil }}px){%- endcapture -%}
-                  {%- unless product.tags contains "Archives" %}
+                  {%- if product.tags contains "Shop" %}
                     {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
+                    {%- assign recount = recount | plus: 1 %}
                   {%- endunless -%}
                 {%- endfor -%}
               {%- else -%}
@@ -86,18 +88,18 @@
 
                   {%- capture sizes_attribute -%}(max-width: 740px) 75vw, min({{ 100.0 | divided_by: 4 | ceil }}vw, {{ 1520.0 | divided_by: 4 | ceil }}px){%- endcapture -%}
                   {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
+                  {%- assign recount = recount | plus: 1 %}
                 {%- endfor -%}
               {%- endif -%}
             </div>
           </div>
 
-          {%- if recommendations.products_count > 4 or section.settings.products.count > 4 -%}
+          {%- if recount > 4 -%}
             <prev-next-buttons class="product-list__prev-next hidden-pocket" style="--smallest-image-aspect-ratio: {{ smallest_image_aspect_ratio }}">
               <button class="product-list__arrow prev-next-button prev-next-button--prev" disabled data-action="prev">
                 <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
                 {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
               </button>
-
               <button class="product-list__arrow prev-next-button prev-next-button--next" data-action="next">
                 <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
                 {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
