@@ -29,7 +29,7 @@
 
                 {%- assign matching_product = cart.items | where: 'product_id', product.id -%}
 
-                {%- if matching_product.size == 0 -%}
+                {%- if matching_product.size == 0 and product.tags contains "Shop" -%}
                   {%- assign shown_products_count = shown_products_count | plus: 1 -%}
                   {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, hide_secondary_image: true, show_cta: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
                 {%- endif -%}
