@@ -15,7 +15,7 @@
           "settings": {
             "only_customer": false,
             "image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_VF.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_MOBILE_VF.jpg",
             "text_position": "middle_center",
             "subheading": "GUIDE",
             "title": "CADEAUX DE NOEL",
@@ -183,14 +183,14 @@
       "type": "rich-text",
       "settings": {
         "subheading": "",
-        "title": "IDÉES CADEAUX",
-        "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/><\/p>",
+        "title": "TROUVER LE CADEAUX IDÉAL",
+        "content": "<p>Noël approche à grand pas et quoi de mieux que de trouver le cadeau idéal pour une femme authentique et inspirante. Symbole d’élégance et d'engagement, nos bijoux en or 3 microns ou en argent massif 925 recyclé made in France sont faits pour célévrer les femmes au quotidien.<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
         "text_width": "large",
-        "text_position": "center",
-        "text_alignment": "center",
+        "text_position": "left",
+        "text_alignment": "left",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
@@ -360,7 +360,6 @@
         },
         "6b91b9ee-0708-4f95-a148-0cf4b80b2b7f": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_3.jpg",
@@ -375,7 +374,6 @@
         },
         "b3cd84f2-603b-4118-aea8-7be3303780b0": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_6.jpg",
@@ -390,7 +388,6 @@
         },
         "34b41122-51d8-40a3-9366-fb0aba917491": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_10_d9b79092-9e52-4033-b279-5d4bccbc3656.jpg",
