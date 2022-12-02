@@ -387,6 +387,7 @@
     },
     "e8b32ffb-ac95-41e3-927b-4184e8398e30": {
       "type": "press",
+      "disabled": true,
       "blocks": {
         "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0": {
           "type": "item",
@@ -401,6 +402,54 @@
       ],
       "settings": {
         "reveal_on_scroll": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "f1b0272a-c560-4737-9e88-b5ab65f5c067": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-0": {
+          "type": "item",
+          "settings": {
+            "icon_position": "left",
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/icon_matieres_responsables.png",
+            "show_icon": false,
+            "custom_icon_width": 70,
+            "title": "MATIÈRES ÉCO-RESPONSABLES",
+            "content": ""
+          }
+        },
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-1": {
+          "type": "item",
+          "settings": {
+            "icon_position": "left",
+            "icon": "picto-email",
+            "show_icon": false,
+            "custom_icon_width": 70,
+            "title": "FABRICATION française ET ARTISANALE",
+            "content": ""
+          }
+        },
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-2": {
+          "type": "item",
+          "settings": {
+            "icon_position": "left",
+            "icon": "picto-email",
+            "show_icon": false,
+            "custom_icon_width": 70,
+            "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-0",
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-1",
+        "template--16640438436070__f1b0272a-c560-4737-9e88-b5ab65f5c067-16699994387115f966-2"
+      ],
+      "settings": {
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -574,6 +623,7 @@
     "1663859928b1090ac6",
     "0240c335-9f22-432a-a226-51078d95d4f0",
     "e8b32ffb-ac95-41e3-927b-4184e8398e30",
+    "f1b0272a-c560-4737-9e88-b5ab65f5c067",
     "1663859615c1a9ffe1",
     "9bfc74df-181d-47c5-a154-5c138c97491b"
   ]
