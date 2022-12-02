@@ -211,7 +211,7 @@
                 {%- endif -%}
 
                 <line-item-quantity class="line-item__quantity" data-variant-id="{{ line_item.variant_id }}" data-key="{{ line_item.key }}">
-                  {%- if line_item.variant_id != 43465471328486 or line_item.variant_id != 43555436626150 -%}
+                  {%- if line_item.variant_id != 43465471328486 and line_item.variant_id != 43555436626150 -%}
                     <div class="quantity-selector quantity-selector--small">
                       <a href="{{ routes.cart_change_url }}?quantity={{ line_item.quantity | minus: 1 }}&line={{ forloop.index }}" class="quantity-selector__button" aria-label="{{ 'cart.general.decrease_quantity' | t | escape }}" data-no-instant>
                         {%- render 'icon' with 'minus' -%}
