@@ -425,7 +425,8 @@
           "type": "item",
           "settings": {
             "icon_position": "left",
-            "icon": "picto-email",
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/icon_atelier.png",
             "show_icon": false,
             "custom_icon_width": 70,
             "title": "FABRICATION française ET ARTISANALE",
@@ -436,7 +437,8 @@
           "type": "item",
           "settings": {
             "icon_position": "left",
-            "icon": "picto-email",
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/icon_programme_solidaire.png",
             "show_icon": false,
             "custom_icon_width": 70,
             "title": "UN PROGRAMME SOLIDAIRE UNIQUE",
