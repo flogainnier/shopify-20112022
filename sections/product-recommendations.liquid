@@ -80,7 +80,7 @@
                   {%- if product.tags contains "Shop" %}
                     {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
                     {%- assign recount = recount | plus: 1 %}
-                  {%- endunless -%}
+                  {%- endif -%}
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in section.settings.products -%}
