@@ -49,7 +49,8 @@
 </style>
 
 <product-recommendations section-id="{{ section.id }}" tags="{{ section.settings.filter_tag }}" product-id="{{ product.id }}" {% if use_recommendations %}use-automatic-recommendations recommendations-count="{{ section.settings.recommendations_count }}"{% endif %} class="section {% unless blends_with_background %}section--flush{% endunless %}">
-  {%- if section.settings.products.count > 4 or recommendations.performed and recommendations.products.size > 4 -%}
+  {% assign reco_products = recommendations.products | where: "tags", "Shop" %}
+  {%- if section.settings.products.count > 4 or recommendations.performed and reco_products > 4 -%}
     <div class="section__color-wrapper">
       <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
         {%- if section.settings.title != blank or section.settings.subheading != blank -%}
