@@ -280,7 +280,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_2.jpg",
             "subheading": "",
-            "title": "COFFRETS",
+            "title": "CADEAUX POUR UNE AMIE",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -294,7 +294,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_4.jpg",
             "subheading": "",
-            "title": "CADEAUX POUR UNE AMIE",
+            "title": "COFFRETS",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -360,6 +360,7 @@
         },
         "6b91b9ee-0708-4f95-a148-0cf4b80b2b7f": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_3.jpg",
@@ -374,6 +375,7 @@
         },
         "b3cd84f2-603b-4118-aea8-7be3303780b0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_6.jpg",
@@ -388,6 +390,7 @@
         },
         "34b41122-51d8-40a3-9366-fb0aba917491": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_10_d9b79092-9e52-4033-b279-5d4bccbc3656.jpg",
