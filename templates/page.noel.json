@@ -14,11 +14,11 @@
           "type": "image",
           "settings": {
             "only_customer": false,
-            "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL_54360ab7-78f2-4a5d-85de-dbfdf808fa24.jpg",
+            "image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_VF.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
             "text_position": "middle_center",
-            "subheading": "COLLECTION",
-            "title": "MADAME",
+            "subheading": "GUIDE",
+            "title": "CADEAUX DE NOEL",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -182,9 +182,9 @@
     "16638600383ac29a23": {
       "type": "rich-text",
       "settings": {
-        "subheading": "histoire",
-        "title": "BIJOUX MADAME",
-        "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/>Auteurs, scientifiques, philosophes, politiciennes, pilotes ou encore artistes, toutes ces femmes ont participé à l'évolution de la place de la femme dans notre société. À travers cette collection nous souhaitions rendre hommage à toute ces femmes en la nommant : Madame. <br\/>Chacune de nos créations s'en inspirent et portent le prénom d'une pionnière qui a participé à améliorer notre monde.<\/p>",
+        "subheading": "",
+        "title": "IDÉES CADEAUX",
+        "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/><\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
@@ -318,12 +318,11 @@
         },
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-4": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_7.jpg",
             "subheading": "",
-            "title": "",
+            "title": "AMOUREUSE DE L'ARGENT",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -333,12 +332,11 @@
         },
         "template--16635215577318__0240c335-9f22-432a-a226-51078d95d4f0-166876215004cd1794-5": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_1.jpg",
             "subheading": "",
-            "title": "",
+            "title": "AMOUREUSE DE L'OR",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -348,12 +346,11 @@
         },
         "368ba603-8855-4538-863a-0f8ca3fb038e": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Collection_list_Madame_9.jpg",
             "subheading": "",
-            "title": "",
+            "title": "COFFRETS",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -440,12 +437,13 @@
         "layout": "grid",
         "subheading": "",
         "title": "",
-        "background": "#1e3d21",
+        "background": "#2a3d2c",
         "text_color": "#ffffff"
       }
     },
     "9bfc74df-181d-47c5-a154-5c138c97491b": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-0": {
           "type": "collection",
