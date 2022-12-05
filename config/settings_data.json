@@ -534,6 +534,24 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "15037621279992766403": {
+        "type": "shopify:\/\/apps\/alma-widget\/blocks\/app-embed\/4f38fc15-ea4e-44b3-96e0-0c0f2daa413f",
+        "disabled": true,
+        "settings": {
+          "merchantId": "",
+          "badgeDisplayedOnProduct": true,
+          "badgeDisplayedOnCart": false,
+          "testMode": false,
+          "customStyleProduct": "",
+          "customStyleCart": "",
+          "productPositionSelector": "",
+          "cartPositionSelector": "",
+          "quantityPositionSelector": "",
+          "dynamicCartPriceSelector": "",
+          "badgePlans": "",
+          "featureFlags": ""
+        }
       }
     }
   },
