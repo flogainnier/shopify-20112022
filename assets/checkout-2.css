@@ -450,13 +450,14 @@ ol {
 	}
 
 	.sidebar__mini-cart-icon {
-		display: block
+		display: flex;
+		align-items: center;
 	}
 
 	.sidebar__mini-cart-icon .icon--cart {
 		width: 24px;
 		height: 24px;
-		margin-right: 1px;
+		margin-right: 5px;
 		stroke: #1b2c13;
 		fill: none
 	}
