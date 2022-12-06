@@ -1166,7 +1166,7 @@ ol {
 	align-items: center;
 	text-transform: uppercase;
 	margin-bottom: 0.9375rem;
-	font-size: 11px;
+	font-size: 0.8571428571em;
   line-height: 12px;
 	letter-spacing: 1.5px;
 }
