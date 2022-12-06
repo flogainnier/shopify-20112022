@@ -454,7 +454,8 @@ ol {
 		align-items: center;
 	}
 
-	.sidebar__mini-cart-icon .icon--cart {
+	.sidebar__mini-cart-icon .icon--cart,
+	.sidebar__mini-cart-icon .icon--header-cart {
 		width: 24px;
 		height: 24px;
 		margin-right: 5px;
