@@ -320,7 +320,9 @@
         "32df7317-068b-4bd9-84fa-c7d6ee026d3b"
       ],
       "settings": {
-        "background": "#1a1a1a",
+        "duration": 40,
+        "breather": 40,
+        "background": "#2a3d2c",
         "text_color": "#ffffff"
       }
     },
