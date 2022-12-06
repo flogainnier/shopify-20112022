@@ -557,6 +557,13 @@
       "return_description": "En France métropolitaine sans minimum d'achat",
       "repair_title": "Politique anti-casse",
       "repair_description": "Bijou reçu cassé ? On s'occupe de vous"
+    },
+    "reinsurance": {
+      "question": "Une question ?",
+      "delivery": "Livraison gratuite dès 79€ d'achats",
+      "return": "Retours gratuits en France métropolitaine sous 30 jours",
+      "ecology": "Expédition écologique",
+      "customer": "Plus de 50 000 client(e)s nous font confiance"
     }
   }
 }

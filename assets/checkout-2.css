@@ -1146,3 +1146,23 @@ ol {
 .section--contact-information .section__header .layout-flex__item>span {
   display: none;
 }
+
+/* Reassurance */
+
+.sidebar__reassurance {
+	margin-top: 20px;
+	border: 2px solid #D1D5DA;
+	padding: 0.9375rem;
+}
+
+.sidebar__reassurance p {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	margin-bottom: 0.9375rem;
+}
+
+.sidebar__reassurance img {
+	margin-right: 0.625rem;
+}
+

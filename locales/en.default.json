@@ -557,6 +557,13 @@
       "return_description": "In France with no minimum purchase",
       "repair_title": "Anti-breakage policy",
       "repair_description": "Jewelry received broken ? We take care of you"
+    },
+    "reinsurance": {
+      "question": "Any questions?",
+      "delivery": "Free delivery from 79€ onwards",
+      "return": "Free returns in France within 30 days",
+      "ecology": "Green shipping",
+      "customer": "More than 50,000 customers trust us"
     }
   },
   "shopify": {
