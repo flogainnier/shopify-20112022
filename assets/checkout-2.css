@@ -336,6 +336,12 @@ ol {
 
 /* Sidebar */
 
+@media (min-width: 1000px) {
+	.order-summary__sections {
+		height: auto !important;
+	}
+}
+
 @media screen and (max-width:999px) {
   
   .order-summary {
@@ -1169,5 +1175,6 @@ ol {
 	margin-right: 0.625rem;
 	width: 15px;
 	height: 15px;
+	fill: #333333;
 }
 
