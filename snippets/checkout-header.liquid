@@ -21,7 +21,7 @@
       {% if checkout.order_id %}
         {{ 'custom_checkout.header.your_order' | t }}
       {% else %}
-        {{ 'custom_checkout.header.your_cart' | t }}
+        {{ 'custom_checkout.header.your_cart' | t }} - {{ checkout.total_price | money }}
       {% endif %}
     </span>
     <span class="header__mini-cart-discount-title hidden-lap-and-up">
