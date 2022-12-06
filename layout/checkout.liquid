@@ -153,9 +153,7 @@
                   {% endif %}
                 </p>
                 <span class="sidebar__mini-cart-icon">
-                  <svg class="icon icon--cart" viewBox="0 0 24 24" fill="none">
-                    <path d="M4.582 17.507L6 9h12l1.418 8.507A3 3 0 0116.458 21H7.542a3 3 0 01-2.959-3.493zM15 6a3 3 0 10-6 0" stroke="#1B2C13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
+                  {%- render 'icon' with 'header-cart' -%}
                   <span class="sidebar__mini-cart-count">
                     <span class="sidebar__mini-cart-item-count">{{ total_item_count }}</span>
                   </span>

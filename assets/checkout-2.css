@@ -216,7 +216,8 @@ ol {
 }
 
 .header__mini-cart-icon {
-	display: block
+	display: flex;
+	align-items: center;
 }
 
 .header__mini-cart-icon .icon--cart {
