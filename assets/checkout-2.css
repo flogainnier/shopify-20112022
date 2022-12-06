@@ -1160,9 +1160,14 @@ ol {
 	align-items: center;
 	text-transform: uppercase;
 	margin-bottom: 0.9375rem;
+	font-size: 11px;
+  line-height: 12px;
+	letter-spacing: 1.5px;
 }
 
 .sidebar__reassurance img {
 	margin-right: 0.625rem;
+	width: 15px;
+	height: 15px;
 }
 
