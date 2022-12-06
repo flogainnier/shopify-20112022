@@ -17,7 +17,8 @@
     --heading-color: {{ heading_color.red }}, {{ heading_color.green }}, {{ heading_color.blue }};
     --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
-    --vertical-breather: 40px; /* Inner spacing is smaller on this section */
+    --vertical-breather: {{ section.settings.breather }}; /* Inner spacing is smaller on this section */
+    --ticker-animation-duration: {{ section.settings.duration }};
   }
 
   @keyframes ticker {
@@ -74,7 +75,7 @@
   }
 </style>
 
-<div class="scroll-ticker " style="--ticker-bg-color: #000000;--ticker-title-color: #ffffff;--ticker-animation-duration: 25s;">
+<div class="scroll-ticker">
 	<div class="ticker-wrap">
 		<div class="ticker">
       {%- if section.blocks.size > 1 -%}
@@ -114,6 +115,24 @@
     }
   ],
   "settings": [
+    {
+      "type": "range",
+      "id": "duration",
+      "label": "Duration",
+      "min": 10,
+      "max": 90,
+      "step": 5,
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "breather",
+      "label": "Vertical breather",
+      "min": 10,
+      "max": 100,
+      "step": 10,
+      "default": 40
+    },
     {
       "type": "color",
       "id": "background",
