@@ -15873,7 +15873,8 @@ textarea:focus.mini-cart__message-textarea {
 
   .footer__bottom-links {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap
+    justify-content: center;
     list-style: none;
     color: rgba(var(--footer-text-color), 0.7);
     margin-bottom: 0px !important;
@@ -15882,7 +15883,7 @@ textarea:focus.mini-cart__message-textarea {
   }
   
   .footer__bottom-links--item {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
 }
