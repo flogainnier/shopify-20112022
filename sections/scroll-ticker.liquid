@@ -18,7 +18,7 @@
     --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
     --vertical-breather: {{ section.settings.breather }}; /* Inner spacing is smaller on this section */
-    --ticker-animation-duration: {{ section.settings.duration }};
+    --ticker-animation-duration: {{ section.settings.duration }}s;
   }
 
   @keyframes ticker {
@@ -60,7 +60,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: var(--ticker-animation-duration)s;
+    animation-duration: var(--ticker-animation-duration);
   }
 
   .ticker-wrap .ticker__item {
