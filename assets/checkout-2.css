@@ -456,8 +456,8 @@ ol {
 
 	.sidebar__mini-cart-icon .icon--cart,
 	.sidebar__mini-cart-icon .icon--header-cart {
-		width: 24px;
-		height: 24px;
+		width: 20px;
+		height: 20px;
 		margin-right: 5px;
 		stroke: #1b2c13;
 		fill: none
