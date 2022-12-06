@@ -537,9 +537,9 @@
       },
       "15037621279992766403": {
         "type": "shopify:\/\/apps\/alma-widget\/blocks\/app-embed\/4f38fc15-ea4e-44b3-96e0-0c0f2daa413f",
-        "disabled": true,
+        "disabled": false,
         "settings": {
-          "merchantId": "",
+          "merchantId": "11vigE41YI7j3iKitiTqOx4Kb9SJdHQKGl",
           "badgeDisplayedOnProduct": true,
           "badgeDisplayedOnCart": false,
           "testMode": false,
@@ -549,7 +549,7 @@
           "cartPositionSelector": "",
           "quantityPositionSelector": "",
           "dynamicCartPriceSelector": "",
-          "badgePlans": "",
+          "badgePlans": "{ installmentsCount: 3, minAmount: 10000, maxAmount: 200000 },",
           "featureFlags": ""
         }
       }
