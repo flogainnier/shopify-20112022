@@ -3,10 +3,165 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "047fb6a6-437a-4e5d-adad-c83e405d072b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16650142023910__047fb6a6-437a-4e5d-adad-c83e405d072b-1670422618564faa45-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mockup_Vitrine.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Cool Girls Wear...",
+            "content": "<p>Sont très heureuses de vous annoncer que <strong>la boutique de 17h10<\/strong>, nous accueille avec <strong>Les Sublimes<\/strong> et <strong>Je ne sais quoi <\/strong>pour un Pop Up des plus festifs.<\/p><p><strong>L'équipes Aglaia et sa créatrice <\/strong>auront le plaisir de vou<em>s <\/em>présenter sa<strong> sélection cadeaux<\/strong> pour Noël.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16650142023910__047fb6a6-437a-4e5d-adad-c83e405d072b-1670422618564faa45-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "image_size": "medium",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "7b2f5c50-c29d-4884-8ef0-a01217ab252a": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-0": {
+          "type": "item",
+          "settings": {
+            "icon_position": "center",
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Plan_de_travail_2_copie_3_25ac2dc4-6523-483e-80eb-33e4ca671735.png",
+            "show_icon": true,
+            "custom_icon_width": 100,
+            "title": "Du 14 au 18 décembre 2022",
+            "content": ""
+          }
+        },
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-1": {
+          "type": "item",
+          "settings": {
+            "icon_position": "center",
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Plan_de_travail_2_fcc92f9a-34ec-437d-95b2-e9972342d6ad.png",
+            "show_icon": true,
+            "custom_icon_width": 95,
+            "title": "de 11h à 20h sauf le mercredi de 11h à 19h",
+            "content": ""
+          }
+        },
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-2": {
+          "type": "item",
+          "settings": {
+            "icon_position": "center",
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Plan_de_travail_2_copie_6cfef103-244a-4483-b64c-192d3a8b2bee.png",
+            "show_icon": true,
+            "custom_icon_width": 90,
+            "title": "36 rue de sévigné,75003 métro saint-paul, chemin vert",
+            "content": ""
+          }
+        },
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-3": {
+          "type": "item",
+          "settings": {
+            "icon_position": "center",
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Plan_de_travail_2_copie_2_60e1a653-0652-4610-a93f-2fd5e80c365a.png",
+            "show_icon": true,
+            "custom_icon_width": 90,
+            "title": "01.73.70.95.22",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-0",
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-1",
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-2",
+        "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-3"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d3447838-56ec-4ecb-8803-9e20c487e91b": {
+      "type": "gallery",
+      "blocks": {
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AGLAIA_NOEL9242.jpg",
+            "caption": ""
+          }
+        },
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AGLAIA-STUDIO-29691.jpg",
+            "caption": ""
+          }
+        },
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AGLAIA_NOEL8993.jpg",
+            "caption": ""
+          }
+        },
+        "a453c099-9105-43a9-94c3-375ffaece686": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30_SEPTEMBRE-300.jpg",
+            "caption": ""
+          }
+        },
+        "681cf2bd-2af8-4a61-b57e-efbbacc31bc9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AGLAIA_NOEL9355.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-0",
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-1",
+        "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-2",
+        "a453c099-9105-43a9-94c3-375ffaece686",
+        "681cf2bd-2af8-4a61-b57e-efbbacc31bc9"
+      ],
+      "settings": {
+        "subheading": "Venez découvrir notre sélection de cadeaux pour noël et nos créations iconiques",
+        "title": "",
+        "show_arrows": true,
+        "background": "#2a3d2d",
+        "text_color": "#ffffff"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "047fb6a6-437a-4e5d-adad-c83e405d072b",
+    "7b2f5c50-c29d-4884-8ef0-a01217ab252a",
+    "d3447838-56ec-4ecb-8803-9e20c487e91b"
   ]
 }
