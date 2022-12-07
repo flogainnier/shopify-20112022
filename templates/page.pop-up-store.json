@@ -31,7 +31,7 @@
         "background_type": "full_width",
         "background_overlap": "image",
         "image_position": "left",
-        "image_size": "medium",
+        "image_size": "small",
         "text_alignment": "left",
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
@@ -52,7 +52,7 @@
             "show_icon": true,
             "custom_icon_width": 100,
             "title": "Du 14 au 18 décembre 2022",
-            "content": ""
+            "content": "<p><\/p>"
           }
         },
         "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-1": {
@@ -64,7 +64,7 @@
             "show_icon": true,
             "custom_icon_width": 95,
             "title": "de 11h à 20h sauf le mercredi de 11h à 19h",
-            "content": ""
+            "content": "<p><\/p>"
           }
         },
         "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-2": {
@@ -76,7 +76,7 @@
             "show_icon": true,
             "custom_icon_width": 90,
             "title": "36 rue de sévigné,75003 métro saint-paul, chemin vert",
-            "content": ""
+            "content": "<p><\/p>"
           }
         },
         "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-3": {
@@ -88,7 +88,7 @@
             "show_icon": true,
             "custom_icon_width": 90,
             "title": "01.73.70.95.22",
-            "content": ""
+            "content": "<p><\/p>"
           }
         }
       },
@@ -117,14 +117,14 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AGLAIA-STUDIO-29691.jpg",
-            "caption": ""
+            "caption": "<p><\/p>"
           }
         },
         "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-2": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AGLAIA_NOEL8993.jpg",
-            "caption": ""
+            "caption": "<p><\/p>"
           }
         },
         "a453c099-9105-43a9-94c3-375ffaece686": {
@@ -138,7 +138,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AGLAIA_NOEL9355.jpg",
-            "caption": ""
+            "caption": "<p><\/p>"
           }
         }
       },
