@@ -170,7 +170,7 @@
       "discount_html": "-{{ savings }}",
       "from_price_html": "From {{ price_min }}",
       "add_to_cart": "+ Add to cart",
-      "add_to_cart_short": "+ Add to cart",
+      "add_to_cart_short": "Add",
       "quick_view": "Quick view",
       "available_colors_count": {
         "one": "{{ count }} color available",
