@@ -565,5 +565,12 @@
       "ecology": "Expédition écologique",
       "customer": "Plus de 50 000 client(e)s nous font confiance"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "vat_label_html": "Taxes de {{ amount }} incluses"
+      }
+    }
   }
 }
