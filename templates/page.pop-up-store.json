@@ -17,7 +17,7 @@
             "tab_label": "",
             "subheading": "",
             "title": "Cool Girls Wear...",
-            "content": "<p>Sont très heureuses de vous annoncer que <strong>la boutique de 17h10<\/strong>, nous accueille avec <strong>Les Sublimes<\/strong> et <strong>Je ne sais quoi <\/strong>pour un Pop Up des plus festifs.<\/p><p><strong>L'équipes Aglaia et sa créatrice <\/strong>auront le plaisir de vou<em>s <\/em>présenter sa<strong> sélection cadeaux<\/strong> pour Noël.<\/p>",
+            "content": "<p>Sont très heureuses de vous annoncer que <strong>la boutique de 17h10<\/strong> nous accueille avec <strong>Les Sublimes<\/strong> et <strong>Je ne sais quoi <\/strong>pour un Pop Up des plus festifs.<\/p><p><strong>L'équipe Aglaïa <\/strong>aura le plaisir de vou<em>s <\/em>présenter sa<strong> sélection cadeaux<\/strong> pour Noël.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -110,7 +110,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AGLAIA_NOEL9242.jpg",
-            "caption": ""
+            "caption": "<p><\/p>"
           }
         },
         "template--16650142023910__d3447838-56ec-4ecb-8803-9e20c487e91b-1670422406198f98c5-1": {
@@ -131,7 +131,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/30_SEPTEMBRE-300.jpg",
-            "caption": ""
+            "caption": "<p><\/p>"
           }
         },
         "681cf2bd-2af8-4a61-b57e-efbbacc31bc9": {
