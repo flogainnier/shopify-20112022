@@ -49,7 +49,7 @@
                 {%- endif -%}
               {%- endif -%}
 
-              <div class="product-form__option-selector {% if option_values_count <= 1 and grouped_products.size == 0 %}hidden{% endif %}" data-selector-type="{{ selector_type | replace: '_', '-' | escape }}">
+              <div class="product-form__option-selector {% if option_values_count <= 1 and grouped_products.size == 0 %}{% unless size_label_list contains option_downcase %}hidden{% endunless %}{% endif %}" data-selector-type="{{ selector_type | replace: '_', '-' | escape }}">
                 <div class="product-form__option-info">
                   <span class="product-form__option-name">{{ option.name }}:</span>
 
