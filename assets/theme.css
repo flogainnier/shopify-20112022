@@ -16299,4 +16299,8 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
     text-align: right;
     width: 100%;
   }
+
+  .copies {
+    font-size: 10px;
+  }
 }
