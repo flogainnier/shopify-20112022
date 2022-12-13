@@ -130,7 +130,7 @@
           "3b233d96-4820-42b9-bc48-41e834f39e65"
         ],
         "settings": {
-          "announcement_bar_type": "countdown",
+          "announcement_bar_type": "carousel",
           "announcement_bar_position": "non_sticky",
           "announcement_text_size": "small",
           "autoplay": true,
