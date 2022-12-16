@@ -52,7 +52,7 @@
             "show_icon": true,
             "custom_icon_width": 100,
             "title": "Du 14 au 18 décembre 2022",
-            "content": "<p><\/p>"
+            "content": ""
           }
         },
         "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-1": {
@@ -63,8 +63,8 @@
             "custom_icon": "shopify:\/\/shop_images\/Plan_de_travail_2_fcc92f9a-34ec-437d-95b2-e9972342d6ad.png",
             "show_icon": true,
             "custom_icon_width": 95,
-            "title": "de 11h à 20h sauf le mercredi de 11h à 19h",
-            "content": "<p><\/p>"
+            "title": "de 11h à 20h sauf le dimanche de 11h à 19h30",
+            "content": ""
           }
         },
         "template--16650142023910__7b2f5c50-c29d-4884-8ef0-a01217ab252a-167042276651d1195b-2": {
