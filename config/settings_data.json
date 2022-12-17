@@ -40,7 +40,7 @@
     "product_color_display": "swatch",
     "product_image_size": "natural",
     "cart_type": "drawer",
-    "cart_show_free_shipping_threshold": true,
+    "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "79",
     "social_facebook": "https:\/\/fr-fr.facebook.com\/AglaiaCo\/",
     "social_twitter": "",
