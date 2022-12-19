@@ -89,6 +89,7 @@
           },
           "7a8fe50b-0533-4ec1-9eef-55156a510ebf": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Noël Zen : Vous avez 30 jours pour changer d'avis",
               "learn_more_text": "En savoir plus",
