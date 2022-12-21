@@ -292,13 +292,6 @@
     "c681fb54-1266-4645-a97a-858f7abb574c": {
       "type": "scroll-ticker",
       "blocks": {
-        "2a51ab50-d550-46ed-8298-fb94b00c7cb7": {
-          "type": "item",
-          "settings": {
-            "title": "Noël : Commandez avant le 20 décembre à minuit",
-            "url": ""
-          }
-        },
         "d3b6df46-b30e-4652-83ec-74a510d536c4": {
           "type": "item",
           "settings": {
@@ -309,7 +302,7 @@
         "7c428808-a8a7-4412-951b-fd24ed670232": {
           "type": "item",
           "settings": {
-            "title": "Retours prolongés jusqu'au 3 janvier 2023",
+            "title": "Retours gratuits sous 30 jours en France métropolitaine",
             "url": ""
           }
         },
@@ -322,7 +315,6 @@
         }
       },
       "block_order": [
-        "2a51ab50-d550-46ed-8298-fb94b00c7cb7",
         "d3b6df46-b30e-4652-83ec-74a510d536c4",
         "7c428808-a8a7-4412-951b-fd24ed670232",
         "32df7317-068b-4bd9-84fa-c7d6ee026d3b"
