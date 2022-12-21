@@ -91,7 +91,7 @@
       "free": "Gratuit !",
       "no_more_stock": "Plus de stock",
       "shipping_tax_note": "Frais d'envoi et taxe calculés à la caisse",
-      "delivery_note": "Livraison avant Noël garantie pour toute commande passée avant le 20 décembre minuit en Colissimo",
+      "delivery_note": "Les codes promos et frais de livraison s’appliquent à l’étape suivante",
       "product": "Produit",
       "quantity": "Quantité",
       "decrease_quantity": "Réduire la quantité",
@@ -562,7 +562,7 @@
     },
     "reinsurance": {
       "question": "Une question ?",
-      "delivery": "Livraison garantie avant Noël avant le 20 décembre minuit en Colissimo",
+      "delivery": "Livraison gratuite dès 79€ d'achats",
       "return": "Retours gratuits en France métropolitaine sous 30 jours",
       "ecology": "Expédition écologique",
       "customer": "Plus de 50 000 client(e)s nous font confiance"
