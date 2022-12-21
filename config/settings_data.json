@@ -65,17 +65,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "7d51a798-10a3-4a1a-8637-3fce932d10a8": {
-            "type": "message",
-            "settings": {
-              "text": "Jusqu'à demain inclus pour une livraison garantie à noël",
-              "learn_more_text": "En savoir plus",
-              "title": "Jusqu'à demain inclus pour une livraison garantie à noël",
-              "content": "",
-              "button_text": "",
-              "button_link": ""
-            }
-          },
           "e841c848-c49d-4586-b1e3-d6a4e6d143d6": {
             "type": "message",
             "settings": {
@@ -89,7 +78,6 @@
           },
           "7a8fe50b-0533-4ec1-9eef-55156a510ebf": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "Noël Zen : Vous avez 30 jours pour changer d'avis",
               "learn_more_text": "En savoir plus",
@@ -101,6 +89,7 @@
           },
           "message-1": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Livraison gratuite à partir de 79€",
               "learn_more_text": "",
@@ -123,7 +112,6 @@
           }
         },
         "block_order": [
-          "7d51a798-10a3-4a1a-8637-3fce932d10a8",
           "e841c848-c49d-4586-b1e3-d6a4e6d143d6",
           "7a8fe50b-0533-4ec1-9eef-55156a510ebf",
           "message-1",
