@@ -512,6 +512,7 @@
     "alert_title": "Warning",
     "alert_description": "Your cart contains a personalized product. The preparation time of your order may be extended by one or two working days.",
     "preorder_description": "Your cart contains a preorder product. Your order will be sent when all products are available.",
+    "delivery_info_description": "Our workshops are closed from December 24th to January 1st. During this period, no delivery will be made. Your order will be delivered from January 2nd.",
     "header": {
       "continue_shopping": "Continue shopping",
       "back_to_site": "Back to site",

@@ -116,9 +116,11 @@
           window.cartContent = {
             hasCustomItem: {{ has_custom_item }},
             hasPreorderItem: {{ has_preorder_item }},
+            hasDeliveryInfo: true,
             alertTitle: "{{ 'custom_checkout.alert_title' | t }}",
             alertDescription: "{{ 'custom_checkout.alert_description' | t }}",
-            preorderDescription: "{{ 'custom_checkout.preorder_description' | t }}"
+            preorderDescription: "{{ 'custom_checkout.preorder_description' | t }}",
+            deliveryInfo: "{{ 'custom_checkout.delivery_info_description' | t }}"
           };
         
         </script>
