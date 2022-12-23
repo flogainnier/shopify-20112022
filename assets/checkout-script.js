@@ -33,7 +33,7 @@
       document.querySelector(".section--shipping-method").querySelector(".section__content").insertAdjacentHTML('afterbegin', pre_order)
     }
     if (window.cartContent.hasDeliveryInfo) {
-      var delivery_info = '<div role="alert" data-shipping-warning data-banner="true" class="notice notice--error default-background" tabindex="-1" aria-atomic="true" aria-live="polite"><svg focusable="false" width="18" height="26" class="" viewBox="0 0 18 26"><circle cx="9" cy="13" r="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></circle><path d="M8.993 15.262a.972.972 0 00-.979.968c0 .539.44.99.98.99a.99.99 0 00.978-.99.972.972 0 00-.979-.968zm-.78-.649h1.561V8.706H8.212v5.907z" fill="currentColor"></path></svg><div class="notice__content"><p class="notice__text">'+ window.cartContent.deliveryInfo +'</p></div></div>'
+      var delivery_info = '<div role="alert" data-shipping-warning data-banner="true" class="notice notice--error default-background" tabindex="-1" aria-atomic="true" aria-live="polite"><svg class="icon-svg icon-svg--size-24 notice__icon" aria-hidden="true" focusable="false"> <use xlink:href="#error"></use> </svg><div class="notice__content"><p class="notice__text">'+ window.cartContent.deliveryInfo +'</p></div></div>'
       document.querySelector(".section--shipping-method").querySelector(".section__content").insertAdjacentHTML('afterbegin', delivery_info)
     }
     for (var shippingMethod in window.shippingMethods) {
