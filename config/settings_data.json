@@ -79,7 +79,7 @@
           "7a8fe50b-0533-4ec1-9eef-55156a510ebf": {
             "type": "message",
             "settings": {
-              "text": "Noël Zen : Vous avez 30 jours pour changer d'avis",
+              "text": "Retour gratuit sous 30 jours",
               "learn_more_text": "En savoir plus",
               "title": "Notre politique de retours",
               "content": "<p>Pour vous permettre d’essayer vos bijoux tranquillement chez vous et pour être sûr qu’ils vous donnent entière satisfaction, nous vous laissons la possibilité de nous retourner vos achats contre remboursement sous un délai de 30 jours. <\/p><p>Les retours sont gratuits en France métropolitaine. Profitez-en!<\/p>",
@@ -89,7 +89,6 @@
           },
           "message-1": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "Livraison gratuite à partir de 79€",
               "learn_more_text": "",
