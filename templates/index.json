@@ -294,6 +294,7 @@
       "blocks": {
         "d3b6df46-b30e-4652-83ec-74a510d536c4": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "Une bougie offerte à partir de 99€ d'achat",
             "url": ""
