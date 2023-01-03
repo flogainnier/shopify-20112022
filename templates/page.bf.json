@@ -14,8 +14,8 @@
           "type": "image",
           "settings": {
             "only_customer": false,
-            "image": "shopify:\/\/shop_images\/BLOC_1_BF_New.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/chacha_mobile_bloc_1.jpg",
+            "image": "shopify:\/\/shop_images\/ACHETEZ_1_OBTENEZ_-15_ACHETEZ_2_OBTENEZ_-20_ACHETEZ_3_OBTENEZ_-30_ACHETEZ_4_OBTENEZ_-40.png",
+            "mobile_image": "shopify:\/\/shop_images\/ACHETEZ_1_OBTENEZ_-15_ACHETEZ_2_OBTENEZ_-20_ACHETEZ_3_OBTENEZ_-30_ACHETEZ_4_OBTENEZ_-40_1.png",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
@@ -27,7 +27,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 5
+            "overlay_opacity": 0
           }
         },
         "1663859615c54b54e3-1": {
