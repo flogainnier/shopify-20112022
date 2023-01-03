@@ -7,21 +7,21 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/HP_SHOPIFY_BF_V3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HP_MOBILE_BF.jpg",
+            "only_customer": true,
+            "image": "shopify:\/\/shop_images\/HP_VP_23_5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Sans_titre-2_3.jpg",
             "text_position": "bottom_left",
-            "subheading": "Jusqu'à -50%",
-            "title": "Cyber Monday",
-            "button_1_text": "JE FONCE",
-            "button_1_link": "shopify:\/\/collections\/bague-bf",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/ventes-privees",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 14
+            "overlay_opacity": 0
           }
         },
         "845b9503-615e-4611-8e65-f17ed938cce7": {
