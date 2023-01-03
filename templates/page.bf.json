@@ -74,7 +74,7 @@
             "subheading": "",
             "title": "BRACELETS",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/colliers-bf",
+            "link_url": "shopify:\/\/collections\/archives-bracelets",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -88,7 +88,7 @@
             "subheading": "",
             "title": "BOUCLES D'OREILLES",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/bague-bf",
+            "link_url": "shopify:\/\/collections\/archives-boucles-doreilles",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 13
@@ -102,7 +102,7 @@
             "subheading": "",
             "title": "COLLIERS",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/bracelets-bf",
+            "link_url": "shopify:\/\/collections\/archives-colliers",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -116,7 +116,7 @@
             "subheading": "",
             "title": "ACCESSOIRES",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/boucles-doreilles-1",
+            "link_url": "shopify:\/\/collections\/chouchous-foulards-1",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 15
@@ -130,7 +130,7 @@
             "subheading": "",
             "title": "BAGUES",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/pendentifs-bf",
+            "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -144,7 +144,7 @@
             "subheading": "",
             "title": "PENDANTIFS",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/accessoires-bf",
+            "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 21
