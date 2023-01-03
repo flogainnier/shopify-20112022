@@ -86,7 +86,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/BLOC_2_BAGUE_V2.jpg",
             "subheading": "",
-            "title": "BAGUES",
+            "title": "BOUCLES D'OREILLES",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/bague-bf",
             "text_color": "rgba(0,0,0,0)",
@@ -119,7 +119,7 @@
             "link_url": "shopify:\/\/collections\/boucles-doreilles-1",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 9
+            "overlay_opacity": 15
           }
         },
         "template--16640355107046__fb655f49-44ee-4b56-a9fc-76b122e05d6b-1669209047c7361205-4": {
@@ -128,7 +128,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/BLOC_2_PENDENTIF_BF.jpg",
             "subheading": "",
-            "title": "PENDENTIFS",
+            "title": "BAGUES",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/pendentifs-bf",
             "text_color": "rgba(0,0,0,0)",
@@ -142,7 +142,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/BLOC_2_ACCESS.jpg",
             "subheading": "",
-            "title": "ACCESSOIRES",
+            "title": "PENDANTIFS",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/accessoires-bf",
             "text_color": "rgba(0,0,0,0)",
