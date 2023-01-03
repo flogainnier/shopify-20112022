@@ -140,14 +140,14 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/BLOC_2_ACCESS.jpg",
+            "image": "shopify:\/\/shop_images\/CEINTURE_VP_FINAL.jpg",
             "subheading": "",
-            "title": "PENDENTIFS",
+            "title": "CEINTURES",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/archives-breloques-et-pendentifs",
+            "link_url": "shopify:\/\/collections\/ceintures",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 21
+            "overlay_opacity": 0
           }
         }
       },
