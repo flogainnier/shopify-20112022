@@ -3,26 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "4a6397ce-db8d-499f-b539-a911e4c53663": {
-          "type": "image",
-          "settings": {
-            "only_customer": true,
-            "image": "shopify:\/\/shop_images\/HP_VP_23_7.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Sans_titre-2_3.jpg",
-            "text_position": "bottom_left",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/ventes-privees",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "845b9503-615e-4611-8e65-f17ed938cce7": {
           "type": "image",
           "settings": {
@@ -41,6 +21,26 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 10
+          }
+        },
+        "4a6397ce-db8d-499f-b539-a911e4c53663": {
+          "type": "image",
+          "settings": {
+            "only_customer": true,
+            "image": "shopify:\/\/shop_images\/HP_VP_23_7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Sans_titre-2_3.jpg",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/ventes-privees",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         },
         "c3092d07-b050-4ec2-bbd6-5ffc5203bcad": {
@@ -87,8 +87,8 @@
         }
       },
       "block_order": [
-        "4a6397ce-db8d-499f-b539-a911e4c53663",
         "845b9503-615e-4611-8e65-f17ed938cce7",
+        "4a6397ce-db8d-499f-b539-a911e4c53663",
         "c3092d07-b050-4ec2-bbd6-5ffc5203bcad",
         "a30850cb-f28e-4683-8600-7001edb72de1"
       ],
