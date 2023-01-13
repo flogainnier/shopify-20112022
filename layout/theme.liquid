@@ -55,7 +55,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
 
     {%- if request.page_type == 'product' -%}
       {%- if product.metafields.custom.canonical_product -%}
-        <link rel="canonical" href="{{ product.metafields.custom.canonical_product.value.url }}">
+        <link rel="canonical" href="{{ shop.url }}{{ product.metafields.custom.canonical_product.value.url }}">
       {%- else -%}
         <link rel="canonical" href="{{ canonical_url }}">
       {%- endif -%}
