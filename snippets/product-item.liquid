@@ -54,20 +54,7 @@
     {%- endif -%}
 
     <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="product-item__aspect-ratio aspect-ratio {% if settings.product_image_size != 'natural' %}aspect-ratio--{{ settings.product_image_size }}{% endif %}" style="padding-bottom: {{ 100.0 | divided_by: product.featured_media.preview_image.aspect_ratio }}%; --aspect-ratio: {{ product.featured_media.preview_image.aspect_ratio }}">
-      <img class="product-item__primary-image" loading="lazy" data-media-id="{{ product.featured_media.id | escape }}" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.featured_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}> 
-      
-      <!--
-      {%- if settings.product_color_display == 'swatch' -%}
-        {%- assign featured_media = product.variants | map: 'featured_media' -%}
-
-        {%- for media in featured_media -%}
-          {%- unless media == product.featured_media -%}
-            <img class="product-item__primary-image" hidden data-media-id="{{ media.id | escape }}" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
-          {%- endunless -%}
-        {%- endfor -%}
-      {%- endif -%}
-      -->
-      
+      <img class="product-item__primary-image" loading="lazy" data-media-id="{{ product.featured_media.id | escape }}" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.featured_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>     
       {%- if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true -%}
         {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
         <img class="product-item__secondary-image" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: next_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
