@@ -21,7 +21,7 @@
           {%- assign matching_product = cart.items | where: 'product_id', product.id -%}
           {%- if matching_product.size == 0 -%}
             {%- assign shown_products_count = shown_products_count | plus: 1 -%}
-            {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, show_cta: true, hide_secondary_image: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
+            {%- render 'product-item', product: product, reduced_content: true, reduced_font_size: true, show_cta: true, hide_collection: true, hide_secondary_image: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
           {%- endif -%}
         {%- endfor -%}
       </div>

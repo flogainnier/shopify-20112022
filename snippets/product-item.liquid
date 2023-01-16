@@ -53,7 +53,7 @@
       </div>
     {%- endif -%}
 
-    <a href="{{ product.url | within: collection }}" class="product-item__aspect-ratio aspect-ratio {% if settings.product_image_size != 'natural' %}aspect-ratio--{{ settings.product_image_size }}{% endif %}" style="padding-bottom: {{ 100.0 | divided_by: product.featured_media.preview_image.aspect_ratio }}%; --aspect-ratio: {{ product.featured_media.preview_image.aspect_ratio }}">
+    <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="product-item__aspect-ratio aspect-ratio {% if settings.product_image_size != 'natural' %}aspect-ratio--{{ settings.product_image_size }}{% endif %}" style="padding-bottom: {{ 100.0 | divided_by: product.featured_media.preview_image.aspect_ratio }}%; --aspect-ratio: {{ product.featured_media.preview_image.aspect_ratio }}">
       <img class="product-item__primary-image" loading="lazy" data-media-id="{{ product.featured_media.id | escape }}" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.featured_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}> 
       
       <!--
@@ -128,7 +128,7 @@
         {%- endunless -%}
       {%- endif -%}
 
-      <a href="{{ product.url | within: collection }}" class="product-item-meta__title">{{ product.title }}</a>
+      <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="product-item-meta__title">{{ product.title }}</a>
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
@@ -290,7 +290,7 @@
                 {%- assign number_of_options = 0 -%}
                 {%- for grouped_product in grouped_products -%}
                   {%- if number_of_options > 5 -%}
-                    <a href="{{ product.url | within: collection }}" class="more-options">
+                    <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="more-options">
                       <div class="more-options__item">
                         {%- render 'icon' with 'plus' -%}
                       </div>
@@ -511,7 +511,7 @@
                       {%- assign color_value_downcase = value | downcase -%}
                       {%- assign variant_for_value = product.variants | where: variant_option, value | first -%}
                       {%- if number_of_options > 5 -%}
-                        <a href="{{ product.url | within: collection }}" class="more_options">
+                        <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="more_options">
                           {%- render 'icon' with 'plus' -%}
                         </a>
                         {%- break -%}
