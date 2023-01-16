@@ -77,15 +77,15 @@
         <div class="image-overlay__content-wrapper">
           <div class="image-overlay__content content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_alignment }} text-container">
             {%- if section.settings.subheading != blank -%}
-              <h2 class="heading heading--small">
+              <{{ section.settings.subheading_type}} class="heading heading--small">
                 <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.subheading | escape }}</split-lines>
-              </h2>
+              </{{ section.settings.subheading_type}}>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
-              <h3 class="heading h2">
+              <{{ section.settings.heading_type}} class="heading h2">
                 <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.title | escape }}</split-lines>
-              </h3>
+              </{{ section.settings.heading_type}}>
             {%- endif -%}
 
             {%- if section.settings.content != blank or section.settings.button_text != blank -%}
@@ -166,10 +166,74 @@
       "default": "Subheading"
     },
     {
+      "type": "select",
+      "id": "subheading_type",
+      "label": "Subheading type",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h2"
+    },
+    {
       "type": "text",
       "id": "title",
       "label": "Heading",
       "default": "Image with text overlay"
+    },
+    {
+      "type": "select",
+      "id": "title_type",
+      "label": "Heading type",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h3"
     },
     {
       "type": "richtext",
