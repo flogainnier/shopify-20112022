@@ -8,8 +8,33 @@
         "page_width": "medium"
       }
     },
+    "03a3a41e-eb16-49c5-904c-59dced357756": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "large",
+        "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL.jpg",
+        "subheading": "Collection",
+        "subheading_type": "h3",
+        "title": "Madame",
+        "title_type": "h1",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "1663859615c1a9ffe1": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "1663859615c54b54e3-0": {
           "type": "image",
@@ -182,7 +207,9 @@
       "type": "rich-text",
       "settings": {
         "subheading": "histoire",
+        "subheading_type": "h2",
         "title": "BIJOUX MADAME",
+        "title_type": "h3",
         "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/>Auteurs, scientifiques, philosophes, politiciennes, pilotes ou encore artistes, toutes ces femmes ont participé à l'évolution de la place de la femme dans notre société. À travers cette collection nous souhaitions rendre hommage à toute ces femmes en la nommant : Madame. <br\/>Chacune de nos créations s'en inspirent et portent le prénom d'une pionnière qui a participé à améliorer notre monde.<\/p>",
         "button_text": "",
         "button_link": "",
@@ -438,6 +465,7 @@
   },
   "order": [
     "main",
+    "03a3a41e-eb16-49c5-904c-59dced357756",
     "1663859615c1a9ffe1",
     "1663859687669a96ea",
     "1663859960dda437aa",
