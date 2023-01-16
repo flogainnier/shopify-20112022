@@ -120,20 +120,6 @@
             "overlay_opacity": 30
           }
         },
-        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/illia1_2.jpg",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/products\/coffret-tina",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-4": {
           "type": "collection",
           "disabled": true,
@@ -167,7 +153,6 @@
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-0",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-1",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-2",
-        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-3",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-4",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-5"
       ],
@@ -226,6 +211,7 @@
     },
     "d264bf40-59e2-4702-bff6-63f92353bf4a": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--16592689627366__d264bf40-59e2-4702-bff6-63f92353bf4a-1665479032e1f50db1-0": {
           "type": "item",
