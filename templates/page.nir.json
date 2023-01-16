@@ -32,63 +32,6 @@
         "overlay_opacity": 30
       }
     },
-    "1663859615c1a9ffe1": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "1663859615c54b54e3-0": {
-          "type": "image",
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL_54360ab7-78f2-4a5d-85de-dbfdf808fa24.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
-            "text_position": "middle_center",
-            "subheading": "COLLECTION",
-            "title": "Madame",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        },
-        "1663859615c54b54e3-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/Page_madame_bloc_1_slide_2.jpg",
-            "text_position": "middle_center",
-            "subheading": "collection",
-            "title": "MADAME",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        }
-      },
-      "block_order": [
-        "1663859615c54b54e3-0",
-        "1663859615c54b54e3-1"
-      ],
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "1663859687669a96ea": {
       "type": "multi-column",
       "blocks": {
@@ -466,7 +409,6 @@
   "order": [
     "main",
     "03a3a41e-eb16-49c5-904c-59dced357756",
-    "1663859615c1a9ffe1",
     "1663859687669a96ea",
     "1663859960dda437aa",
     "16638600383ac29a23",
