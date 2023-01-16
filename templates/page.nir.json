@@ -8,60 +8,28 @@
         "page_width": "medium"
       }
     },
-    "1663859615c1a9ffe1": {
-      "type": "slideshow",
-      "blocks": {
-        "1663859615c54b54e3-0": {
-          "type": "image",
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL_54360ab7-78f2-4a5d-85de-dbfdf808fa24.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Bloc_1_mobile_madame.jpg",
-            "text_position": "middle_center",
-            "subheading": "COLLECTION",
-            "title": "Madame",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        },
-        "1663859615c54b54e3-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/Page_madame_bloc_1_slide_2.jpg",
-            "text_position": "middle_center",
-            "subheading": "collection",
-            "title": "MADAME",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        }
-      },
-      "block_order": [
-        "1663859615c54b54e3-0",
-        "1663859615c54b54e3-1"
-      ],
+    "03a3a41e-eb16-49c5-904c-59dced357756": {
+      "type": "image-with-text-overlay",
       "settings": {
-        "section_height": "auto",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
+        "reveal_on_scroll": true,
+        "section_height": "large",
+        "image": "shopify:\/\/shop_images\/BLOC_1_MADAME_NOEL.jpg",
+        "subheading": "Collection",
+        "subheading_type": "h3",
+        "title": "Madame",
+        "title_type": "h1",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "1663859687669a96ea": {
@@ -141,7 +109,7 @@
         "title": "",
         "content": "",
         "column_alignment": "center",
-        "mobile_item_size": "small",
+        "mobile_item_size": "medium",
         "desktop_item_size": "medium",
         "spacing": "normal",
         "background": "rgba(0,0,0,0)",
@@ -182,7 +150,9 @@
       "type": "rich-text",
       "settings": {
         "subheading": "histoire",
+        "subheading_type": "h2",
         "title": "BIJOUX MADAME",
+        "title_type": "h3",
         "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/>Auteurs, scientifiques, philosophes, politiciennes, pilotes ou encore artistes, toutes ces femmes ont participé à l'évolution de la place de la femme dans notre société. À travers cette collection nous souhaitions rendre hommage à toute ces femmes en la nommant : Madame. <br\/>Chacune de nos créations s'en inspirent et portent le prénom d'une pionnière qui a participé à améliorer notre monde.<\/p>",
         "button_text": "",
         "button_link": "",
@@ -194,65 +164,6 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "1663859928b1090ac6": {
-      "type": "shop-the-look",
-      "disabled": true,
-      "blocks": {
-        "16638599281dbb3dd6-0": {
-          "type": "look",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Page_madame_bloc_4_shop_the_look.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/shop_the_look_V2.jpg",
-            "dot_type": "inverted",
-            "product_1": "creoles-frida-or",
-            "product_1_horizontal_position": 49,
-            "product_1_vertical_position": 23,
-            "product_1_horizontal_position_mobile": 50,
-            "product_1_vertical_position_mobile": 26,
-            "product_2": "collier-cesaria-or",
-            "product_2_horizontal_position": 49,
-            "product_2_vertical_position": 41,
-            "product_2_horizontal_position_mobile": 49,
-            "product_2_vertical_position_mobile": 48,
-            "product_3": "collier-baly-or",
-            "product_3_horizontal_position": 51,
-            "product_3_vertical_position": 59,
-            "product_3_horizontal_position_mobile": 43,
-            "product_3_vertical_position_mobile": 71
-          }
-        },
-        "32a2d3ba-d0d7-485e-8180-517de9531450": {
-          "type": "look",
-          "disabled": true,
-          "settings": {
-            "dot_type": "normal",
-            "product_1": "",
-            "product_1_horizontal_position": 30,
-            "product_1_vertical_position": 30,
-            "product_1_horizontal_position_mobile": 30,
-            "product_1_vertical_position_mobile": 30,
-            "product_2": "",
-            "product_2_horizontal_position": 50,
-            "product_2_vertical_position": 50,
-            "product_2_horizontal_position_mobile": 50,
-            "product_2_vertical_position_mobile": 50,
-            "product_3": "",
-            "product_3_horizontal_position": 70,
-            "product_3_vertical_position": 70,
-            "product_3_horizontal_position_mobile": 70,
-            "product_3_vertical_position_mobile": 70
-          }
-        }
-      },
-      "block_order": [
-        "16638599281dbb3dd6-0",
-        "32a2d3ba-d0d7-485e-8180-517de9531450"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "label": "Shop the looks"
       }
     },
     "0240c335-9f22-432a-a226-51078d95d4f0": {
@@ -438,11 +349,10 @@
   },
   "order": [
     "main",
-    "1663859615c1a9ffe1",
+    "03a3a41e-eb16-49c5-904c-59dced357756",
     "1663859687669a96ea",
     "1663859960dda437aa",
     "16638600383ac29a23",
-    "1663859928b1090ac6",
     "0240c335-9f22-432a-a226-51078d95d4f0"
   ]
 }

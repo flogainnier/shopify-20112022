@@ -11,7 +11,9 @@
       "type": "rich-text",
       "settings": {
         "subheading": "",
+        "subheading_type": "h3",
         "title": "Notre programme solidaire",
+        "title_type": "h1",
         "content": "<p>Nous sommes convaincus que chaque entreprise doit s'engager aujourd'hui pour le changement vers un monde plus durable et solidaire. Chaque entreprise doit porter et inscrire en son sein ces valeurs qui feront la société de demain.<\/p><p><\/p><p>C’est pourquoi, au délà des actions que nous menons chaque jour pour améliorer nos conditions de production, nous avons intégré la notion de partage des richesses au coeur de notre projet. Nous avons fait le choix fort de redistribuer 5% du montant de nos ventes à plusieurs associations reconnues, oeuvrant pour des projets qui ont du sens et avec qui nous partageons les mêmes valeurs.<\/p><p><\/p>",
         "button_text": "",
         "button_link": "",

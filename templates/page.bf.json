@@ -8,60 +8,28 @@
         "page_width": "medium"
       }
     },
-    "1663859615c1a9ffe1": {
-      "type": "slideshow",
-      "blocks": {
-        "1663859615c54b54e3-0": {
-          "type": "image",
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/HP_SOLDES_AH23.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HP_MOBILE_SOLDES_AH23.jpg",
-            "text_position": "middle_center",
-            "subheading": "JUSQU'À -50% SUR NOS CRÉATIONS ARCHIVES",
-            "title": "SOLDES",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1663859615c54b54e3-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/Page_madame_bloc_1_slide_2.jpg",
-            "text_position": "middle_center",
-            "subheading": "collection",
-            "title": "MADAME",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        }
-      },
-      "block_order": [
-        "1663859615c54b54e3-0",
-        "1663859615c54b54e3-1"
-      ],
+    "e2789b6f-3125-49d8-8f6d-2b38bdfb5292": {
+      "type": "image-with-text-overlay",
       "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
+        "reveal_on_scroll": true,
+        "section_height": "medium",
+        "image": "shopify:\/\/shop_images\/HP_SOLDES_AH23.jpg",
+        "subheading": "JUSQU'À -50% SUR NOS CRÉATIONS ARCHIVES",
+        "subheading_type": "h3",
+        "title": "SOLDES",
+        "title_type": "h1",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10
       }
     },
     "fb655f49-44ee-4b56-a9fc-76b122e05d6b": {
@@ -290,7 +258,9 @@
       "disabled": true,
       "settings": {
         "subheading": "histoire",
+        "subheading_type": "h2",
         "title": "BIJOUX MADAME",
+        "title_type": "h3",
         "content": "<p>La collection Madame s'inspire de grandes Femme qui ont contribué à façonner un monde plus équitable à travers leur action et\/ou leur engagement qui inspire admiration. <br\/>Auteurs, scientifiques, philosophes, politiciennes, pilotes ou encore artistes, toutes ces femmes ont participé à l'évolution de la place de la femme dans notre société. À travers cette collection nous souhaitions rendre hommage à toute ces femmes en la nommant : Madame. <br\/>Chacune de nos créations s'en inspirent et portent le prénom d'une pionnière qui a participé à améliorer notre monde.<\/p>",
         "button_text": "",
         "button_link": "",
@@ -547,7 +517,7 @@
   },
   "order": [
     "main",
-    "1663859615c1a9ffe1",
+    "e2789b6f-3125-49d8-8f6d-2b38bdfb5292",
     "fb655f49-44ee-4b56-a9fc-76b122e05d6b",
     "1663859687669a96ea",
     "1663859960dda437aa",
