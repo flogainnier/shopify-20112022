@@ -60,7 +60,7 @@
           {%- endif -%}
 
           {%- if section.settings.title != blank -%}
-            <h3 class="heading h2">{{ section.settings.title | escape }}</h3>
+              <{{ section.settings.title_heading}} class="heading h2">{{ section.settings.title | escape }}</{{ section.settings.title_heading}}>
           {%- endif -%}
 
           {%- if section.settings.content != blank -%}
@@ -90,10 +90,74 @@
       "default": "Subheading"
     },
     {
+      "type": "select",
+      "id": "subheading_heading",
+      "label": "Subheading heading",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        }
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h2"
+    },
+    {
       "type": "text",
       "id": "title",
       "label": "Heading",
       "default": "Talk about your brand"
+    },
+    {
+      "type": "select",
+      "id": "title_heading",
+      "label": "Title heading",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        }
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h3"
     },
     {
       "type": "richtext",
