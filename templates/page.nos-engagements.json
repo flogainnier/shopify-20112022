@@ -11,7 +11,9 @@
       "type": "rich-text",
       "settings": {
         "subheading": "",
+        "subheading_type": "h3",
         "title": "Nos Engagements",
+        "title_type": "h1",
         "content": "<p>Nous sommes une marque engagée...engagée pour redéfinir la mode, engagée pour la planète, engagée pour les autres, engagée pour vous, pour nous. Ces valeurs nous les portons chaque jour avec notre équipe pour imaginer l'entreprise et la mode de demain, et vous servir avec l'excellence comme ambition.<\/p>",
         "button_text": "",
         "button_link": "",
