@@ -400,7 +400,7 @@
           "bottom_menu": "footer",
           "show_cookie_bar": true,
           "cookie_bar_title": "",
-          "cookie_bar_content": "<p>Ce site Web utilise des cookies pour vous garantir la meilleure expérience possible sur notre site conformément à notre <a href=\"\/pages\/politique-de-confidentialite\" target=\"_blank\" title=\"Politique de confidentialité\">politique de confidentialité<\/a>.<\/p>"
+          "cookie_bar_content": "<p>Ce site Web utilise des cookies pour vous garantir la meilleure expérience possible sur notre site conformément à notre <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">politique de confidentialité<\/a>.<\/p>"
         }
       },
       "popup": {
