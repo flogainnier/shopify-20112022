@@ -288,7 +288,7 @@
             {%- when 'swatch' -%}
               <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
                 {%- assign number_of_options = 0 -%}
-                {%- for grouped_product in grouped_products -%}
+                {%- for grouped_product in grouped_products limit: 6 -%}
                   {%- if number_of_options > 5 -%}
                     <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="more-options">
                       <div class="more-options__item">
@@ -321,7 +321,7 @@
               </div>
               <script type="application/json" data-colors-json>
                 {
-                  {%- for grouped_product in grouped_products -%}
+                  {%- for grouped_product in grouped_products limit:6 -%}
                     {%- capture image_featured -%}
                       <img class="product-item__primary-image" loading="lazy" data-media-id="{{ grouped_product.featured_media.id | escape }}" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: grouped_product.featured_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
                     {%- endcapture -%}

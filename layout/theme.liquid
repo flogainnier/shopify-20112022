@@ -42,7 +42,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     {%- endif -%}
 
     {%- if request.page_type == 'product' -%}
-      {% if  product.metafields.custom.no_index %}
+      {% if product.metafields.custom.no_index %}
         <meta name="robots" content="noindex">
       {% endif %}
     {%- endif -%}
