@@ -276,7 +276,7 @@
               <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
                 {%- assign number_of_options = 0 -%}
                 {%- for grouped_product in grouped_products -%}
-                  {%- if number_of_options > 5 -%}
+                  {%- if number_of_options > 4 -%}
                     <a href="{%- if hide_collection -%}{{ product.url }}{% else %}{{ product.url | within: collection }}{% endif %}" class="more-options">
                       <div class="more-options__item">
                         {%- render 'icon' with 'plus' -%}
