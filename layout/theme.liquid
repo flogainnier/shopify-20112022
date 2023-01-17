@@ -105,16 +105,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     {%- endcomment -%}
     {%- if request.page_type == 'product' -%}
       {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
-
       <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
       <link rel="preload" as="image" imagesizes="(max-width: 999px) calc(100vw - 48px), 640px" imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}">
-
       {%- if product.media.size > 1 -%}
         <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
-      {%- endif -%}
-
-      {%- if collection -%}
-        <link rel="alternate" hreflang="{{ request.locale.iso_code }}" href="{{ shop.url }}{{ product.url | within: collection }}" />
       {%- endif -%}
     {%- elsif request.page_type == 'collection' and collection.image -%}
       <link rel="preload" as="image" media="(max-width: 740px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}">
