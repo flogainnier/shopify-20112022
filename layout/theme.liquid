@@ -69,10 +69,12 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- endif -%}
     {%- endif -%}
 
-    {%- if request.page_type == 'blog' && current_tags -%}
-      <link rel="canonical" href="{{ shop.url }}{{ blog.url }}">
-    {%- else -%}
-      <link rel="canonical" href="{{ canonical_url }}">
+    {%- if request.page_type == 'blog' -%}
+      {%- ifcurrent_tags -%}
+        <link rel="canonical" href="{{ shop.url }}{{ blog.url }}">
+      {%- else -%}
+        <link rel="canonical" href="{{ canonical_url }}">
+      {%- endif -%}
     {%- endif -%}
 
     {%- if settings.favicon -%}
