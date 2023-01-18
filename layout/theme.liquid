@@ -51,12 +51,12 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       <meta name="robots" content="noindex">
     {%- endif -%}
 
-    {% if request.page_type == 'search' || request.page_type == 'policy' || request.page_type == 'cart' || request.page_type == 'customers/login' %}
+    {% if request.page_type == 'search' or request.page_type == 'policy' or request.page_type == 'cart' or request.page_type == 'customers/login' %}
       <meta name="robots" content="noindex">
     {%- endif -%}
 
     {%- if request.page_type == 'collection' -%}
-      {% if collection.metafields.custom.no_index %}
+      {% if collection.metafields.custom.no_index or current_tags %}
         <meta name="robots" content="noindex">
       {% endif %}
     {%- endif -%}
@@ -71,6 +71,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
 
     {%- if request.page_type == 'blog' -%}
       {%- if current_tags -%}
+        <meta name="robots" content="noindex">
         <link rel="canonical" href="{{ shop.url }}{{ blog.url }}">
       {%- else -%}
         <link rel="canonical" href="{{ canonical_url }}">
