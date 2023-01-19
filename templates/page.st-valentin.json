@@ -145,103 +145,64 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "fe49bb63-699e-4f35-880e-95f610df8acc": {
-      "type": "collection-list",
+    "cad80cb6-b483-46c7-82c3-bbe11b89f875": {
+      "type": "featured-collections",
       "blocks": {
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-0": {
+        "template--16678706577638__cad80cb6-b483-46c7-82c3-bbe11b89f875-16741363455bf35b5d-0": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-5": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "label": "",
+            "button_text": "",
+            "button_url": ""
           }
         }
       },
       "block_order": [
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-0",
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-1",
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-2",
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-3",
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-4",
-        "template--16678706577638__fe49bb63-699e-4f35-880e-95f610df8acc-167413634574c69399-5"
+        "template--16678706577638__cad80cb6-b483-46c7-82c3-bbe11b89f875-16741363455bf35b5d-0"
       ],
       "settings": {
-        "reveal_on_scroll": false,
-        "layout": "carousel",
         "subheading": "Prix doux",
         "title": "La petite attention",
+        "content": "",
+        "products_count": 40,
+        "products_per_row": 5,
+        "stack_products": false,
+        "show_cta": false,
         "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e3c0f01a-abef-45ff-b0ed-b697d955d3dc": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16678706577638__e3c0f01a-abef-45ff-b0ed-b697d955d3dc-16741363455bf35b5d-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__e3c0f01a-abef-45ff-b0ed-b697d955d3dc-16741363455bf35b5d-0"
+      ],
+      "settings": {
+        "subheading": "Bijoux précieux",
+        "title": "Déclarez sa flamme",
+        "content": "",
+        "products_count": 40,
+        "products_per_row": 5,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     },
     "713d4a7e-fb87-4fd4-919d-c6f46d3665f7": {
@@ -264,8 +225,8 @@
         "subheading": "Gravure",
         "title": "Gravé dans la roche",
         "content": "",
-        "products_count": 37,
-        "products_per_row": 4,
+        "products_count": 40,
+        "products_per_row": 5,
         "stack_products": false,
         "show_cta": false,
         "background": "rgba(0,0,0,0)",
@@ -306,66 +267,6 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
-    },
-    "e3c0f01a-abef-45ff-b0ed-b697d955d3dc": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16678706577638__e3c0f01a-abef-45ff-b0ed-b697d955d3dc-16741363455bf35b5d-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16678706577638__e3c0f01a-abef-45ff-b0ed-b697d955d3dc-16741363455bf35b5d-0"
-      ],
-      "settings": {
-        "subheading": "Bijoux précieux",
-        "title": "Déclarez sa flamme",
-        "content": "",
-        "products_count": 32,
-        "products_per_row": 4,
-        "stack_products": false,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "cad80cb6-b483-46c7-82c3-bbe11b89f875": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16678706577638__cad80cb6-b483-46c7-82c3-bbe11b89f875-16741363455bf35b5d-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16678706577638__cad80cb6-b483-46c7-82c3-bbe11b89f875-16741363455bf35b5d-0"
-      ],
-      "settings": {
-        "subheading": "Prix doux",
-        "title": "La petite attention",
-        "content": "",
-        "products_count": 40,
-        "products_per_row": 5,
-        "stack_products": false,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -374,10 +275,9 @@
     "e0eca95a-a2e2-4355-8a2c-6edac76fc6f2",
     "58c49d62-89a5-47a5-96ad-9dc85fad27ff",
     "7b9c825a-8570-46b6-aaaf-d4bbee880b13",
-    "fe49bb63-699e-4f35-880e-95f610df8acc",
-    "713d4a7e-fb87-4fd4-919d-c6f46d3665f7",
-    "021cc817-ffe8-43e0-8551-18b65499971a",
+    "cad80cb6-b483-46c7-82c3-bbe11b89f875",
     "e3c0f01a-abef-45ff-b0ed-b697d955d3dc",
-    "cad80cb6-b483-46c7-82c3-bbe11b89f875"
+    "713d4a7e-fb87-4fd4-919d-c6f46d3665f7",
+    "021cc817-ffe8-43e0-8551-18b65499971a"
   ]
 }
