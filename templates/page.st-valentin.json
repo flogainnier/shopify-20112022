@@ -267,6 +267,26 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "a37f6c49-709b-4f86-899f-2469e4519133": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Petit Conseil Aglaïa :",
+        "subheading_type": "h2",
+        "title": "",
+        "title_type": "h3",
+        "content": "<p><strong>Si vous êtes une petite maline qui a atteri sur cette page, merci de la partager à votre homme. <\/strong><\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "#de2a2a",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -278,6 +298,7 @@
     "cad80cb6-b483-46c7-82c3-bbe11b89f875",
     "e3c0f01a-abef-45ff-b0ed-b697d955d3dc",
     "713d4a7e-fb87-4fd4-919d-c6f46d3665f7",
-    "021cc817-ffe8-43e0-8551-18b65499971a"
+    "021cc817-ffe8-43e0-8551-18b65499971a",
+    "a37f6c49-709b-4f86-899f-2469e4519133"
   ]
 }
