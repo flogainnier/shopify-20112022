@@ -65,16 +65,24 @@
             "title": "COMMENT ÉVITER LE DRAME EN 3 ÉTAPES",
             "url": ""
           }
+        },
+        "83e0f61d-b817-47a9-9da4-932ba9ef95f2": {
+          "type": "item",
+          "settings": {
+            "title": "COMMENT ÉVITER LE DRAME EN 3 ÉTAPES",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "718b7864-c633-4ebd-897e-02d66ff441a8",
         "103145ed-2bcc-4fa0-bf97-a0fed138570f",
-        "a192ad7a-5c8f-45ec-9288-25f0f342f4ec"
+        "a192ad7a-5c8f-45ec-9288-25f0f342f4ec",
+        "83e0f61d-b817-47a9-9da4-932ba9ef95f2"
       ],
       "settings": {
         "duration": 25,
-        "breather": 40,
+        "breather": 50,
         "background": "#f5f1ec",
         "text_color": "rgba(0,0,0,0)"
       }
