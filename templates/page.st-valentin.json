@@ -87,9 +87,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Gif_page_st_val_bloc_etape_1.gif",
             "tab_label": "Item",
-            "subheading": "Subheading",
-            "title": "Image with text",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "subheading": "ÉTAPE 1",
+            "title": "Préparez-vous pour le Festival de Cannes",
+            "content": "<p>On sait tous qu’il faut 2h aux femmes pour se préparer et ressembler à Monica Bellucci et 5 min pour que vous ressemblez à Bradley Cooper et pour ça, toutes les femmes vous envient ! <\/p><p>Mais pour l’occasion, faites l’effort de prendre 15min en plus pour ressembler à Ryan Gosling, ça changera la donne. L’Aventure commence sous la douche, avec un bon shampooing, on frotte, il faut que sa mousse ! En sortant de la douche, appliquez une crème hydratante, votre femme en a forcément une. <\/p><p>N’oubliez pas votre touche de parfum, elle ne pourra plus vous résister. Enfin, sortez votre plus belle chemise, car ce soir vous allez remporter un oscar ! <\/p>",
             "button_text": "",
             "button_link": ""
           }
