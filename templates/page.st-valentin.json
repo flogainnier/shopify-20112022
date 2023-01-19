@@ -441,6 +441,39 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "021cc817-ffe8-43e0-8551-18b65499971a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16678706577638__021cc817-ffe8-43e0-8551-18b65499971a-167413680551cf76bf-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gif_page_st_val_bloc_etape_3.gif",
+            "tab_label": "Item",
+            "subheading": "Étape 3",
+            "title": "Dévoilez votre talent pour un dîner presque parfait",
+            "content": "<p>On a déjà tous eu l’idée de réserver une table au meilleur resto du coin, mais c’est du vu et du revu. D’ailleurs votre femme y a surement pensée et c’est le moment de l’impressionner ! Oubliez le resto et mettez vous plutôt au fourneau pour lui concocter son repas préféré ! Rien de mieux qu’un bon petit plat fait par son homme, Philippe Etchebest, peut aller se coucher. <\/p><p>Tant que vous y mettez du cœur, même vos petites pâtes aux beurres seront recommandées dans Top Chef ! Pour les plus audacieux vous pouvez ajouter quelques bougies et quelques fleurs pour une ambiance plus romantique. Découvrez ici 2 recettes simples et efficaces à faire avec ce que vous avez dans le placard.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__021cc817-ffe8-43e0-8551-18b65499971a-167413680551cf76bf-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "image_size": "small",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -451,6 +484,7 @@
     "7b9c825a-8570-46b6-aaaf-d4bbee880b13",
     "fe49bb63-699e-4f35-880e-95f610df8acc",
     "719de689-c939-4df7-8067-73256875b2a4",
-    "499c73a7-79af-4dc2-95db-2fad24d618c8"
+    "499c73a7-79af-4dc2-95db-2fad24d618c8",
+    "021cc817-ffe8-43e0-8551-18b65499971a"
   ]
 }
