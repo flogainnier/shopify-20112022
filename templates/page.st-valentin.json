@@ -104,7 +104,40 @@
         "background_overlap": "image",
         "image_position": "right",
         "image_size": "small",
-        "text_alignment": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "7b9c825a-8570-46b6-aaaf-d4bbee880b13": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16678706577638__7b9c825a-8570-46b6-aaaf-d4bbee880b13-167413680551cf76bf-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gif_page_st_val_bloc_etape_2.gif",
+            "tab_label": "Item",
+            "subheading": "ÉTAPE 2",
+            "title": "Consultez une voyante pour trouver son cadeau",
+            "content": "<p>Le secret d’un homme pour réussir, c’est de lire dans les pensées d’une femme. Pour la Saint-Valentin, elles disent toutes qu’elles n’ont besoin de rien, mais c’est <strong>UN PIÈGE <\/strong>! <\/p><p>Elles attendent de voir si elles valent plus qu’un match de foot, c’est donc le moment de l'épater et de la faire passer avant Kylian MBappé ! On a donc pensé à elles pour vous, avec des bijoux précieux et authentiques, qui durent dans le temps, et qu’elles pourront porter au quotidien. Ce sont les accessoires féminin par excellence et indémodables qui plaisent à coup sûr, même Grizou leurs fait moins d’effet. Découvrez nos 3 sélections.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__7b9c825a-8570-46b6-aaaf-d4bbee880b13-167413680551cf76bf-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "image_size": "small",
+        "text_alignment": "center",
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
@@ -117,6 +150,7 @@
     "main",
     "365b47ca-69f3-4a0c-9558-f9489d76be4c",
     "e0eca95a-a2e2-4355-8a2c-6edac76fc6f2",
-    "58c49d62-89a5-47a5-96ad-9dc85fad27ff"
+    "58c49d62-89a5-47a5-96ad-9dc85fad27ff",
+    "7b9c825a-8570-46b6-aaaf-d4bbee880b13"
   ]
 }
