@@ -2,11 +2,120 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "365b47ca-69f3-4a0c-9558-f9489d76be4c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16678706577638__365b47ca-69f3-4a0c-9558-f9489d76be4c-1674136787d796373d-0": {
+          "type": "image",
+          "settings": {
+            "only_customer": false,
+            "image": "shopify:\/\/shop_images\/site_charlotte_2.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__365b47ca-69f3-4a0c-9558-f9489d76be4c-1674136787d796373d-0"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "e0eca95a-a2e2-4355-8a2c-6edac76fc6f2": {
+      "type": "scroll-ticker",
+      "blocks": {
+        "718b7864-c633-4ebd-897e-02d66ff441a8": {
+          "type": "item",
+          "settings": {
+            "title": "Comment éviter le drame en 3 étapes",
+            "url": ""
+          }
+        },
+        "103145ed-2bcc-4fa0-bf97-a0fed138570f": {
+          "type": "item",
+          "settings": {
+            "title": "COMMENT ÉVITER LE DRAME EN 3 ÉTAPES",
+            "url": ""
+          }
+        },
+        "a192ad7a-5c8f-45ec-9288-25f0f342f4ec": {
+          "type": "item",
+          "settings": {
+            "title": "COMMENT ÉVITER LE DRAME EN 3 ÉTAPES",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "718b7864-c633-4ebd-897e-02d66ff441a8",
+        "103145ed-2bcc-4fa0-bf97-a0fed138570f",
+        "a192ad7a-5c8f-45ec-9288-25f0f342f4ec"
+      ],
+      "settings": {
+        "duration": 25,
+        "breather": 40,
+        "background": "#f5f1ec",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "58c49d62-89a5-47a5-96ad-9dc85fad27ff": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16678706577638__58c49d62-89a5-47a5-96ad-9dc85fad27ff-167413680551cf76bf-0": {
+          "type": "item",
+          "settings": {
+            "tab_label": "Item",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__58c49d62-89a5-47a5-96ad-9dc85fad27ff-167413680551cf76bf-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "image_size": "small",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "365b47ca-69f3-4a0c-9558-f9489d76be4c",
+    "e0eca95a-a2e2-4355-8a2c-6edac76fc6f2",
+    "58c49d62-89a5-47a5-96ad-9dc85fad27ff"
   ]
 }
