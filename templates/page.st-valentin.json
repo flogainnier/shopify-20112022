@@ -85,6 +85,7 @@
         "template--16678706577638__58c49d62-89a5-47a5-96ad-9dc85fad27ff-167413680551cf76bf-0": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gif_page_st_val_bloc_etape_1.gif",
             "tab_label": "Item",
             "subheading": "Subheading",
             "title": "Image with text",
@@ -101,9 +102,9 @@
         "reveal_on_scroll": true,
         "background_type": "full_width",
         "background_overlap": "image",
-        "image_position": "left",
+        "image_position": "right",
         "image_size": "small",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
