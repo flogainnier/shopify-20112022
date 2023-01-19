@@ -268,24 +268,26 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "a37f6c49-709b-4f86-899f-2469e4519133": {
-      "type": "rich-text",
+    "21cb4e3c-2993-4f07-bf92-0b5c2184ea46": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16678706577638__21cb4e3c-2993-4f07-bf92-0b5c2184ea46-1674136819fb2d3925-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Si vous êtes une petite maline qui a atteri sur cette page, merci de la partager à votre homme.",
+            "author": "L'équipe Aglaïa & Co"
+          }
+        }
+      },
+      "block_order": [
+        "template--16678706577638__21cb4e3c-2993-4f07-bf92-0b5c2184ea46-1674136819fb2d3925-0"
+      ],
       "settings": {
-        "subheading": "Petit Conseil Aglaïa :",
-        "subheading_type": "h2",
+        "reveal_on_scroll": true,
+        "subheading": "conseil",
         "title": "",
-        "title_type": "h3",
-        "content": "<p><strong>Si vous êtes une petite maline qui a atteri sur cette page, merci de la partager à votre homme. <\/strong><\/p>",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_width": "fill",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "#de2a2a",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
+        "background": "#f5f1ec",
+        "text_color": "#de2a2a"
       }
     }
   },
@@ -299,6 +301,6 @@
     "e3c0f01a-abef-45ff-b0ed-b697d955d3dc",
     "713d4a7e-fb87-4fd4-919d-c6f46d3665f7",
     "021cc817-ffe8-43e0-8551-18b65499971a",
-    "a37f6c49-709b-4f86-899f-2469e4519133"
+    "21cb4e3c-2993-4f07-bf92-0b5c2184ea46"
   ]
 }
