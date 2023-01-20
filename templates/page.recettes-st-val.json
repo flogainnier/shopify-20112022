@@ -60,9 +60,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/recette_tagliatelles_champ_1.jpg",
             "tab_label": "Item",
-            "subheading": "Subheading",
-            "title": "Image with text",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "subheading": "Recette express : 20 min",
+            "title": "Tagliatelles au poulet et champignons",
+            "content": "<p><em><strong>Étape 1<\/strong><\/em> : Épluchez puis coupez l'oignon en fines lamelles. Lavez et coupez les champignons en quartiers. <\/p><p><em><strong>Étape 2<\/strong><\/em> : Pendant ce temps, coupez le poulet en lamelles. Par la suite, faites chauffer une casserole d'eau bouillante salée et faites cuire les pâtes selon les instructions du paquet (environ 10 minutes). <\/p><p><em><strong>Étape 3 <\/strong><\/em>: Faites chauffer une poêle avec une noisette de beurre ou un filet d'huile d'olive et ajoutez le poulet. Faites-le dorer 1 à 2 minutes de chaque côté. Puis, ajoutez les oignons et les champignons. Faites cuire 5 minutes supplémentaires tout en remuant. Salez et poivrez. <\/p><p><em><strong>Étape 4 <\/strong><\/em>: Gardez une petite louche d'eau de cuisson (1 par portion) avant d'égoutter les pâtes à ajouter avec la crème fraîche dans la poêle. Mélangez. <\/p><p><em><strong>Étape 5<\/strong><\/em> : Ajoutez les pâtes et mélangez. Servez c'est prêt !<\/p>",
             "button_text": "",
             "button_link": ""
           }
