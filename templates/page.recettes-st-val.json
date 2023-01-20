@@ -137,6 +137,28 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "3b64115c-e516-49f8-8574-555ca38ae596": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16679718322406__3b64115c-e516-49f8-8574-555ca38ae596-167422139596afe0f8-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        }
+      },
+      "block_order": [
+        "template--16679718322406__3b64115c-e516-49f8-8574-555ca38ae596-167422139596afe0f8-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "background": "#f5f1ec",
+        "text_color": "#de2a2a"
+      }
     }
   },
   "order": [
@@ -144,6 +166,7 @@
     "25d789c0-94b5-4fda-848f-3a18eec57c26",
     "b3563117-cf4d-4938-a193-de2e044cb04d",
     "779e5e79-46d9-4c6f-bfc4-76e63f14b51c",
-    "1f93f2cd-e972-4be9-806a-10f7006832d5"
+    "1f93f2cd-e972-4be9-806a-10f7006832d5",
+    "3b64115c-e516-49f8-8574-555ca38ae596"
   ]
 }
