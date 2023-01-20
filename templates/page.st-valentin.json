@@ -132,8 +132,8 @@
             "subheading": "ÉTAPE 2",
             "title": "Consultez une voyante pour trouver son cadeau",
             "content": "<p>Le secret d’un homme pour réussir, c’est de lire dans les pensées d’une femme. Pour la Saint-Valentin, elles disent toutes qu’elles n’ont besoin de rien, mais c’est <strong>UN PIÈGE <\/strong>! <\/p><p>Elles attendent de voir si elles valent plus qu’un match de foot (oui, on sait qu'il y a match pour les fans), c’est donc le moment de l'épater et de la faire passer avant Kylian MBappé ! On a donc pensé à elles pour vous, avec des <strong>bijoux précieux et authentiques<\/strong>, qui durent dans le temps, et qu’elles pourront porter au quotidien. Ce sont les <strong>accessoires féminin par excellence<\/strong> et indémodables qui plaisent à coup sûr, même Grizou leurs fait moins d’effets. Découvrez nos <strong>3 sélections juste ici !<\/strong><\/p>",
-            "button_text": "",
-            "button_link": ""
+            "button_text": "Cadeaux pour elle",
+            "button_link": "shopify:\/\/collections\/cadeaux-pour-elle"
           }
         }
       },
@@ -149,9 +149,9 @@
         "text_alignment": "center",
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
+        "text_color": "#1a1a1a",
+        "button_background": "#f5f1ec",
+        "button_text_color": "#de2a2a"
       }
     },
     "cad80cb6-b483-46c7-82c3-bbe11b89f875": {
