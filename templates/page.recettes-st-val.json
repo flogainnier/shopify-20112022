@@ -2,11 +2,49 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "25d789c0-94b5-4fda-848f-3a18eec57c26": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16679718322406__25d789c0-94b5-4fda-848f-3a18eec57c26-1674217045d5b0dbe9-0": {
+          "type": "image",
+          "settings": {
+            "only_customer": false,
+            "image": "shopify:\/\/shop_images\/site_St_val_recette_acc.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16679718322406__25d789c0-94b5-4fda-848f-3a18eec57c26-1674217045d5b0dbe9-0"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "25d789c0-94b5-4fda-848f-3a18eec57c26"
   ]
 }
