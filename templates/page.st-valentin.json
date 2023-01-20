@@ -16,6 +16,7 @@
           "settings": {
             "only_customer": false,
             "image": "shopify:\/\/shop_images\/site_charlotte_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Plan_de_travail_2.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -189,7 +190,7 @@
         "template--16678706577638__e3c0f01a-abef-45ff-b0ed-b697d955d3dc-16741363455bf35b5d-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "declarez-sa-flamme",
             "label": "",
             "button_text": "",
             "button_url": ""
