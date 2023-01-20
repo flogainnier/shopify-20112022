@@ -45,6 +45,26 @@
     },
     "b3563117-cf4d-4938-a193-de2e044cb04d": {
       "type": "scroll-ticker",
+      "blocks": {
+        "f0399a02-a8cf-4715-b3e8-07e09264eaea": {
+          "type": "item",
+          "settings": {
+            "title": "Découvrez comment éviter le drame le soir de la Saint Valentin en 3 étapes, en cliquant ici",
+            "url": "shopify:\/\/pages\/guide-saint-valentin"
+          }
+        },
+        "5f601c70-0f8f-40ca-99d6-610ee897652a": {
+          "type": "item",
+          "settings": {
+            "title": "Découvrez comment éviter le drame le soir de la Saint Valentin en 3 étapes, en cliquant ici",
+            "url": "shopify:\/\/pages\/guide-saint-valentin"
+          }
+        }
+      },
+      "block_order": [
+        "f0399a02-a8cf-4715-b3e8-07e09264eaea",
+        "5f601c70-0f8f-40ca-99d6-610ee897652a"
+      ],
       "settings": {
         "duration": 25,
         "breather": 40,
