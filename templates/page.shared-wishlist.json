@@ -27,8 +27,8 @@
         "page_width": "medium"
       }
     },
-    "wishlist": {
-      "type": "wishlist",
+    "shared-wishlist": {
+      "type": "shared-wishlist",
       "settings": {
         "mobile_products_per_row": "2",
         "desktop_products_per_row": 4
@@ -38,6 +38,6 @@
   "order": [
     "166429147726ac73bc",
     "main",
-    "wishlist"
+    "shared-wishlist"
   ]
 }
