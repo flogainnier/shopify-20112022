@@ -74,7 +74,7 @@ function swymRenderWishlist(swat) {
 		  console.log("Container not found, Wishlist Page element not found");
 		}
   }, function(xhrObj) {
-    // something went wrong
+    document.getElementById("header-wishlist").innerHTML = "<div class='wishlist__empty heading h3'>Cette wishlist n'existe pas</div>"
   });
 }
 
