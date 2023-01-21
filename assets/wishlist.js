@@ -147,7 +147,22 @@ function onRemoveBtnClick(e) {
 
 function onShareFormSubmit(e) {
 	e.preventDefault();
-  var data = new FormData(document.querySelector("#share-wishlist-form"))
+  var form_html = `<form class="form" id="share-wishlist-form">
+    <div class="input">
+      <input id="share-sender" name="fromName" type="text" class="input__field input__field--text">
+      <label for="share-sender" class="input__label">Votre nom</label>
+    </div>
+    <div class="input">
+      <input id="share-email" name="toEmailId" type="text" class="input__field input__field--text">
+      <label for="share-email" class="input__label">Email du destinataire</label>
+    </div>
+    <div class="input">
+      <textarea id="share-message" name="note" class="input__field input__field--textarea"></textarea>
+      <label for="share-message" class="input__label">Votre message</label>
+    </div>
+    <input id="share-lid" name="lid" type="hidden">
+    <button type="submit" is="loader-button" class="form__submit button button--primary button--full">ENVOYER</button>
+  </form>`
   try {
     window._swat.sendListViaEmail(
     {
@@ -168,7 +183,7 @@ function onShareFormSubmit(e) {
     function(r) {
       document.getElementById("share-wishlist-form").classList.add("hidden")
       document.getElementById("share-form").innerHTML = "Oups! Une erreur est survenue!";
-      document.getElementById("share-wishlist-form").reset();
+      document.getElementById("share-wishlist-form").innerHTML = form_html;
       setTimeout(() => {
         document.getElementById("share-form").innerHTML = "";
         document.getElementById("share-wishlist-form").classList.remove("hidden")
@@ -177,7 +192,7 @@ function onShareFormSubmit(e) {
   } catch (error) {
     document.getElementById("share-wishlist-form").classList.add("hidden")
     document.getElementById("share-form").innerHTML = "Oups! Une erreur est survenue!";
-    document.getElementById("share-wishlist-form").reset();
+    document.getElementById("share-wishlist-form").innerHTML = form_html;
     setTimeout(() => {
       document.getElementById("share-form").innerHTML = "";
       document.getElementById("share-wishlist-form").classList.remove("hidden")
