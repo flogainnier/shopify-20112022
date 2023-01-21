@@ -49,7 +49,8 @@ if (!window.SwymCallbacks) {
 window.SwymCallbacks.push(swymRenderWishlist); /* Init Here */
 
 function swymRenderWishlist(swat) {
-  swat.fetchListDetails({lid: }, function(listContents){
+  var list = urlParams.get('hkey')
+  swat.fetchListDetails({lid: list}, function(listContents){
     var wishlistContentsContainer = document.getElementById("wishlist-items-container");
 		var formattedWishlistedProducts = listContents.items.map(function(p) {
 			p = SwymUtils.formatProductPrice(p); // formats product price and adds currency to product Object
