@@ -66,7 +66,7 @@ function swymRenderWishlist(swat) {
 		if(wishlistContentsContainer){
       if (listContents.items.length > 0) {
         wishlistContentsContainer.innerHTML = productCardsMarkup;
-        document.getElementById("header-wishlist").innerHTML = "<div class='wishlist__empty heading h3'>" + listContents.list.cby +"a partagé sa wishlist avec vous.</div>"
+        document.getElementById("header-wishlist").innerHTML = "<div class='wishlist__empty heading h4'>" + listContents.list.cby +" a partagé sa wishlist avec vous.</div>"
       } else {
         wishlistContentsContainer.innerHTML = "<div class='wishlist__empty heading h3'>La wishlist est vide.</div>";
       }
