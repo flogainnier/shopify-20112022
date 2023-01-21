@@ -2,6 +2,7 @@
   "sections": {
     "166429147726ac73bc": {
       "type": "page-header",
+      "disabled": true,
       "settings": {
         "section_type": "image_with_text_overlay",
         "image": "shopify:\/\/shop_images\/PAGE_MADAME_BLOC_2_BARCELONE.jpg",
