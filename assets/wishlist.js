@@ -156,20 +156,22 @@ function onShareFormSubmit(e) {
       lid: document.getElementById("share-lid").value,
     },
     function(r) {
+      document.getElementById("share-wishlist-form").classList.add("hidden")
+      document.getElementById("share-form").innerHTML = "Votre email a bien été envoyé.";
+      document.getElementById("share-wishlist-form").reset();
       setTimeout(() => {
-        document.getElementById("share-wishlist-form").classList.add("hidden")
-        document.getElementById("share-form").innerHTML = "Votre email a bien été envoyé.";
-        document.getElementById("share-wishlist-form").reset();
+        document.getElementById("share-form").innerHTML = "";
+        document.getElementById("share-wishlist-form").classList.remove("hidden")
       }, 5000);
-      document.getElementById("share-wishlist-form").classList.remove("hidden")
     },
     function(r) {
+      document.getElementById("share-wishlist-form").classList.add("hidden")
+      document.getElementById("share-form").innerHTML = "Oups! Une erreur est survenue!";
+      document.getElementById("share-wishlist-form").reset();
       setTimeout(() => {
-        document.getElementById("share-wishlist-form").classList.add("hidden")
-        document.getElementById("share-form").innerHTML = "Oups! Une erreur est survenue.";
-        document.getElementById("share-wishlist-form").reset();
+        document.getElementById("share-form").innerHTML = "";
+        document.getElementById("share-wishlist-form").classList.remove("hidden")
       }, 5000);
-      document.getElementById("share-wishlist-form").classList.remove("hidden")
     }
   );	
 }
