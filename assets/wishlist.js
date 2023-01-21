@@ -147,7 +147,8 @@ function onRemoveBtnClick(e) {
 
 function onShareFormSubmit(e) {
 	e.preventDefault();
-    var data = new FormData(document.querySelector("#share-wishlist-form"))
+  var data = new FormData(document.querySelector("#share-wishlist-form"))
+  try {
     window._swat.sendListViaEmail(
     {
       toEmailId: document.getElementById("share-email").value,
@@ -171,7 +172,15 @@ function onShareFormSubmit(e) {
       setTimeout(() => {
         document.getElementById("share-form").innerHTML = "";
         document.getElementById("share-wishlist-form").classList.remove("hidden")
-      }, 5000);
-    }
-  );	
+      }, 3000);
+    });	
+  } catch (error) {
+    document.getElementById("share-wishlist-form").classList.add("hidden")
+    document.getElementById("share-form").innerHTML = "Oups! Une erreur est survenue!";
+    document.getElementById("share-wishlist-form").reset();
+    setTimeout(() => {
+      document.getElementById("share-form").innerHTML = "";
+      document.getElementById("share-wishlist-form").classList.remove("hidden")
+    }, 3000);
+  }
 }
