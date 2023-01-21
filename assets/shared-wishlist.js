@@ -49,6 +49,8 @@ if (!window.SwymCallbacks) {
 window.SwymCallbacks.push(swymRenderWishlist); /* Init Here */
 
 function swymRenderWishlist(swat) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
   var list = urlParams.get('hkey')
   swat.fetchListDetails({lid: list}, function(listContents){
     var wishlistContentsContainer = document.getElementById("wishlist-items-container");
