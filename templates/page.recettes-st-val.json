@@ -15,7 +15,7 @@
           "type": "image",
           "settings": {
             "only_customer": false,
-            "image": "shopify:\/\/shop_images\/site_St_val_recette_acc.jpg",
+            "image": "shopify:\/\/shop_images\/site_St_val_recette_acc_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/site_St_val_recette_acc_tel.jpg",
             "text_position": "middle_center",
             "subheading": "",
@@ -78,11 +78,11 @@
         "template--16679718322406__779e5e79-46d9-4c6f-bfc4-76e63f14b51c-1674217196bce8debc-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/recette_tagliatelles_champ_1.jpg",
+            "image": "shopify:\/\/shop_images\/recette_tagliatelles_champ_2.jpg",
             "tab_label": "Item",
             "subheading": "Recette express : 20 min",
-            "title": "Tagliatelles au poulet et champignons",
-            "content": "<p><em><strong>Étape 1<\/strong><\/em> : Épluchez puis coupez l'oignon en fines lamelles. Lavez et coupez les champignons en quartiers. <\/p><p><em><strong>Étape 2<\/strong><\/em> : Pendant ce temps, coupez le poulet en lamelles. Par la suite, faites chauffer une casserole d'eau bouillante salée et faites cuire les pâtes selon les instructions du paquet (environ 10 minutes). <\/p><p><em><strong>Étape 3 <\/strong><\/em>: Faites chauffer une poêle avec une noisette de beurre ou un filet d'huile d'olive et ajoutez le poulet. Faites-le dorer 1 à 2 minutes de chaque côté. Puis, ajoutez les oignons et les champignons. Faites cuire 5 minutes supplémentaires tout en remuant. Salez et poivrez. <\/p><p><em><strong>Étape 4 <\/strong><\/em>: Gardez une petite louche d'eau de cuisson (1 par portion) avant d'égoutter les pâtes à ajouter avec la crème fraîche dans la poêle. Mélangez. <\/p><p><em><strong>Étape 5<\/strong><\/em> : Ajoutez les pâtes et mélangez. Servez c'est prêt !<\/p>",
+            "title": "Tagliatelles aux champignons",
+            "content": "<p><em><strong>Étape 1<\/strong><\/em> : Épluchez puis coupez l'oignon en fines lamelles. Lavez et coupez les champignons en quartiers. <\/p><p><em><strong>Étape 2<\/strong><\/em> : Faites chauffer une casserole d'eau bouillante salée et faites cuire les pâtes selon les instructions du paquet (environ 10 minutes). <\/p><p><em><strong>Étape 3 <\/strong><\/em>: Faites chauffer une poêle avec une noisette de beurre ou un filet d'huile d'olive et ajoutez les champignons et les oignons. Faites-les revenir pendant 5 à 10 min pour qu'ils deviennent fondant.  Salez et poivrez tout en remuant. <\/p><p><em><strong>Étape 4 <\/strong><\/em>: Gardez une petite louche d'eau de cuisson (1 par portion) avant d'égoutter les pâtes à ajouter avec la crème fraîche dans la poêle. Mélangez. <\/p><p><em><strong>Étape 5<\/strong><\/em> : Ajoutez les pâtes et mélangez. Servez c'est prêt !<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -111,11 +111,11 @@
         "template--16679718322406__1f93f2cd-e972-4be9-806a-10f7006832d5-1674217196bce8debc-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/recette_tagliatelles_d09616d6-a555-4f8c-8a2e-98ef06906b09.jpg",
+            "image": "shopify:\/\/shop_images\/recette_gratin_1.jpg",
             "tab_label": "Item",
             "subheading": "Recette pour les plus braves : 1h",
-            "title": "Gratin dauphinois accompagné de la viande de votre choix",
-            "content": "<p><em><strong>Étape 1 <\/strong><\/em>: Eplucher, laver et couper les pommes de terre en rondelles fines. Puis, hacher l'ail très finement.<\/p><p><em><strong>Étape 2 <\/strong><\/em>:  Porter à ébullition dans une casserole le lait, l'ail, le sel, le poivre et la muscade puis y plonger les pommes de terre et laisser cuire 10 à 15 min, selon leur fermeté. <\/p><p><em><strong>Étape 3 <\/strong><\/em>: Préchauffer le four à 180°C (thermostat 6) et beurrer un plat à gratin à l'aide d'une feuille de papier essuie-tout. Placer les pommes de terre égouttées dans le plat. Les recouvrir de crème, puis disposer des petites noix de beurre sur le dessus.<\/p><p><em><strong>Étape 4<\/strong><\/em> : Enfourner pour 50 min à 1 heure de cuisson. Utiliser le lait restant de la cuisson des pommes de terre pour faire une soupe ou une purée dans la foulée.<\/p>",
+            "title": "Gratin dauphinois",
+            "content": "<p><em><strong>Étape 1 <\/strong><\/em>: Eplucher, laver et couper les pommes de terre en rondelles fines. Puis, hacher l'ail très finement.<\/p><p><em><strong>Étape 2 <\/strong><\/em>:  Porter à ébullition dans une casserole le lait, l'ail, le sel, le poivre et la muscade puis y plonger les pommes de terre et laisser cuire 10 à 15 min, selon leur fermeté. <\/p><p><em><strong>Étape 3 <\/strong><\/em>: Préchauffer le four à 180°C (thermostat 6) et beurrer un plat à gratin à l'aide d'une feuille de papier essuie-tout. Placer les pommes de terre égouttées dans le plat. Les recouvrir de crème, puis disposer des petites noix de beurre sur le dessus. <\/p><p><em><strong>Étape 4<\/strong><\/em> : Enfourner pour 50 min à 1 heure de cuisson. Utiliser le lait restant de la cuisson des pommes de terre pour faire une soupe ou une purée dans la foulée.<\/p>",
             "button_text": "",
             "button_link": ""
           }
