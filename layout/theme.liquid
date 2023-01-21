@@ -51,7 +51,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       <meta name="robots" content="noindex">
     {%- endif -%}
 
-    {% if request.page_type == 'search' or request.page_type == 'policy' or request.page_type == 'cart' or request.page_type == 'customers/login' %}
+    {% if request.page_type == 'search' or request.page_type == 'policy' or request.page_type == 'cart' or request.page_type == 'customers/login' or request.page_type == 'customers/register' %}
       <meta name="robots" content="noindex">
     {%- endif -%}
 
@@ -126,7 +126,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     <script src="{{ 'vendor.js' | asset_url }}" defer></script>
     <script src="{{ 'theme.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
-    <script src="{{ 'wishlist.js' | asset_url }}" defer></script>
     <script src="{{ 'checkout-flickity.js' | asset_url }}" defer></script>
 
     <!-- Google Tag Manager -->
@@ -227,8 +226,8 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- section 'footer' -%}
     {%- endif -%}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script type="text/javascript" defer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
       var _learnq = _learnq || [];
       {% if customer %}
       _learnq.push(['identify', {
@@ -284,18 +283,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       }
       })
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    {% include 'swymSnippet' %}
+  </body>
 </html>

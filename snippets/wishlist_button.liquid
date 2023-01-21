@@ -1,14 +1,26 @@
 {%- if product.handle != blank -%}
-  <button type="button" aria-label="Add to wishlist" class="" button-wishlist data-product-handle="{{ product.handle }}">
+  <button class="product_{{product.id}}  swym-add-to-wishlist hidden" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" aria-label="">
     <style scoped>
       .icon {
         fill: transparent;
         transition: fill 0.3s ease;
       }
-      .active .icon {
+      .disabled .icon {
         fill: black;
+      }
+      .swym-tooltip {
+        display:none;
       }
     </style>
     {%- render 'icon' with 'heart' -%}
   </button>
+  <script>
+    if (!window.SwymCallbacks) {
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymRenderWishlist); /* Init Here */
+    function swymRenderWishlist(swat) {
+      var wishlistButton = document.querySelector(".swym-add-to-wishlist").classList.remove("hidden")
+    }
+  </script>
 {%- endif -%}
