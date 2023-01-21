@@ -79,18 +79,16 @@ function swymRenderWishlist(swat) {
 		  console.log("Container not found, Wishlist Page element not found");
 		}
 	});
-    if (document.getElementById("copyLink")) {
-      swat.generateSharedListURL(
-        null,
-        function(data, sharedListId) {
-          console.log(data);
-          document.getElementById("copyLink").value = data;
-          document.getElementById("share-lid").value = sharedListId;
-          document.getElementById("copyLink").classList.add("is-filled")
-        },     // returns the generated url
-        function(data) { console.log(data); }
-      );
-    }
+  if (document.getElementById("copyLink")) {
+    swat.generateSharedListURL(
+      null,
+      function(data, sharedListId) {
+        document.getElementById("copyLink").value = data;
+        document.getElementById("share-lid").value = sharedListId;
+        document.getElementById("copyLink").classList.add("is-filled")
+      }
+    );
+  }
 }
 
 function onAddToCartClick(e) {
@@ -150,7 +148,6 @@ function onRemoveBtnClick(e) {
 function onShareFormSubmit(e) {
 	e.preventDefault();
     var data = new FormData(document.querySelector("#share-wishlist-form"))
-    console.log(data)
     window._swat.sendListViaEmail(
     {
       toEmailId: document.getElementById("share-email").value,
