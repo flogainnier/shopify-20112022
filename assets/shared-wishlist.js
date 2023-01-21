@@ -64,7 +64,7 @@ function swymRenderWishlist(swat) {
 			products: formattedWishlistedProducts
 		});
 		if(wishlistContentsContainer){
-      if (products.length > 0) {
+      if (listContents.items.length > 0) {
         wishlistContentsContainer.innerHTML = productCardsMarkup;
         document.getElementById("header-wishlist").innerHTML = "<div class='wishlist__empty heading h3'>" + listContents.list.cby +"a partagé sa wishlist avec vous.</div>"
       } else {
