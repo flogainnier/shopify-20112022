@@ -174,7 +174,7 @@ function onShareFormSubmit(e) {
     function(r) {
       document.getElementById("share-wishlist-form").classList.add("hidden")
       document.getElementById("share-form").innerHTML = "Votre email a bien été envoyé.";
-      document.getElementById("share-wishlist-form").reset();
+      document.getElementById("share-wishlist-form").innerHTML = form_html;
       setTimeout(() => {
         document.getElementById("share-form").innerHTML = "";
         document.getElementById("share-wishlist-form").classList.remove("hidden")
