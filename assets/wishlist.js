@@ -56,7 +56,6 @@ window.SwymCallbacks.push(swymRenderWishlist); /* Init Here */
 function swymRenderWishlist(swat) {
 	// Get wishlist items
 	swat.fetch(function(products) {
-		console.log(products)
 		var wishlistContentsContainer = document.getElementById("wishlist-items-container");
 		var formattedWishlistedProducts = products.map(function(p) {
 			p = SwymUtils.formatProductPrice(p); // formats product price and adds currency to product Object
@@ -84,6 +83,7 @@ function swymRenderWishlist(swat) {
       swat.generateSharedListURL(
         null,
         function(data, sharedListId) {
+          console.log(data);
           document.getElementById("copyLink").value = data;
           document.getElementById("share-lid").value = sharedListId;
           document.getElementById("copyLink").classList.add("is-filled")
@@ -127,7 +127,6 @@ function attachClickListeners() {
     if (shareForm) {
     	shareForm.addEventListener('submit', onShareFormSubmit, false);
     }
-  	console.log("Events attached!");
 }
 
 function onRemoveBtnClick(e) {
