@@ -2,6 +2,7 @@
   <div class="section__header">
     <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
       <h2 class="section__title layout-flex__item layout-flex__item--stretch" id="main-header" tabindex="-1">{{ 'custom_checkout.order_info.title' | t }}</h2>
+      <p class="section__title layout-flex__item layout-flex__item--stretch">{{ 'custom_checkout.order_info.description' | t }}</p>
     </div>
   </div>
   <div class="section__content" data-section="order-information">
@@ -11,9 +12,8 @@
           <label class="field__label field__label--visible" for="checkout_attributes_order_info">{{ 'custom_checkout.order_info.to_whom_label' | t }}</label>
           <select size="1" class="field__input field__input--select" aria-required="false" name="checkout[attributes][order_info]" id="checkout_attributes_order_info">
             <option value="" selected>{{ 'custom_checkout.order_info.to_whom_label' | t }}</option>
-            <option value="J'achète pour moi" {% if checkout.attributes.order_info == "J'achète pour moi"%}selected{% endif %}>{{ 'custom_checkout.order_info.for_me' | t }}</option>
-            <option value="J'achète pour offrir" {% if checkout.attributes.order_info == "J'achète pour offrir"%}selected{% endif %}>{{ 'custom_checkout.order_info.to_offer' | t }}</option>
-            <option value="Un peu des deux" {% if checkout.attributes.order_info == "Un peu des deux"%}selected{% endif %}>{{ 'custom_checkout.order_info.both' | t }}</option>
+            <option value="single" {% if checkout.attributes.order_info == "single"%}selected{% endif %}>{{ 'custom_checkout.order_info.for_me' | t }}</option>
+            <option value="couple" {% if checkout.attributes.order_info == "couple"%}selected{% endif %}>{{ 'custom_checkout.order_info.to_offer' | t }}</option>
           </select>
           <div class="field__caret">
             <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"><use xlink:href="#caret-down"></use></svg>
@@ -24,7 +24,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="section section--order-fulfillment" style="display:none">
   <div class="section__content" data-section="order-fulfillment">
