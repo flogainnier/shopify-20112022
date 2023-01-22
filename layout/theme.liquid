@@ -52,7 +52,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     {%- if request.page_type == 'collection' -%}
       {% if collection.metafields.custom.no_index or current_tags %}
         <meta name="robots" content="noindex">
-      {% endif %}
+        <link rel="canonical" href="{{ shop.url }}{{ collection.url }}">
+      {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+      {%- endif -%}
     {%- endif -%}
 
     {%- if request.page_type == 'product' -%}
