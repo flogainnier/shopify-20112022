@@ -63,6 +63,14 @@
             <li class="breadcrumb__item">
               <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
             </li>
+          {%- else -%}
+            {%- if product.metafields.custom.breadcrumb_links -%}
+              {%- for collection in product.metafields.custom.breadcrumb_links -%}
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
+                </li>
+              {%- endfor -%}
+            {%- endif -%}
           {%- endif -%}
           <li class="breadcrumb__item">
             <span class="breadcrumb__link" aria-current="page">{{ product.title }}</span>
