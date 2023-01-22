@@ -65,7 +65,7 @@
             </li>
           {%- else -%}
             {%- if product.metafields.custom.breadcrumb_links -%}
-              {%- for collection in product.metafields.custom.breadcrumb_links -%}
+              {%- for collection in product.metafields.custom.breadcrumb_links.value -%}
                 <li class="breadcrumb__item">
                   <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
                 </li>
