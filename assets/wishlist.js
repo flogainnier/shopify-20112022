@@ -69,10 +69,14 @@ function swymRenderWishlist(swat) {
 		if(wishlistContentsContainer){
             if (products.length > 0) {
               wishlistContentsContainer.innerHTML = productCardsMarkup;
-              document.getElementById("toggle-wishlist-button").classList.remove("hidden")
+              if (document.getElementById("toggle-wishlist-button")) {
+                document.getElementById("toggle-wishlist-button").classList.remove("hidden")
+              }
       		  attachClickListeners();
             } else {
-              document.getElementById("toggle-wishlist-button").classList.add("hidden")
+              if (document.getElementById("toggle-wishlist-button")) {
+                document.getElementById("toggle-wishlist-button").classList.add("hidden")
+              }
               wishlistContentsContainer.innerHTML = "<div class='wishlist__empty heading h3'>Votre wishlist est vide.</div>";
             }
 		} else{
