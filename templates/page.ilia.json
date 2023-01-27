@@ -42,56 +42,9 @@
         "overlay_opacity": 10
       }
     },
-    "a9984739-4c9d-497b-b111-0784c3bd84fe": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16592689627366__a9984739-4c9d-497b-b111-0784c3bd84fe-1665479032e1f50db1-0": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/BLOC_2_COFFRET_SAHA.jpg",
-            "tab_label": "Item",
-            "subheading": "PRECOMMANDE",
-            "title": "COFFRET SAHA",
-            "content": "<p>En association ou seule, sublimez vos oreilles avec le coffret Saha qui est composé de 3 boucles : Yemaya, Ida et Sian. Mantra : j'exprime ma puissance.<\/p>",
-            "button_text": "découvrir",
-            "button_link": "shopify:\/\/products\/coffret-saha-1"
-          }
-        }
-      },
-      "block_order": [
-        "template--16592689627366__a9984739-4c9d-497b-b111-0784c3bd84fe-1665479032e1f50db1-0"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "background_type": "full_width",
-        "background_overlap": "image",
-        "image_position": "right",
-        "image_size": "medium",
-        "text_alignment": "center",
-        "cycle_speed": 8,
-        "accent_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "#1a1a1a",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "4e1faa2d-7169-458c-b644-12eba56cfa5e": {
       "type": "collection-list",
       "blocks": {
-        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/coffretversion2.jpg",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#1a1a1a",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-1": {
           "type": "collection",
           "settings": {
@@ -106,15 +59,29 @@
             "overlay_opacity": 30
           }
         },
+        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/coffretversion2.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-2": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/coffret2_1_2.jpg",
+            "image": "shopify:\/\/shop_images\/baguex3_700x_6801209d-d20b-43de-b265-620bc66a8d8c.webp",
             "subheading": "",
             "title": "",
             "link_text": "",
-            "link_url": "shopify:\/\/products\/coffret-saha",
+            "link_url": "shopify:\/\/products\/coffret-yoga",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -150,8 +117,8 @@
         }
       },
       "block_order": [
-        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-0",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-1",
+        "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-0",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-2",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-4",
         "template--16592689627366__4e1faa2d-7169-458c-b644-12eba56cfa5e-1666186166001cf369-5"
@@ -278,7 +245,6 @@
     "main",
     "a48b4e50-3837-4c80-8d34-d8e0286cec00",
     "b2598326-d1c9-4ab8-8d9d-afab7d9df082",
-    "a9984739-4c9d-497b-b111-0784c3bd84fe",
     "4e1faa2d-7169-458c-b644-12eba56cfa5e",
     "91a2dfa6-f90f-46cf-b0c3-5e672fbb3634",
     "d264bf40-59e2-4702-bff6-63f92353bf4a",
