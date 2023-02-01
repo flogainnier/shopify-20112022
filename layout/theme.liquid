@@ -38,7 +38,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     </title>
 
     {%- if page_description -%}
-      <meta name="description" content="{{ page_description | escape }}">
+      {% if template == 'collection-list' %}
+        <meta name="description" content="{{ 'general.meta.list_collections_description' | t }}">
+      {% else %}
+        <meta name="description" content="{{ page_description | escape }}">
+      {% endif %}
     {%- endif -%}
 
     {% if template == 'list-collections' %}

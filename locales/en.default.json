@@ -2,7 +2,8 @@
   "general": {
     "meta": {
       "page": "Page {{ page }}",
-      "list_collections": "All collections"
+      "list_collections": "All collections",
+      "list_collections_description": "Let yourself be seduced by our collections of jewelry Made in France, created with care and passion. Each piece is unique and testifies to our artisanal know-how. Browse our selection of rings, earrings, necklaces, bracelets and pendants in solid recycled silver and gold plated. Find the perfect gift for yourself or to offer. Order online now."
     },
     "label": {
       "color": "Color,Colour,Couleur",

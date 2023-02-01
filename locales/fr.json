@@ -2,7 +2,8 @@
   "general": {
     "meta": {
       "page": "Page {{ page }}",
-      "list_collections": "Toutes les collections"
+      "list_collections": "Toutes les collections",
+      "list_collections_description": "Laissez-vous séduire par nos collections de bijoux Made in France, créés avec soin et passion. Chaque pièce est unique et témoigne de nos savoir-faire artisanaux. Parcourez notre sélection de bagues, boucles d'oreilles, colliers, bracelets et pendentifs en argent massif recyclé et plaqué or. Trouvez le cadeau idéal pour vous ou pour offrir. Commandez en ligne dès maintenant."
     },
     "label": {
       "color": "Couleur",
