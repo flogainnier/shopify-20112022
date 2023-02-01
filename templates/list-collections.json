@@ -1,1 +1,258 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"collections_to_show":"selected","show_collection_title":true}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "blocks": {
+        "f7a64a75-5a32-48b3-8e87-f2c7dfd5bf69": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "f7a64a75-5a32-48b3-8e87-f2c7dfd5bf69"
+      ],
+      "settings": {
+        "collections_to_show": "selected",
+        "show_collection_title": true
+      }
+    },
+    "d06868e6-aefb-4e40-af91-4b1909445196": {
+      "type": "page-header",
+      "settings": {
+        "section_type": "image_with_text",
+        "image": "shopify:\/\/shop_images\/collections_header.jpg",
+        "section_height": "small",
+        "image_size": "medium",
+        "image_position": "right",
+        "background_type": "full_width",
+        "title": "Bijouterie Française engagée",
+        "content": "<p>Découvrez notre gamme de de bijoux fabriqués en France et conçus avec passion. Chaque pièce est unique et reflète l'héritage de l'artisanat français. Explorez notre sélection de bagues, boucles d'oreilles, colliers, bracelets et pendentifs en argent recyclé, plaqué or et pierres fines. Trouvez le bijou parfait pour vous ou pour offrir en toute occasion.<\/p>",
+        "text_position": "center",
+        "text_alignment": "center",
+        "text_width": "medium",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 30
+      }
+    },
+    "9636f298-da19-4410-8dbe-4688ae3a2cfa": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16637482500326__9636f298-da19-4410-8dbe-4688ae3a2cfa-167525968100c4f5f4-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "les-iconiques",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482500326__9636f298-da19-4410-8dbe-4688ae3a2cfa-167525968100c4f5f4-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Nos Iconiques",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8944b8a7-aa5f-436e-ab49-a6af473355b4": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bagues",
+            "image": "shopify:\/\/shop_images\/collections_bagues.jpg",
+            "subheading": "",
+            "title": "Bagues",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "colliers",
+            "image": "shopify:\/\/shop_images\/collections_colliers.jpg",
+            "subheading": "",
+            "title": "Colliers",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "boucles-doreilles",
+            "image": "shopify:\/\/shop_images\/collections_boucles.jpg",
+            "subheading": "",
+            "title": "Boucles d'oreilles",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "image": "shopify:\/\/shop_images\/collections_bracelets.jpg",
+            "subheading": "",
+            "title": "Bracelets",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-0",
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-1",
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-2",
+        "template--16637482500326__8944b8a7-aa5f-436e-ab49-a6af473355b4-1675251643959751c0-3"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "carousel",
+        "subheading": "Accumulez-les",
+        "title": "Nos Bijoux",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/collections_solaires_ddb52b2c-59bd-4a10-bdb8-49a543faf370.jpg",
+            "subheading": "",
+            "title": "Solaires",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "barrettes",
+            "image": "shopify:\/\/shop_images\/collections_barrettes_3bab0e96-174c-4856-b780-0222f402acd4.jpg",
+            "subheading": "",
+            "title": "Barrettes",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-0",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-1",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-3",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-4",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "carousel",
+        "subheading": "Nos accessoires",
+        "title": "Complétez votre look",
+        "background": "#f5f1ec",
+        "text_color": "#1a1a1a"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d06868e6-aefb-4e40-af91-4b1909445196",
+    "9636f298-da19-4410-8dbe-4688ae3a2cfa",
+    "8944b8a7-aa5f-436e-ab49-a6af473355b4",
+    "4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2"
+  ]
+}
