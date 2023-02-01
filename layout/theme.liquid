@@ -65,6 +65,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- endif -%}
     {%- endif -%}
 
+    {% if collection.handle == 'all' %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
     {%- if settings.favicon -%}
       <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
     {%- endif -%}
