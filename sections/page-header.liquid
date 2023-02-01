@@ -53,12 +53,22 @@
                 <li class="breadcrumb__item">
                   <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
                 </li>
-        
-                <li class="breadcrumb__item">
-                  <span class="breadcrumb__link" aria-current="page">
-                    {{- page.title -}}
-                  </span>
-                </li>
+                
+                {% if template == 'collection-list' %}
+                  <li class="breadcrumb__item">
+                    <span class="breadcrumb__link" aria-current="page">
+                      {{ 'general.meta.list_collections' | t }}
+                    </span>
+                  </li>
+                {%- endif -%}
+
+                {% if page %}
+                  <li class="breadcrumb__item">
+                    <span class="breadcrumb__link" aria-current="page">
+                      {{- page.title -}}
+                    </span>
+                  </li>
+                {%- endif -%}
               </ol>
             </nav>
 
