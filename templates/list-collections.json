@@ -35,7 +35,7 @@
         "content": "<p>Découvrez notre gamme de de bijoux fabriqués en France et conçus avec passion. Chaque pièce est unique et reflète l'héritage de l'artisanat français. Explorez notre sélection de bagues, boucles d'oreilles, colliers, bracelets et pendentifs en argent recyclé, plaqué or et pierres fines. Trouvez le bijou parfait pour vous ou pour offrir en toute occasion.<\/p>",
         "text_position": "center",
         "text_alignment": "center",
-        "text_width": "medium",
+        "text_width": "fill",
         "image_text_color": "#ffffff",
         "image_overlay_color": "#000000",
         "image_overlay_opacity": 30
