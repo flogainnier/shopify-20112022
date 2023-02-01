@@ -163,6 +163,20 @@
             "overlay_opacity": 0
           }
         },
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "montres",
+            "image": "shopify:\/\/shop_images\/collections_montres_1.jpg",
+            "subheading": "",
+            "title": "Montres",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-1": {
           "type": "collection",
           "settings": {
@@ -176,25 +190,12 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
         "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-0",
-        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-1",
-        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2"
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-2",
+        "template--16637482500326__4dc3609d-9599-4fd3-8bb1-7a521f4ca3f2-1675251643959751c0-1"
       ],
       "settings": {
         "reveal_on_scroll": false,
