@@ -38,15 +38,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     </title>
 
     {%- if page_description -%}
-      {% if template == 'collection-list' %}
+      {% if template == 'list-collections' %}
         <meta name="description" content="{{ 'general.meta.list_collections_description' | t }}">
       {% else %}
         <meta name="description" content="{{ page_description | escape }}">
       {% endif %}
-    {%- endif -%}
-
-    {% if template == 'list-collections' %}
-      <meta name="robots" content="noindex">
     {%- endif -%}
 
     {% if request.page_type == 'search' or request.page_type == 'policy' or request.page_type == 'cart' or request.page_type == 'customers/login' or request.page_type == 'customers/register' %}
