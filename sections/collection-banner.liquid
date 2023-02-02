@@ -1,166 +1,162 @@
-{% if collection.handle == 'all' %}
-  <script>window.location.replace("/");</script>
-{% else %}
-  <style>
-    #shopify-section-{{ section.id }} .image-overlay {
-      --heading-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
-      --text-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
-      --section-items-alignment: center;
-      --section-overlay-color: {{ section.settings.image_overlay_color.red }}, {{ section.settings.image_overlay_color.green }}, {{ section.settings.image_overlay_color.blue }};
-      --section-overlay-opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+<style>
+  #shopify-section-{{ section.id }} .image-overlay {
+    --heading-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
+    --text-color: {{ section.settings.image_text_color.red }}, {{ section.settings.image_text_color.green }}, {{ section.settings.image_text_color.blue }};
+    --section-items-alignment: center;
+    --section-overlay-color: {{ section.settings.image_overlay_color.red }}, {{ section.settings.image_overlay_color.green }}, {{ section.settings.image_overlay_color.blue }};
+    --section-overlay-opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+  @media screen and (min-width: 1000px) {
+    .image-with-text__image-wrapper {
+      {%- if section.settings.image_size == 'small' -%}
+        width: 33%;
+      {%- elsif section.settings.image_size == 'medium' -%}
+        width: 50%;
+      {%- else -%}
+        width: 66%;
+      {%- endif -%}
     }
+  }
+</style>
 
-    @media screen and (min-width: 1000px) {
-      .image-with-text__image-wrapper {
-        {%- if section.settings.image_size == 'small' -%}
-          width: 33%;
-        {%- elsif section.settings.image_size == 'medium' -%}
-          width: 50%;
-        {%- else -%}
-          width: 66%;
-        {%- endif -%}
-      }
-    }
-  </style>
+<section>
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------
+  TOP PART (IMAGE AND BREADCRUMB)
+  ------------------------------------------------------------------------------------------
+  {%- endcomment -%}
 
-  <section>
-    {%- comment -%}
-    ------------------------------------------------------------------------------------------
-    TOP PART (IMAGE AND BREADCRUMB)
-    ------------------------------------------------------------------------------------------
-    {%- endcomment -%}
+  {%- capture breadcrumb -%}
+    <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall hidden-phone">
+      <ol class="breadcrumb__list" role="list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+        </li>
 
-    {%- capture breadcrumb -%}
-      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall hidden-phone">
-        <ol class="breadcrumb__list" role="list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
-          </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__link" aria-current="page">
+            {%- if collection.handle == 'all' -%}
+              {{- 'collection.general.all_products' | t -}}
+            {%- else -%}
+              {{- section.settings.title -}}
+            {%- endif -%}
+          </span>
+        </li>
+      </ol>
+    </nav>
+  {%- endcapture -%}
 
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__link" aria-current="page">
-              {%- if collection.handle == 'all' -%}
-                {{- 'collection.general.all_products' | t -}}
-              {%- else -%}
-                {{- section.settings.title -}}
-              {%- endif -%}
-            </span>
-          </li>
-        </ol>
-      </nav>
-    {%- endcapture -%}
+  {%- if section.settings.image and section.settings.section_type == "image_with_text_overlay" -%}
+    <image-with-text-overlay reveal-on-scroll parallax class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio }}"{% endif %}>
+      <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%"{% endif %}>
+        {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
+        <picture>
+          <source media="(max-width: 740px)" {% render 'image-attributes', image: section.settings.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', ignore_src: true %}>
+          <img class="image-overlay__image" reveal {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' %}>
+        </picture>
+      </div>
 
-    {%- if section.settings.image and section.settings.section_type == "image_with_text_overlay" -%}
-      <image-with-text-overlay reveal-on-scroll parallax class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio }}"{% endif %}>
-        <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%"{% endif %}>
-          {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
-          <picture>
-            <source media="(max-width: 740px)" {% render 'image-attributes', image: section.settings.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', ignore_src: true %}>
-            <img class="image-overlay__image" reveal {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' %}>
-          </picture>
-        </div>
-
-        <div class="container">
-          <div class="image-overlay__content-wrapper">
-            {{- breadcrumb -}}
-
-            <div class="image-overlay__content content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--center text-container">
-              <h1 class="heading h1">
-                <split-lines reveal>{{ section.settings.title }}</split-lines>
-              </h1>
-
-              {%- if section.settings.show_collection_description and collection.description != blank -%}
-                <div class="image-overlay__text-container" reveal>
-                  {{- collection.description -}}
-                </div>
-              {%- endif -%}
-            </div>
-          </div>
-        </div>
-      </image-with-text-overlay>
-    {%- elsif section.settings.image and section.settings.section_type == "image_with_text" -%}
-      <image-with-text {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-with-text {% if is_boxed %}image-with-text--boxed{% endif %} {% if section.settings.image_position == 'right' %}image-with-text--reverse{% endif %} image-with-text--overlap-{{ section.settings.background_overlap }}" style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio | default: 1 }}">
-        <div class="{% if is_boxed == true %}container{% endif %}">
-          <div class="image-with-text__wrapper">
-            {%- assign first_image_aspect_ratio = section.settings.image.aspect_ratio | default: 1 -%}
-
-            <div class="image-with-text__image-wrapper"> 
-              {%- if section.settings.image -%}
-                <img class="image-with-text__image" {% if section.settings.reveal_on_scroll %}reveal-visibility{% endif %} sizes="(max-width: 740px) calc(100vw - 96px), (max-width: 999px) calc(100vw - 160px), 600px" loading="lazy" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400' %}>
-              {%- else -%}
-                {%- if section.settings.reveal_on_scroll -%}
-                  {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' | replace: '<svg', '<svg reveal-visibility' -}}
-                {%- else -%}
-                  {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' -}}
-                {%- endif -%}
-              {%- endif -%}
-            </div>
-
-            <div class="image-with-text__content-wrapper">    
-              <image-with-text-item class="image-with-text__content text-container text--{{ section.settings.text_alignment }}" {{ section.shopify_attributes }}>
-                {{- breadcrumb -}}
-                            
-                <h1 class="heading h1">
-                  <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.title | escape }}</split-lines>
-                </h1>
-
-                {%- if section.settings.show_collection_description and collection.description != blank -%}
-                  <div class="image-with-text__text-wrapper" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>
-                    {{- collection.description -}}
-                  </div>
-                {%- endif -%}
-              </image-with-text-item>
-            </div>
-
-          </div>
-        </div>
-      </image-with-text>
-    {%- else -%}
       <div class="container">
-        <div class="page-header">
-          <div class="page-header__text-wrapper content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--{{ section.settings.text_position }} text-container">
-            {{- breadcrumb -}}
+        <div class="image-overlay__content-wrapper">
+          {{- breadcrumb -}}
 
-            <h1 class="heading h1">{{ section.settings.title }}</h1>
+          <div class="image-overlay__content content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--center text-container">
+            <h1 class="heading h1">
+              <split-lines reveal>{{ section.settings.title }}</split-lines>
+            </h1>
 
             {%- if section.settings.show_collection_description and collection.description != blank -%}
-              {{- collection.description -}}
+              <div class="image-overlay__text-container" reveal>
+                {{- collection.description -}}
+              </div>
             {%- endif -%}
           </div>
         </div>
-      </div>      
-    {%- endif -%}
+      </div>
+    </image-with-text-overlay>
+  {%- elsif section.settings.image and section.settings.section_type == "image_with_text" -%}
+    <image-with-text {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-with-text {% if is_boxed %}image-with-text--boxed{% endif %} {% if section.settings.image_position == 'right' %}image-with-text--reverse{% endif %} image-with-text--overlap-{{ section.settings.background_overlap }}" style="--image-aspect-ratio: {{ section.settings.image.aspect_ratio | default: 1 }}">
+      <div class="{% if is_boxed == true %}container{% endif %}">
+        <div class="image-with-text__wrapper">
+          {%- assign first_image_aspect_ratio = section.settings.image.aspect_ratio | default: 1 -%}
 
-    {%- comment -%}
-    ------------------------------------------------------------------------------------------
-    QUICK LINKS PART
-    ------------------------------------------------------------------------------------------
-    {%- endcomment -%}
+          <div class="image-with-text__image-wrapper"> 
+            {%- if section.settings.image -%}
+              <img class="image-with-text__image" {% if section.settings.reveal_on_scroll %}reveal-visibility{% endif %} sizes="(max-width: 740px) calc(100vw - 96px), (max-width: 999px) calc(100vw - 160px), 600px" loading="lazy" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400' %}>
+            {%- else -%}
+              {%- if section.settings.reveal_on_scroll -%}
+                {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' | replace: '<svg', '<svg reveal-visibility' -}}
+              {%- else -%}
+                {{- 'image' | placeholder_svg_tag: 'image-with-text__image placeholder-background' -}}
+              {%- endif -%}
+            {%- endif -%}
+          </div>
 
-    {%- assign quick_links_menu = section.settings.quick_links -%}
+          <div class="image-with-text__content-wrapper">    
+            <image-with-text-item class="image-with-text__content text-container text--{{ section.settings.text_alignment }}" {{ section.shopify_attributes }}>
+              {{- breadcrumb -}}
+                          
+              <h1 class="heading h1">
+                <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.title | escape }}</split-lines>
+              </h1>
 
-    {%- if quick_links_menu.links.size > 0 -%}
-      <link-bar class="link-bar">
-        <div class="container">
-          <div class="link-bar__wrapper">
-            <!--
-            <span class="link-bar__title heading heading--small text--subdued">{{ quick_links_menu.title }}</span>
-            -->
-            <div class="link-bar__scroller hide-scrollbar">
-              <ul class="link-bar__linklist list--unstyled" role="list">
-                {%- for link in quick_links_menu.links -%}
-                  <li class="link-bar__link-item {% if link.active %}link-bar__link-item--selected{% endif %}">
-                    <a href="{{ link.url }}" class="link-bar__link link--animated {% if link.active %}text--underlined{% endif %}">{{ link.title }}</a>
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
+              {%- if section.settings.show_collection_description and collection.description != blank -%}
+                <div class="image-with-text__text-wrapper" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>
+                  {{- collection.description -}}
+                </div>
+              {%- endif -%}
+            </image-with-text-item>
+          </div>
+
+        </div>
+      </div>
+    </image-with-text>
+  {%- else -%}
+    <div class="container">
+      <div class="page-header">
+        <div class="page-header__text-wrapper content-box content-box--{{ section.settings.text_width }} content-box--text-{{ section.settings.text_alignment }} content-box--{{ section.settings.text_position }} text-container">
+          {{- breadcrumb -}}
+
+          <h1 class="heading h1">{{ section.settings.title }}</h1>
+
+          {%- if section.settings.show_collection_description and collection.description != blank -%}
+            {{- collection.description -}}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>      
+  {%- endif -%}
+
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------
+  QUICK LINKS PART
+  ------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- assign quick_links_menu = section.settings.quick_links -%}
+
+  {%- if quick_links_menu.links.size > 0 -%}
+    <link-bar class="link-bar">
+      <div class="container">
+        <div class="link-bar__wrapper">
+          <!--
+          <span class="link-bar__title heading heading--small text--subdued">{{ quick_links_menu.title }}</span>
+          -->
+          <div class="link-bar__scroller hide-scrollbar">
+            <ul class="link-bar__linklist list--unstyled" role="list">
+              {%- for link in quick_links_menu.links -%}
+                <li class="link-bar__link-item {% if link.active %}link-bar__link-item--selected{% endif %}">
+                  <a href="{{ link.url }}" class="link-bar__link link--animated {% if link.active %}text--underlined{% endif %}">{{ link.title }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
           </div>
         </div>
-      </link-bar>
-    {%- endif -%}
-  </section>
-{%- endif -%}
+      </div>
+    </link-bar>
+  {%- endif -%}
+</section>
 
 {% schema %}
 {
