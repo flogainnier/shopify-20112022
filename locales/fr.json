@@ -528,9 +528,9 @@
     "order_info": {
       "title": "Information sur la commande",
       "description": "Dites-nous en plus sur vous! Une petite surprise sera incluse dans votre commande.",
-      "to_whom_label": "Êtes-vous en couple ou célibataire ?",
-      "for_me": "En couple",
-      "to_offer": "Célibataire",
+      "to_whom_label": "À qui cette commande est-elle destinée ?",
+      "for_me": "Pour moi",
+      "to_offer": "Pour offrir",
       "both": "Un peu des deux",
       "error": "Veuillez sélectionner une option"
     },

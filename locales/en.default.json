@@ -528,9 +528,9 @@
     "order_info": {
       "title": "Order information",
       "description": "Tell us more about you! A little surprise will be included in your order.",
-      "to_whom_label": "Are you in a relationship or single ?",
-      "for_me": "Single",
-      "to_offer": "In a relationship",
+      "to_whom_label": "Who is this order for ?",
+      "for_me": "For me",
+      "to_offer": "To offer",
       "both": "A little of both",
       "error": "Select an option"
     },
