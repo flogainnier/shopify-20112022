@@ -25,6 +25,7 @@
         },
         "a30850cb-f28e-4683-8600-7001edb72de1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "only_customer": false,
             "image": "shopify:\/\/shop_images\/HP_SOLDES_AH23.jpg",
