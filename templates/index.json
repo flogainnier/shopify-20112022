@@ -354,7 +354,7 @@
       "settings": {
         "duration": 40,
         "breather": 40,
-        "background": "#2a3d2c",
+        "background": "#000000",
         "text_color": "#ffffff"
       }
     },
