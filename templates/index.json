@@ -101,8 +101,39 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "9543a909-ee04-4e26-9e57-d09177471457": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16637482565862__9543a909-ee04-4e26-9e57-d09177471457-16758459492a875aa0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "back-in-stock",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16637482565862__9543a909-ee04-4e26-9e57-d09177471457-16758459492a875aa0-0"
+      ],
+      "settings": {
+        "subheading": "Découvrez",
+        "title": "BACK IN STOCK",
+        "content": "",
+        "products_count": 14,
+        "products_per_row": 5,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1658498460c35802eb": {
       "type": "featured-collections",
+      "disabled": true,
       "blocks": {
         "1658498460200905ad-0": {
           "type": "collection",
@@ -605,6 +636,7 @@
   },
   "order": [
     "slideshow",
+    "9543a909-ee04-4e26-9e57-d09177471457",
     "1658498460c35802eb",
     "1663599417d7f4c1fe",
     "collection-list",
