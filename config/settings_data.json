@@ -50,7 +50,6 @@
     "social_linkedin": "https:\/\/fr.linkedin.com\/company\/aglaia-&-co",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "checkout_customization": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/aglaiaco_vf_black.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_sidebar_background_color": "#ffffff",
@@ -442,7 +441,7 @@
               "icon": "picto-box",
               "custom_icon_width": 50,
               "title": "Free shipping",
-              "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+              "content": "<p> Free worldwide shipping and returns - customs and duties taxes included<\/p>"
             }
           },
           "static-text-with-icons-1": {
@@ -451,7 +450,7 @@
               "icon": "picto-phone",
               "custom_icon_width": 50,
               "title": "Customer service",
-              "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+              "content": "<p> We are available from monday to friday to answer your questions.<\/p>"
             }
           },
           "static-text-with-icons-2": {
@@ -460,7 +459,7 @@
               "icon": "picto-lock",
               "custom_icon_width": 50,
               "title": "Secure payment",
-              "content": "<p>Your payment information is processed securely.<\/p>"
+              "content": "<p> Your payment information is processed securely.<\/p>"
             }
           },
           "static-text-with-icons-3": {
@@ -469,7 +468,7 @@
               "icon": "picto-email",
               "custom_icon_width": 50,
               "title": "Contact us",
-              "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com<\/p>"
+              "content": "<p> Need to contact us? Just send us an e-mail at info@yourstore.com<\/p>"
             }
           }
         },
@@ -491,7 +490,7 @@
           "show_section": false,
           "reveal_on_scroll": true,
           "subheading": "Subscribe to our newsletter",
-          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "content": "<p> Promotions, new products and sales. Directly to your inbox.<\/p>",
           "text_position": "right",
           "text_alignment": "left",
           "text_background": "rgba(0,0,0,0)",
