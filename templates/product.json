@@ -87,6 +87,9 @@
         "9b68dfbd-00c2-4eb7-85c7-6693767c3ef1",
         "081edb4d-f243-4995-83a6-66a9b7f8470c"
       ],
+      "custom_css": [
+        ".swym-button-bar {margin: 0px;}"
+      ],
       "settings": {
         "show_vendor": false,
         "show_sku": false,
