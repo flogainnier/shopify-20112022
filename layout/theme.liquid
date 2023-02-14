@@ -217,7 +217,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- section 'footer' -%}
     {%- endif -%}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
       var _learnq = _learnq || [];
       {% if customer %}
@@ -265,14 +264,14 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           return response
         }
       }(window, window.fetch))
-      $(document).ajaxComplete(function(event, request, settings){
-        if(settings.url == "/cart/add.js"){
+      document.addEventListener("ajaxComplete", function(event) {
+        if(event.detail[0].responseURL == "/cart/add.js"){
             addedToCart()
         }
-        if(settings.url == "/cart/change.js"){
+        if(event.detail[0].responseURL == "/cart/change.js"){
           addedToCart()
-      }
-      })
+        }
+      });
     </script>
     {% include 'swymSnippet' %}
   </body>
