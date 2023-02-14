@@ -6558,7 +6558,7 @@
   window.customElements.define("count-down", CountDown);
 
   // js/custom-element/expand.js
-  class Expand extends HTMLElement {
+  var Expand = class extends HTMLElement {
     constructor() {
       super();
       this.toggleExpand = this.toggleExpand.bind(this);
