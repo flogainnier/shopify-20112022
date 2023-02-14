@@ -42,6 +42,7 @@
     "94994535-0a0f-4faa-849b-b6daa88354bc": {
       "type": "collection-footer",
       "settings": {
+        "expandable": true,
         "subheading": "",
         "title": "",
         "content": "<p>{{ collection.metafields.custom.long_description.value }}<\/p>",
