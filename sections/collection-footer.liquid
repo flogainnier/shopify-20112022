@@ -54,7 +54,7 @@
         {%- assign text_position = section.settings.text_position -%}
         {%- assign text_alignment = section.settings.text_alignment -%}
         {%- if section.settings.expandable -%}
-          <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container">
+          <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container text--small">
             <w3-expand class="expand js-expand" data-height="150">
               <div class="expand__wrapper">
                 <div class="expand__content js-expand-content">  
@@ -78,7 +78,7 @@
             </w3-expand>
           </div>
         {%- else -%}
-          <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container text--xsmall">
+          <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container text--small">
             {%- if section.settings.subheading != blank -%}
               <h2 class="heading heading--small">{{ section.settings.subheading | escape }}</h2>
             {%- endif -%}
@@ -120,7 +120,7 @@
             <ul class="link-bar__linklist list--unstyled" role="list">
               {%- for link in quick_links_menu.links -%}
                 <li class="link-bar__link-item">
-                  <a href="{{ link.url }}" class="link-bar__link link--animated text--underlined text--xsmall text--strong">{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="link-bar__link link--animated text--underlined text--small text--strong">{{ link.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>
