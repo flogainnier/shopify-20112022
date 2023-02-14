@@ -16309,9 +16309,11 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 
 .expand--expanded .expand__button--close {
   display: block;
+  margin-right: 5px;
 }
 .expand--expanded .expand__button--open {
   display: none;
+  margin-right: 5px;
 }
 .expand--expanded .expand__content {
   height: var(--expanded-height);
