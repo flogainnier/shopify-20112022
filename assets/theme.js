@@ -6557,6 +6557,34 @@
   };
   window.customElements.define("count-down", CountDown);
 
+  // js/custom-element/expand.js
+  class Expand extends HTMLElement {
+    constructor() {
+      super();
+      this.toggleExpand = this.toggleExpand.bind(this);
+    }
+    connectedCallback() {
+      this.expandEl = this;
+      this.expandContent = this.expandEl.querySelector('.js-expand-content');
+      this.expandButton = this.expandEl.querySelector('.js-expand-button');
+      // minimum height of preview 
+      this.beforeExpandHeight = parseInt(this.expandEl.dataset.height);
+      // real height of content
+      this.contentHeight = this.expandContent.offsetHeight;
+      if (this.contentHeight > this.beforeExpandHeight) {
+          this.expandEl.style.setProperty('--before-expand-height', `${parseInt(this.beforeExpandHeight)}px`);
+          this.expandEl.style.setProperty('--expanded-height', `${parseInt(this.contentHeight)}px`);
+          this.expandButton.addEventListener('click', this.toggleExpand)
+      } else {
+          this.expandButton.style.display = 'none';
+      }
+    }
+    toggleExpand() {
+      this.expandEl.classList.toggle('expand--expanded');
+    }
+  }
+  window.customElements.define('w3-expand', Expand);
+
   // js/index.js
   (() => {
     new InputBindingManager();

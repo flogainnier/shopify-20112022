@@ -16304,3 +16304,47 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
     font-size: 10px;
   }
 }
+
+/* Expand section */
+
+.expand--expanded .expand__button--close {
+  display: block;
+}
+.expand--expanded .expand__button--open {
+  display: none;
+}
+.expand--expanded .expand__content {
+  height: var(--expanded-height);
+  transition: var(--global-transition);
+}
+.expand--expanded .expand__content:after {
+  opacity: 0;
+  visibility: hidden;
+}
+.expand--expanded .icon {
+  transform: rotate(180deg) !important;
+  transition: var(--global-transition);
+}
+.expand__button--close {
+  display: none;
+}
+.expand__content {
+  position: relative;
+  height: var(--before-expand-height);
+  max-height: none;
+  will-change: height;
+  padding-bottom: var(--space-l);
+  transition: var(--global-transition);
+}
+.expand__content:after {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  transition: var(--global-transition);
+}
