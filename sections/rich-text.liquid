@@ -54,7 +54,7 @@
         {%- assign text_position = section.settings.text_position -%}
         {%- assign text_alignment = section.settings.text_alignment -%}
         {%- if section.settings.expandable -%}
-          <w3-expand class="expand grid-row | js-expand expand--expanded" data-height="150" style="--before-expand-height:150px; --expanded-height:821px;">
+          <w3-expand class="expand grid-row | js-expand">
             <div class="expand__wrapper">
               <div class="expand__content u-overflow-hidden richtext u-pad-t-m u-center | js-expand-content">  
                 {%- if section.settings.content != blank -%}

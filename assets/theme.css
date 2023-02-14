@@ -16315,7 +16315,7 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 }
 .expand--expanded .expand__content {
   height: var(--expanded-height);
-  transition: var(--global-transition);
+  transition: all 200ms cubic-bezier(0.40, 0, 0, 1);
 }
 .expand--expanded .expand__content:after {
   opacity: 0;
@@ -16323,7 +16323,7 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 }
 .expand--expanded .icon {
   transform: rotate(180deg) !important;
-  transition: var(--global-transition);
+  transition: all 200ms cubic-bezier(0.40, 0, 0, 1);
 }
 .expand__button--close {
   display: none;
@@ -16334,7 +16334,7 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
   max-height: none;
   will-change: height;
   padding-bottom: var(--space-l);
-  transition: var(--global-transition);
+  transition: all 200ms cubic-bezier(0.40, 0, 0, 1);
 }
 .expand__content:after {
   content: "";
@@ -16346,5 +16346,5 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
   z-index: 1;
   opacity: 1;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  transition: var(--global-transition);
+  transition: all 200ms cubic-bezier(0.40, 0, 0, 1);
 }
