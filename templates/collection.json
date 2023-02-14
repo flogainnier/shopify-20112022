@@ -45,7 +45,7 @@
         "expandable": true,
         "subheading": "",
         "title": "",
-        "content": "<p>{{ collection.metafields.custom.long_description.value }}<\/p>",
+        "content": "{{ collection.metafields.custom.bottom_description | metafield_tag }}",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
