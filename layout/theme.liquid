@@ -217,62 +217,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- section 'footer' -%}
     {%- endif -%}
 
-    <script type="text/javascript">
-      var _learnq = _learnq || [];
-      {% if customer %}
-      _learnq.push(['identify', {
-        'Gender': '{{ customer.metafields.custom.gender }}',
-        '$email': '{{ customer.email }}',
-        '$first_name': '{{ customer.first_name }}',
-        '$last_name': '{{ customer.last_name }}',
-        'Birthday': '{{ customer.metafields.custom.birthday }}'
-      }]);
-      {% endif %}
-    </script>
-    <script type="text/javascript" defer>
-      var _learnq = _learnq || [];
-      function addedToCart() {
-        fetch(`${window.location.origin}/cart.js`)
-        .then(res => res.clone().json().then(data => {
-          var cart = {
-            total_price: data.total_price/100,
-            $value: data.total_price/100,
-            total_discount: data.total_discount,
-            original_total_price: data.original_total_price/100,
-            item_count: data.item_count,
-            items: data.items
-          }
-          if (typeof item !== 'undefined') {
-            cart = Object.assign(cart, item)
-          }
-          _learnq.push(['track', 'Added to Cart', cart])
-        }))
-      } 
-      (function (ns, fetch) {
-        ns.fetch = function() {
-          const response = fetch.apply(this, arguments);
-          response.then(res => {
-            if (`${window.location.origin}/cart/add.js`
-              .includes(res.url)) {
-                addedToCart()
-            }
-            if (`${window.location.origin}/cart/change.js`
-              .includes(res.url)) {
-                addedToCart()
-            }
-          });
-          return response
-        }
-      }(window, window.fetch))
-      document.addEventListener("ajaxComplete", function(event) {
-        if(event.detail[0].responseURL == "/cart/add.js"){
-            addedToCart()
-        }
-        if(event.detail[0].responseURL == "/cart/change.js"){
-          addedToCart()
-        }
-      });
-    </script>
+    {% include 'klavuio-events' %}
     {% include 'swymSnippet' %}
   </body>
 </html>
