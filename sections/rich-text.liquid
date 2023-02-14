@@ -54,27 +54,29 @@
         {%- assign text_position = section.settings.text_position -%}
         {%- assign text_alignment = section.settings.text_alignment -%}
         {%- if section.settings.expandable -%}
-          <w3-expand class="expand js-expand" data-height="150">
-            <div class="expand__wrapper">
-              <div class="expand__content js-expand-content">  
-                {%- if section.settings.content != blank -%}
-                  {{- section.settings.content -}}
-                {%- endif -%}
+          <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container">
+            <w3-expand class="expand js-expand" data-height="150">
+              <div class="expand__wrapper">
+                <div class="expand__content js-expand-content">  
+                  {%- if section.settings.content != blank -%}
+                    {{- section.settings.content -}}
+                  {%- endif -%}
+                </div>
+                <button class="js-expand-button">
+                  <span class="expand__button--open js-expand-button--open">
+                    Voir plus
+                  </span>
+                  <span class="expand__button--close js-expand-button--close">
+                    Voir moins
+                  </span>
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="icon icon-chevron-down ">
+                    <use href="#icon-chevron-down"></use>
+                  </svg>
+                  <span class="visually-hidden">chevron-down</span>
+                </button>
               </div>
-              <button class="js-expand-button">
-                <span class="expand__button--open js-expand-button--open">
-                  Voir plus
-                </span>
-                <span class="expand__button--close js-expand-button--close">
-                  Voir moins
-                </span>
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="icon icon-chevron-down ">
-                  <use href="#icon-chevron-down"></use>
-                </svg>
-                <span class="visually-hidden">chevron-down</span>
-              </button>
-            </div>
-          </w3-expand>
+            </w3-expand>
+          </div>
         {%- else -%}
           <div class="content-box content-box--{{ section.settings.text_width }} content-box--text-{{ text_alignment }} content-box--{{ text_position }} text-container">
             {%- if section.settings.subheading != blank -%}
