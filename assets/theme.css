@@ -16357,4 +16357,6 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
   align-items: center;
   justify-content: center;
   width: 100%;
+  font-weight: 600;
+  text-decoration: underline;
 }

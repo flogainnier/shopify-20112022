@@ -56,12 +56,12 @@
         {%- if section.settings.expandable -%}
           <w3-expand class="expand js-expand" data-height="150">
             <div class="expand__wrapper">
-              <div class="expand__content js-expand-content">  
+              <div class="expand__content js-expand-content text--xsmall">  
                 {%- if section.settings.content != blank -%}
                   {{- section.settings.content -}}
                 {%- endif -%}
               </div>
-              <button class="js-expand-button">
+              <button class="js-expand-button text--xsmall">
                 <span class="expand__button--open js-expand-button--open">
                   Voir plus
                 </span>
