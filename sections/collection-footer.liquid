@@ -54,14 +54,14 @@
         {%- assign text_position = section.settings.text_position -%}
         {%- assign text_alignment = section.settings.text_alignment -%}
         {%- if section.settings.expandable -%}
-          <w3-expand class="expand grid-row | js-expand">
+          <w3-expand class="expand js-expand">
             <div class="expand__wrapper">
-              <div class="expand__content u-overflow-hidden richtext u-pad-t-m u-center | js-expand-content">  
+              <div class="expand__content js-expand-content">  
                 {%- if section.settings.content != blank -%}
                   {{- section.settings.content -}}
                 {%- endif -%}
               </div>
-              <button class="u-flex align-items-center justify-content-center u-full-width | js-expand-button">
+              <button class="js-expand-button">
                 <span class="expand__button--open js-expand-button--open">
                   Voir plus
                 </span>
