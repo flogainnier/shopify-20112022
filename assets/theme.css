@@ -16309,11 +16309,9 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 
 .expand--expanded .expand__button--close {
   display: block;
-  margin-right: 5px;
 }
 .expand--expanded .expand__button--open {
   display: none;
-  margin-right: 5px;
 }
 .expand--expanded .expand__content {
   height: var(--expanded-height);
@@ -16326,6 +16324,9 @@ input[disabled], input[type="text"][disabled], input[type="email"][disabled], in
 .expand--expanded .icon {
   transform: rotate(180deg) !important;
   transition: all 200ms cubic-bezier(0.40, 0, 0, 1);
+}
+.expand__button {
+  margin-right: 5px;
 }
 .expand__button--close {
   display: none;
