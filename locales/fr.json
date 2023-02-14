@@ -159,6 +159,8 @@
       "empty_button": "Explorer nos produits",
       "sort_by": "Trier par",
       "more_filter": "Plus de filtres",
+      "see_more": "Voir plus",
+      "see_less": "Voir moins",
       "products_count": {
         "zero": "{{ count }} produit",
         "one": "{{ count }} produit",

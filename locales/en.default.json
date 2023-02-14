@@ -159,6 +159,8 @@
       "empty_button": "Shop now",
       "sort_by": "Sort by",
       "more_filter": "More filters",
+      "see_more": "See more",
+      "see_less": "See less",
       "products_count": {
         "zero": "{{ count }} products",
         "one": "{{ count }} product",

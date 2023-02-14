@@ -64,10 +64,10 @@
                 </div>
                 <button class="js-expand-button">
                   <span class="expand__button expand__button--open js-expand-button--open">
-                    Voir plus
+                    {{ 'collection.general.see_more' | t }}
                   </span>
                   <span class="expand__button expand__button--close js-expand-button--close">
-                    Voir moins
+                    {{ 'collection.general.see_less' | t }}
                   </span>
                   {%- render 'icon' with 'chevron' -%}
                   <span class="visually-hidden">chevron-down</span>
