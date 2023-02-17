@@ -3,26 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "4a6397ce-db8d-499f-b539-a911e4c53663": {
-          "type": "image",
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/HP_NEW_CO_JANV23_V6.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HP_NEW_CO_JANV23_MOBILE_V1.jpg",
-            "text_position": "bottom_left",
-            "subheading": "NOUVELLE COLLECTION",
-            "title": "Must-Have",
-            "button_1_text": "DÉCOUVRIR",
-            "button_1_link": "shopify:\/\/collections\/boucles-doreilles",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "a30850cb-f28e-4683-8600-7001edb72de1": {
           "type": "image",
           "disabled": true,
@@ -42,6 +22,26 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 10
+          }
+        },
+        "4a6397ce-db8d-499f-b539-a911e4c53663": {
+          "type": "image",
+          "settings": {
+            "only_customer": false,
+            "image": "shopify:\/\/shop_images\/HP_NEW_CO_JANV23_V6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HP_NEW_CO_JANV23_MOBILE_V1.jpg",
+            "text_position": "bottom_left",
+            "subheading": "NOUVELLE COLLECTION",
+            "title": "Must-Have",
+            "button_1_text": "DÉCOUVRIR",
+            "button_1_link": "shopify:\/\/collections\/boucles-doreilles",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         },
         "845b9503-615e-4611-8e65-f17ed938cce7": {
@@ -88,8 +88,8 @@
         }
       },
       "block_order": [
-        "4a6397ce-db8d-499f-b539-a911e4c53663",
         "a30850cb-f28e-4683-8600-7001edb72de1",
+        "4a6397ce-db8d-499f-b539-a911e4c53663",
         "845b9503-615e-4611-8e65-f17ed938cce7",
         "c3092d07-b050-4ec2-bbd6-5ffc5203bcad"
       ],
