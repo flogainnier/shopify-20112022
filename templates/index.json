@@ -42,55 +42,11 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "845b9503-615e-4611-8e65-f17ed938cce7": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_VF.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HP_NOEL_MADAME_MOBILE_VF.jpg",
-            "text_position": "middle_center",
-            "subheading": "Nouveautés",
-            "title": "Madame",
-            "button_1_text": "Découvrir",
-            "button_1_link": "shopify:\/\/pages\/madame",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 10
-          }
-        },
-        "c3092d07-b050-4ec2-bbd6-5ffc5203bcad": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "only_customer": false,
-            "image": "shopify:\/\/shop_images\/HP_PERLE_TEST_3jpg.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HP_PERLE_MOBILE.jpg",
-            "text_position": "middle_center",
-            "subheading": "Nouvelle Collection",
-            "title": "VÉNUS",
-            "button_1_text": "Découvrir",
-            "button_1_link": "shopify:\/\/collections\/venus",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
         }
       },
       "block_order": [
         "a30850cb-f28e-4683-8600-7001edb72de1",
-        "4a6397ce-db8d-499f-b539-a911e4c53663",
-        "845b9503-615e-4611-8e65-f17ed938cce7",
-        "c3092d07-b050-4ec2-bbd6-5ffc5203bcad"
+        "4a6397ce-db8d-499f-b539-a911e4c53663"
       ],
       "settings": {
         "section_height": "fit",
@@ -122,37 +78,6 @@
         "content": "",
         "products_count": 4,
         "products_per_row": 4,
-        "stack_products": false,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "1658498460c35802eb": {
-      "type": "featured-collections",
-      "disabled": true,
-      "blocks": {
-        "1658498460200905ad-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "best-sellers-hp",
-            "label": "BEST SELLERS",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "1658498460200905ad-0"
-      ],
-      "settings": {
-        "subheading": "DÉCOUVREZ",
-        "title": "BEST SELLERS",
-        "content": "",
-        "products_count": 8,
-        "products_per_row": 6,
         "stack_products": false,
         "show_cta": false,
         "background": "rgba(0,0,0,0)",
@@ -322,14 +247,6 @@
     "c681fb54-1266-4645-a97a-858f7abb574c": {
       "type": "scroll-ticker",
       "blocks": {
-        "d3b6df46-b30e-4652-83ec-74a510d536c4": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "title": "Une bougie offerte à partir de 99€ d'achat",
-            "url": ""
-          }
-        },
         "7c428808-a8a7-4412-951b-fd24ed670232": {
           "type": "item",
           "settings": {
@@ -346,7 +263,6 @@
         }
       },
       "block_order": [
-        "d3b6df46-b30e-4652-83ec-74a510d536c4",
         "7c428808-a8a7-4412-951b-fd24ed670232",
         "32df7317-068b-4bd9-84fa-c7d6ee026d3b"
       ],
@@ -355,98 +271,6 @@
         "breather": 40,
         "background": "#000000",
         "text_color": "#ffffff"
-      }
-    },
-    "43c63689-22c1-4d87-8c7d-321239627670": {
-      "type": "featured-collections",
-      "disabled": true,
-      "blocks": {
-        "template--16637482565862__43c63689-22c1-4d87-8c7d-321239627670-166913364473cd9030-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "black-friday-1",
-            "label": "",
-            "button_text": "J'EN PROFITE",
-            "button_url": "shopify:\/\/collections\/bague-bf"
-          }
-        }
-      },
-      "block_order": [
-        "template--16637482565862__43c63689-22c1-4d87-8c7d-321239627670-166913364473cd9030-0"
-      ],
-      "settings": {
-        "subheading": "CYBER MONDAY IS HERE",
-        "title": "Notre Sélection",
-        "content": "",
-        "products_count": 12,
-        "products_per_row": 4,
-        "stack_products": false,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "1656928658a00e3d02": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1656928658d7e5012e-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/294247243_1017393172303970_6815176666556840475_n.jpg",
-            "subheading": "Collection",
-            "title": "Madame",
-            "link_text": "",
-            "link_url": "shopify:\/\/pages\/madame",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        },
-        "1656928658d7e5012e-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/290185909_583544463217218_4976414748693458877_n.jpg",
-            "subheading": "CRÉEZ VOTRE BIJOUX",
-            "title": "Mix & Match",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/pendentifs",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        },
-        "1656928658d7e5012e-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/289297444_1104260796792401_7974049473672860097_n.jpg",
-            "subheading": "ACCUMULEZ-LES",
-            "title": "Bar à boucles",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/bar-a-boucles",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        }
-      },
-      "block_order": [
-        "1656928658d7e5012e-0",
-        "1656928658d7e5012e-1",
-        "1656928658d7e5012e-2"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "layout": "collage",
-        "subheading": "À la une",
-        "title": "Découvrir",
-        "background": "#ffffff",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "16584869861542d55e": {
@@ -499,67 +323,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "d28194a4-5dce-4d8e-bd6b-c5037f29b857": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/matieres_homepage_1.jpg",
-            "subheading": "NOS MATIÈRES ÉCO-RESPONSABLES",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/pages\/nos-matieres-premieres",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/ateliers_homepage_1.jpg",
-            "subheading": "NOS ATELIERS 100% FRANÇAIS",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/pages\/nos-ateliers",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        },
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/programme_solidaire_homepage_1.jpg",
-            "subheading": "NOTRE PROGRAMME SOLIDAIRE UNIQUE",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/pages\/notre-programme-solidaire",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-0",
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-1",
-        "template--16637482565862__d28194a4-5dce-4d8e-bd6b-c5037f29b857-16691953743492b9d3-3"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "carousel",
-        "subheading": "Notre promesse",
-        "title": "Inventer une mode vraiment durable",
-        "background": "#f5f1ec",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5": {
       "type": "custom-html",
       "settings": {
@@ -571,80 +334,15 @@
         "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "disabled": true,
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "icon_position": "center",
-            "icon": "picto-box",
-            "show_icon": false,
-            "custom_icon_width": 40,
-            "title": "Livraison offerte",
-            "content": "<p>À partir de 79€ en France métropolitaine<\/p>"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "icon_position": "center",
-            "icon": "picto-phone",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "SAV réactif",
-            "content": "<p>Une question, besoin d'aide?    <a href=\"mailto:hello@aglaiaco.com\" target=\"_blank\" title=\"mailto:hello@aglaiaco.com\">hello@aglaiaco.com<\/a><\/p>"
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icon_position": "center",
-            "icon": "picto-lock",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "Paiement sécurisé",
-            "content": "<p>Par carte bancaire (Visa, Mastercard, CB), Paypal et 3 fois sans frais.<\/p>"
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "icon_position": "center",
-            "icon": "picto-email",
-            "show_icon": false,
-            "custom_icon_width": 50,
-            "title": "Retours gratuits",
-            "content": "<p>En France métropolitaine sous 30 jours<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "item-4"
-      ],
-      "settings": {
-        "background": "#ffffff",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
     "slideshow",
     "9543a909-ee04-4e26-9e57-d09177471457",
-    "1658498460c35802eb",
     "1663599417d7f4c1fe",
     "collection-list",
     "c681fb54-1266-4645-a97a-858f7abb574c",
-    "43c63689-22c1-4d87-8c7d-321239627670",
-    "1656928658a00e3d02",
     "16584869861542d55e",
-    "d28194a4-5dce-4d8e-bd6b-c5037f29b857",
-    "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5",
-    "text-with-icons"
+    "7eb7562e-7c73-4f9e-a1df-ff05a6de17e5"
   ]
 }
