@@ -5,9 +5,9 @@
       <p class="mini-cart__recommendations-heading heading heading--xsmall text--subdued hidden-lap-and-up">{{ section.settings.free_product_title | escape }}</p>
     {%- endif -%}
     {%- if cart.total_price >= section.settings.minimum_total -%}
-      {{ assign free = true }}
+      {% assign free = true %}
     {%- else -%}
-      {{ assign free = false }}
+      {% assign free = false %}
     {%- endif -%}
     <div class="scroller">
       <div class="scroller__inner">
