@@ -252,6 +252,10 @@
         {%- endfor -%}
       </form>
 
+      {%- if section.settings.product -%}
+        {%- render 'cart-free-product', product: section.settings.product -%}
+      {%- endif -%}
+
       {%- if section.settings.show_recommendations -%}
         {%- render 'cart-recommendations' -%}
       {%- endif -%}
@@ -417,6 +421,30 @@
       "type": "collection",
       "id": "upsell_collection",
       "label": "Collection"
+    },
+    {
+      "type": "header",
+      "content": "Free product"
+    },
+    {
+      "type": "text",
+      "id": "free_product_title",
+      "label": "Heading"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "range",
+      "id": "minimum_total",
+      "label": "Over price",
+      "min": 50,
+      "max": 200,
+      "step": 1,
+      "unit": "€",
+      "default": 100
     }
   ]
 }
