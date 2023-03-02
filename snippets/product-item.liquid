@@ -120,7 +120,7 @@
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
           {%- if free %}
-            
+            {{- 'cart.general.free' | t -}}
           {% else %}  
             {%- if product.price_varies and product.compare_at_price -%}
             
