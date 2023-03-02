@@ -4,7 +4,8 @@
       <p class="mini-cart__recommendations-heading heading heading--small hidden-pocket">{{ section.settings.free_product_title | escape }}</p>
       <p class="mini-cart__recommendations-heading heading heading--xsmall text--subdued hidden-lap-and-up">{{ section.settings.free_product_title | escape }}</p>
     {%- endif -%}
-    {%- if cart.total_price >= section.settings.minimum_total -%}
+    {%- assign minimum_total_in_cents = section.settings.minimum_total | times: 100 -%}
+    {%- if cart.total_price >= minimum_total_in_cents -%}
       {% assign free_product = true %}
     {%- else -%}
       {% assign free_product = false %}
