@@ -5,14 +5,14 @@
       <p class="mini-cart__recommendations-heading heading heading--xsmall text--subdued hidden-lap-and-up">{{ section.settings.free_product_title | escape }}</p>
     {%- endif -%}
     {%- if cart.total_price >= section.settings.minimum_total -%}
-      {% assign free = true %}
+      {% assign free_product = true %}
     {%- else -%}
-      {% assign free = false %}
+      {% assign free_product = false %}
     {%- endif -%}
     <div class="scroller">
       <div class="scroller__inner">
         <div class="mini-cart__recommendations-list">
-          {%- render 'product-item', product: product, free: free, reduced_content: true, reduced_font_size: true, hide_secondary_image: true, show_cta: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
+          {%- render 'product-item', product: product, free: free_product, reduced_content: true, reduced_font_size: true, hide_secondary_image: true, show_cta: true, sizes_attribute: '(max-width: 740px) 65px, 92px' -%}
         </div>
       </div>
     </div>
