@@ -9,7 +9,6 @@
     },
     "1663859687669a96ea": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "16638596866d6999cc-1": {
           "type": "item",
@@ -78,6 +77,7 @@
         "16638596866d6999cc-3",
         "16638596866d6999cc-2"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": true,
@@ -94,7 +94,6 @@
     },
     "1663859960dda437aa": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "1663859960095d2406-0": {
           "type": "collection",
@@ -109,6 +108,7 @@
       "block_order": [
         "1663859960095d2406-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "Bijoux MADE IN FRANCE",
         "title": "DÉCOUVRIR",
@@ -143,7 +143,6 @@
     },
     "1663859928b1090ac6": {
       "type": "shop-the-look",
-      "disabled": true,
       "blocks": {
         "16638599281dbb3dd6-0": {
           "type": "look",
@@ -195,6 +194,7 @@
         "16638599281dbb3dd6-0",
         "32a2d3ba-d0d7-485e-8180-517de9531450"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "label": "Shop the looks"
@@ -254,7 +254,7 @@
             "subheading": "",
             "title": "CADEAUX POUR ELLE",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/cadeaux-pour-elle",
+            "link_url": "shopify:\/\/collections\/cadeaux-pour-elle-noel",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -387,7 +387,6 @@
     },
     "e8b32ffb-ac95-41e3-927b-4184e8398e30": {
       "type": "press",
-      "disabled": true,
       "blocks": {
         "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0": {
           "type": "item",
@@ -400,6 +399,7 @@
       "block_order": [
         "template--16640438436070__e8b32ffb-ac95-41e3-927b-4184e8398e30-16692195277409f272-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background": "rgba(0,0,0,0)",
@@ -514,7 +514,6 @@
     },
     "9bfc74df-181d-47c5-a154-5c138c97491b": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-0": {
           "type": "collection",
@@ -607,6 +606,7 @@
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-4",
         "template--16640438436070__9bfc74df-181d-47c5-a154-5c138c97491b-1669218645f51dc6e5-5"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "collage",
